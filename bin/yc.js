@@ -5,9 +5,9 @@ const program = new Command();
 const inquirer = require('inquirer')
 
 program
-    .name('yc')
+    .name('yucheng')
     .description('余成的个人cli 啦啦啦啦')
-    .version('1.0.0')
+    .version('0.0.1')
     .action(() => {
         console.log('欢迎使用余成的个人cli');
         inquirer.prompt([
@@ -15,7 +15,7 @@ program
                 type: 'rawlist', //type： input, number, confirm, list, checkbox ... 
                 name: 'name', // key 名
                 message: '请选择你要使用的功能', // 提示信息
-                default: 'yc-cli', // 默认值
+                default: 'yucheng', // 默认值
                 choices: [
                     {
                         "name": "创建前端项目",
