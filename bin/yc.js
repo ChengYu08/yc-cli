@@ -2,7 +2,18 @@
 
 const { Command } = require('commander');
 const program = new Command();
-const inquirer = require('inquirer')
+const inquirer = require('inquirer');
+const path = require('path');
+
+const lang = require('../lib/lang.js');
+
+// 获取当前工作目录
+const currentDirectory = process.cwd();
+console.log('当前工作目录:', currentDirectory);
+
+// // 获取执行脚手架命令的目录
+// const commandDirectory = path.dirname(process.argv[1]);
+// console.log('脚手架命令的目录:', commandDirectory);
 
 program
     .name('yucheng')
@@ -21,7 +32,6 @@ program
                         "name": "创建前端项目",
                         "value": "create",
                         "short": "create",
-                        // "checked": true,
                     },
                     {
                         "name": "将当前目录下的png转成webp",
@@ -33,8 +43,6 @@ program
                         "value": "lang",
                         "short": "lang",
                     },
-
-
                 ],
             },
         ]).then(answers => {
@@ -50,6 +58,7 @@ program
                     break;
                 case "lang":
                     console.log("将excel转成json语言包");
+                    lang.exportLangToJson();
                     break;
                 default:
                     break;
