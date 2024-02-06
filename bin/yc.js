@@ -12,28 +12,34 @@ program
         console.log('欢迎使用余成的个人cli');
         inquirer.prompt([
             {
-                type: 'list', //type： input, number, confirm, list, checkbox ... 
+                type: 'rawlist', //type： input, number, confirm, list, checkbox ... 
                 name: 'name', // key 名
-                message: '第一步', // 提示信息
+                message: '请选择你要使用的功能', // 提示信息
                 default: 'yc-cli', // 默认值
-                choices: ["a", "b"],
+                choices: [
+                    {
+                        "name": "创建前端项目",
+                        "value": "create",
+                        "short": "create",
+                        // "checked": true,
+                    },
+                    {
+                        "name": "将当前目录下的png转成webp",
+                        "value": "Transpile",
+                        "short": "Transpile",
+                    },
+                    {
+                        "name": "将excel转成json语言包",
+                        "value": "lang",
+                        "short": "lang",
+                    },
+
+
+                ],
             },
         ]).then(answers => {
             // 打印互用输入结果
             console.log(answers)
-
-            inquirer.prompt([
-                {
-                    type: 'list', //type： input, number, confirm, list, checkbox ... 
-                    name: 'name', // key 名
-                    message: '第二步', // 提示信息
-                    default: 'yc-cli', // 默认值
-                    choices: ["a", "b"],
-                },
-            ]).then(answers => {
-                // 打印互用输入结果
-                console.log(answers)
-            })
         })
     });
 
