@@ -25,8 +25,8 @@ program
                     },
                     {
                         "name": "将当前目录下的png转成webp",
-                        "value": "Transpile",
-                        "short": "Transpile",
+                        "value": "transpile",
+                        "short": "transpile",
                     },
                     {
                         "name": "将excel转成json语言包",
@@ -40,6 +40,20 @@ program
         ]).then(answers => {
             // 打印互用输入结果
             console.log(answers)
+            console.log(__dirname);
+            switch (answers.name) {
+                case "create":
+                    console.log("创建前端项目");
+                    break;
+                case "transpile":
+                    console.log("将当前目录下的png转成webp");
+                    break;
+                case "lang":
+                    console.log("将excel转成json语言包");
+                    break;
+                default:
+                    break;
+            }
         })
     });
 
