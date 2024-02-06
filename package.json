@@ -6,9 +6,9 @@
     "yucheng": "bin/yc.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "link": "npm link"
   },
-    "type": "module",
+  "type": "module",
   "keywords": [],
   "author": "cheng Yu",
   "license": "ISC",
