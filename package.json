@@ -2,15 +2,15 @@
   "name": "yucheng",
   "version": "0.0.1",
   "description": "",
-  "main": "./bin/yc.js",
   "bin": {
-    "yucheng": "./bin/yc.js"
+    "yucheng": "bin/yc.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+    "type": "module",
   "keywords": [],
-  "author": "",
+  "author": "cheng Yu",
   "license": "ISC",
   "dependencies": {
     "autocannon": "^7.14.0",
@@ -20,6 +20,9 @@
     "execa": "^8.0.1",
     "fs-extra": "^11.2.0",
     "inquirer": "8.0.0",
+    "node-fetch": "^3.3.2",
+    "open": "^10.0.3",
     "xlsx": "^0.18.5"
-  }
+  },
+  "packageManager": "yarn@1.22.11"
 }

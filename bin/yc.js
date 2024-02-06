@@ -1,11 +1,10 @@
 #!/usr/bin/env node
 
-const { Command } = require('commander');
+import { Command } from "commander";
 const program = new Command();
-const inquirer = require('inquirer');
-const path = require('path');
-
-const lang = require('../lib/lang.js');
+import inquirer  from "inquirer";
+import transpile from "../lib/png_to_webp.js";
+import lang from "../lib/lang.js";
 
 // 获取当前工作目录
 const currentDirectory = process.cwd();
@@ -48,13 +47,13 @@ program
         ]).then(answers => {
             // 打印互用输入结果
             console.log(answers)
-            console.log(__dirname);
             switch (answers.name) {
                 case "create":
                     console.log("创建前端项目");
                     break;
                 case "transpile":
                     console.log("将当前目录下的png转成webp");
+                    transpile.pngToWebp();
                     break;
                 case "lang":
                     console.log("将excel转成json语言包");
