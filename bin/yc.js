@@ -2,9 +2,11 @@
 
 import { Command } from "commander";
 const program = new Command();
-import inquirer  from "inquirer";
+import inquirer from "inquirer";
+
 import transpile from "../lib/png_to_webp.js";
 import lang from "../lib/lang.js";
+import csdn from "../lib/csdn.js"
 
 // 获取当前工作目录
 const currentDirectory = process.cwd();
@@ -33,6 +35,11 @@ program
                         "short": "create",
                     },
                     {
+                        "name": "刷博客访问量",
+                        "value": "csdn",
+                        "short": "csdn",
+                    },
+                    {
                         "name": "将当前目录下的png转成webp",
                         "value": "transpile",
                         "short": "transpile",
@@ -44,7 +51,7 @@ program
                     },
                 ],
             },
-        ]).then(answers => {
+        ]).then(async answers => {
             // 打印互用输入结果
             console.log(answers)
             switch (answers.name) {
@@ -58,6 +65,18 @@ program
                 case "lang":
                     console.log("将excel转成json语言包");
                     lang.exportLangToJson();
+                    break;
+                case "csdn":
+                    const answer = await inquirer.prompt([
+                        {
+                            type: 'input',
+                            name: 'name',
+                            message: '输入csdn博客名字',
+                            default: 'weixin_43575775',
+                        },
+                    ]);
+                    console.log(`刷博客访问量 博客名字 ${answer.name}`);
+                    csdn.reptile(answer.name);
                     break;
                 default:
                     break;
