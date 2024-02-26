@@ -2,6 +2,9 @@
     "name": "yc_cli",
     "version": "1.0.0",
     "description": "",
+    "keywords": [],
+    "license": "ISC",
+    "author": "",
     "type": "module",
     "bin": {
         "yc_cli": "out.cjs"
@@ -10,17 +13,17 @@
         "out.cjs"
     ],
     "scripts": {
-        "prepare": "husky",
-        "format": "prettier --write .",
         "build": "zx ./scripts/build.mjs",
+        "format": "prettier --write .",
+        "prepare": "husky",
         "t": "npm run build && npm run format && npm link "
     },
-    "engines": {
-        "node": ">=v16.20.0"
+    "lint-staged": {
+        "**/*": "prettier --write --ignore-unknown"
     },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
+    "dependencies": {
+        "prettier-plugin-packagejson": "^2.4.12"
+    },
     "devDependencies": {
         "cheerio": "^1.0.0-rc.12",
         "esbuild": "^0.20.1",
@@ -35,7 +38,7 @@
         "xlsx": "^0.18.5",
         "zx": "^7.2.3"
     },
-    "lint-staged": {
-        "**/*": "prettier --write --ignore-unknown"
+    "engines": {
+        "node": ">=v16.20.0"
     }
 }
