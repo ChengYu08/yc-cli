@@ -1,5 +1,4 @@
-/** @format */
-
+import prompts from 'prompts';
 import fetch from 'node-fetch';
 import * as cheerio from 'cheerio';
 
@@ -93,6 +92,18 @@ function intervalArticle(urls) {
     }, 2000);
 }
 
+async function main() {
+    const { name } = await prompts({
+        type: 'text',
+        name: 'name',
+        message: '请输入csdn博客名字',
+        description: 'Please enter csdn blog name',
+        initial: 'weixin_43575775',
+    });
+    reptile(name);
+}
+
 export default {
     reptile,
+    main,
 };

@@ -8,6 +8,11 @@ async function pngToWebp() {
     console.log();
 }
 
+async function main() {
+    pngToWebp();
+}
+
 export default {
-    pngToWebp: pngToWebp,
+    pngToWebp,
+    main,
 };

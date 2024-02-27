@@ -1,6 +1,4 @@
 #!/usr/bin/env node
-/** @format */
-
 var __create = Object.create;
 var __defProp = Object.defineProperty;
 var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
@@ -377,7 +375,7 @@ var require_clear = __commonJS({
 var require_figures = __commonJS({
     'node_modules/prompts/dist/util/figures.js'(exports2, module2) {
         'use strict';
-        var main = {
+        var main5 = {
             arrowUp: '\u2191',
             arrowDown: '\u2193',
             arrowLeft: '\u2190',
@@ -392,10 +390,10 @@ var require_figures = __commonJS({
             pointer: '\u276F',
         };
         var win = {
-            arrowUp: main.arrowUp,
-            arrowDown: main.arrowDown,
-            arrowLeft: main.arrowLeft,
-            arrowRight: main.arrowRight,
+            arrowUp: main5.arrowUp,
+            arrowDown: main5.arrowDown,
+            arrowLeft: main5.arrowLeft,
+            arrowRight: main5.arrowRight,
             radioOn: '(*)',
             radioOff: '( )',
             tick: '\u221A',
@@ -405,7 +403,7 @@ var require_figures = __commonJS({
             line: '\u2500',
             pointer: '>',
         };
-        var figures = process.platform === 'win32' ? win : main;
+        var figures = process.platform === 'win32' ? win : main5;
         module2.exports = figures;
     },
 });
@@ -614,7 +612,7 @@ var require_prompt = __commonJS({
 var require_text = __commonJS({
     'node_modules/prompts/dist/elements/text.js'(exports2, module2) {
         'use strict';
-        function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {
+        function asyncGeneratorStep(gen, resolve2, reject, _next, _throw, key, arg) {
             try {
                 var info = gen[key](arg);
                 var value = info.value;
@@ -623,7 +621,7 @@ var require_text = __commonJS({
                 return;
             }
             if (info.done) {
-                resolve(value);
+                resolve2(value);
             } else {
                 Promise.resolve(value).then(_next, _throw);
             }
@@ -632,13 +630,13 @@ var require_text = __commonJS({
             return function () {
                 var self2 = this,
                     args = arguments;
-                return new Promise(function (resolve, reject) {
+                return new Promise(function (resolve2, reject) {
                     var gen = fn.apply(self2, args);
                     function _next(value) {
-                        asyncGeneratorStep(gen, resolve, reject, _next, _throw, 'next', value);
+                        asyncGeneratorStep(gen, resolve2, reject, _next, _throw, 'next', value);
                     }
                     function _throw(err) {
-                        asyncGeneratorStep(gen, resolve, reject, _next, _throw, 'throw', err);
+                        asyncGeneratorStep(gen, resolve2, reject, _next, _throw, 'throw', err);
                     }
                     _next(void 0);
                 });
@@ -1437,7 +1435,7 @@ var require_dateparts = __commonJS({
 var require_date = __commonJS({
     'node_modules/prompts/dist/elements/date.js'(exports2, module2) {
         'use strict';
-        function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {
+        function asyncGeneratorStep(gen, resolve2, reject, _next, _throw, key, arg) {
             try {
                 var info = gen[key](arg);
                 var value = info.value;
@@ -1446,7 +1444,7 @@ var require_date = __commonJS({
                 return;
             }
             if (info.done) {
-                resolve(value);
+                resolve2(value);
             } else {
                 Promise.resolve(value).then(_next, _throw);
             }
@@ -1455,13 +1453,13 @@ var require_date = __commonJS({
             return function () {
                 var self2 = this,
                     args = arguments;
-                return new Promise(function (resolve, reject) {
+                return new Promise(function (resolve2, reject) {
                     var gen = fn.apply(self2, args);
                     function _next(value) {
-                        asyncGeneratorStep(gen, resolve, reject, _next, _throw, 'next', value);
+                        asyncGeneratorStep(gen, resolve2, reject, _next, _throw, 'next', value);
                     }
                     function _throw(err) {
-                        asyncGeneratorStep(gen, resolve, reject, _next, _throw, 'throw', err);
+                        asyncGeneratorStep(gen, resolve2, reject, _next, _throw, 'throw', err);
                     }
                     _next(void 0);
                 });
@@ -1694,7 +1692,7 @@ ${i2 ? ` ` : figures.pointerSmall} ${color.red().italic(l)}`,
 var require_number = __commonJS({
     'node_modules/prompts/dist/elements/number.js'(exports2, module2) {
         'use strict';
-        function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {
+        function asyncGeneratorStep(gen, resolve2, reject, _next, _throw, key, arg) {
             try {
                 var info = gen[key](arg);
                 var value = info.value;
@@ -1703,7 +1701,7 @@ var require_number = __commonJS({
                 return;
             }
             if (info.done) {
-                resolve(value);
+                resolve2(value);
             } else {
                 Promise.resolve(value).then(_next, _throw);
             }
@@ -1712,13 +1710,13 @@ var require_number = __commonJS({
             return function () {
                 var self2 = this,
                     args = arguments;
-                return new Promise(function (resolve, reject) {
+                return new Promise(function (resolve2, reject) {
                     var gen = fn.apply(self2, args);
                     function _next(value) {
-                        asyncGeneratorStep(gen, resolve, reject, _next, _throw, 'next', value);
+                        asyncGeneratorStep(gen, resolve2, reject, _next, _throw, 'next', value);
                     }
                     function _throw(err) {
-                        asyncGeneratorStep(gen, resolve, reject, _next, _throw, 'throw', err);
+                        asyncGeneratorStep(gen, resolve2, reject, _next, _throw, 'throw', err);
                     }
                     _next(void 0);
                 });
@@ -2208,7 +2206,7 @@ Instructions:
 var require_autocomplete = __commonJS({
     'node_modules/prompts/dist/elements/autocomplete.js'(exports2, module2) {
         'use strict';
-        function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {
+        function asyncGeneratorStep(gen, resolve2, reject, _next, _throw, key, arg) {
             try {
                 var info = gen[key](arg);
                 var value = info.value;
@@ -2217,7 +2215,7 @@ var require_autocomplete = __commonJS({
                 return;
             }
             if (info.done) {
-                resolve(value);
+                resolve2(value);
             } else {
                 Promise.resolve(value).then(_next, _throw);
             }
@@ -2226,13 +2224,13 @@ var require_autocomplete = __commonJS({
             return function () {
                 var self2 = this,
                     args = arguments;
-                return new Promise(function (resolve, reject) {
+                return new Promise(function (resolve2, reject) {
                     var gen = fn.apply(self2, args);
                     function _next(value) {
-                        asyncGeneratorStep(gen, resolve, reject, _next, _throw, 'next', value);
+                        asyncGeneratorStep(gen, resolve2, reject, _next, _throw, 'next', value);
                     }
                     function _throw(err) {
-                        asyncGeneratorStep(gen, resolve, reject, _next, _throw, 'throw', err);
+                        asyncGeneratorStep(gen, resolve2, reject, _next, _throw, 'throw', err);
                     }
                     _next(void 0);
                 });
@@ -2971,7 +2969,7 @@ var require_dist = __commonJS({
             for (var i2 = 0, arr2 = new Array(len); i2 < len; i2++) arr2[i2] = arr[i2];
             return arr2;
         }
-        function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {
+        function asyncGeneratorStep(gen, resolve2, reject, _next, _throw, key, arg) {
             try {
                 var info = gen[key](arg);
                 var value = info.value;
@@ -2980,7 +2978,7 @@ var require_dist = __commonJS({
                 return;
             }
             if (info.done) {
-                resolve(value);
+                resolve2(value);
             } else {
                 Promise.resolve(value).then(_next, _throw);
             }
@@ -2989,19 +2987,19 @@ var require_dist = __commonJS({
             return function () {
                 var self2 = this,
                     args = arguments;
-                return new Promise(function (resolve, reject) {
+                return new Promise(function (resolve2, reject) {
                     var gen = fn.apply(self2, args);
                     function _next(value) {
-                        asyncGeneratorStep(gen, resolve, reject, _next, _throw, 'next', value);
+                        asyncGeneratorStep(gen, resolve2, reject, _next, _throw, 'next', value);
                     }
                     function _throw(err) {
-                        asyncGeneratorStep(gen, resolve, reject, _next, _throw, 'throw', err);
+                        asyncGeneratorStep(gen, resolve2, reject, _next, _throw, 'throw', err);
                     }
                     _next(void 0);
                 });
             };
         }
-        var prompts2 = require_prompts();
+        var prompts4 = require_prompts();
         var passOn = ['suggest', 'format', 'onState', 'validate', 'onRender', 'type'];
         var noop3 = () => {};
         function prompt() {
@@ -3065,7 +3063,7 @@ var require_dist = __commonJS({
                         var _question2 = question;
                         name = _question2.name;
                         type = _question2.type;
-                        if (prompts2[type] === void 0) {
+                        if (prompts4[type] === void 0) {
                             throw new Error(`prompt type (${type}) is not defined`);
                         }
                         if (override2[question.name] !== void 0) {
@@ -3078,7 +3076,7 @@ var require_dist = __commonJS({
                         try {
                             answer = prompt._injected
                                 ? getInjectedAnswer(prompt._injected, question.initial)
-                                : yield prompts2[type](question);
+                                : yield prompts4[type](question);
                             answers[name] = answer = yield getFormattedAnswer(
                                 question,
                                 answer,
@@ -3114,7 +3112,7 @@ var require_dist = __commonJS({
         }
         module2.exports = Object.assign(prompt, {
             prompt,
-            prompts: prompts2,
+            prompts: prompts4,
             inject,
             override,
         });
@@ -3196,7 +3194,7 @@ var require_clear2 = __commonJS({
 var require_figures2 = __commonJS({
     'node_modules/prompts/lib/util/figures.js'(exports2, module2) {
         'use strict';
-        var main = {
+        var main5 = {
             arrowUp: '\u2191',
             arrowDown: '\u2193',
             arrowLeft: '\u2190',
@@ -3211,10 +3209,10 @@ var require_figures2 = __commonJS({
             pointer: '\u276F',
         };
         var win = {
-            arrowUp: main.arrowUp,
-            arrowDown: main.arrowDown,
-            arrowLeft: main.arrowLeft,
-            arrowRight: main.arrowRight,
+            arrowUp: main5.arrowUp,
+            arrowDown: main5.arrowDown,
+            arrowLeft: main5.arrowLeft,
+            arrowRight: main5.arrowRight,
             radioOn: '(*)',
             radioOff: '( )',
             tick: '\u221A',
@@ -3224,7 +3222,7 @@ var require_figures2 = __commonJS({
             line: '\u2500',
             pointer: '>',
         };
-        var figures = process.platform === 'win32' ? win : main;
+        var figures = process.platform === 'win32' ? win : main5;
         module2.exports = figures;
     },
 });
@@ -5426,7 +5424,7 @@ var require_prompts2 = __commonJS({
 var require_lib = __commonJS({
     'node_modules/prompts/lib/index.js'(exports2, module2) {
         'use strict';
-        var prompts2 = require_prompts2();
+        var prompts4 = require_prompts2();
         var passOn = ['suggest', 'format', 'onState', 'validate', 'onRender', 'type'];
         var noop3 = () => {};
         async function prompt(questions = [], { onSubmit = noop3, onCancel = noop3 } = {}) {
@@ -5460,7 +5458,7 @@ var require_lib = __commonJS({
                     throw new Error('prompt message is required');
                 }
                 ({ name, type } = question);
-                if (prompts2[type] === void 0) {
+                if (prompts4[type] === void 0) {
                     throw new Error(`prompt type (${type}) is not defined`);
                 }
                 if (override2[question.name] !== void 0) {
@@ -5473,7 +5471,7 @@ var require_lib = __commonJS({
                 try {
                     answer = prompt._injected
                         ? getInjectedAnswer(prompt._injected, question.initial)
-                        : await prompts2[type](question);
+                        : await prompts4[type](question);
                     answers[name] = answer = await getFormattedAnswer(question, answer, true);
                     quit = await onSubmit(question, answer, answers);
                 } catch (err) {
@@ -5496,7 +5494,7 @@ var require_lib = __commonJS({
         function override(answers) {
             prompt._override = Object.assign({}, answers);
         }
-        module2.exports = Object.assign(prompt, { prompt, prompts: prompts2, inject, override });
+        module2.exports = Object.assign(prompt, { prompt, prompts: prompts4, inject, override });
     },
 });
 
@@ -6391,15 +6389,15 @@ var require_route = __commonJS({
             };
         }
         function wrapConversion(toModel, graph) {
-            const path4 = [graph[toModel].parent, toModel];
+            const path5 = [graph[toModel].parent, toModel];
             let fn = conversions[graph[toModel].parent][toModel];
             let cur = graph[toModel].parent;
             while (graph[cur].parent) {
-                path4.unshift(graph[cur].parent);
+                path5.unshift(graph[cur].parent);
                 fn = link(conversions[graph[cur].parent][cur], fn);
                 cur = graph[cur].parent;
             }
-            fn.conversion = path4;
+            fn.conversion = path5;
             return fn;
         }
         module2.exports = function (fromModel) {
@@ -8720,8 +8718,8 @@ var require_windows = __commonJS({
     'node_modules/isexe/windows.js'(exports2, module2) {
         module2.exports = isexe;
         isexe.sync = sync;
-        var fs3 = require('fs');
-        function checkPathExt(path4, options2) {
+        var fs4 = require('fs');
+        function checkPathExt(path5, options2) {
             var pathext = options2.pathExt !== void 0 ? options2.pathExt : process.env.PATHEXT;
             if (!pathext) {
                 return true;
@@ -8732,25 +8730,25 @@ var require_windows = __commonJS({
             }
             for (var i2 = 0; i2 < pathext.length; i2++) {
                 var p = pathext[i2].toLowerCase();
-                if (p && path4.substr(-p.length).toLowerCase() === p) {
+                if (p && path5.substr(-p.length).toLowerCase() === p) {
                     return true;
                 }
             }
             return false;
         }
-        function checkStat(stat2, path4, options2) {
+        function checkStat(stat2, path5, options2) {
             if (!stat2.isSymbolicLink() && !stat2.isFile()) {
                 return false;
             }
-            return checkPathExt(path4, options2);
+            return checkPathExt(path5, options2);
         }
-        function isexe(path4, options2, cb) {
-            fs3.stat(path4, function (er, stat2) {
-                cb(er, er ? false : checkStat(stat2, path4, options2));
+        function isexe(path5, options2, cb) {
+            fs4.stat(path5, function (er, stat2) {
+                cb(er, er ? false : checkStat(stat2, path5, options2));
             });
         }
-        function sync(path4, options2) {
-            return checkStat(fs3.statSync(path4), path4, options2);
+        function sync(path5, options2) {
+            return checkStat(fs4.statSync(path5), path5, options2);
         }
     },
 });
@@ -8760,14 +8758,14 @@ var require_mode = __commonJS({
     'node_modules/isexe/mode.js'(exports2, module2) {
         module2.exports = isexe;
         isexe.sync = sync;
-        var fs3 = require('fs');
-        function isexe(path4, options2, cb) {
-            fs3.stat(path4, function (er, stat2) {
+        var fs4 = require('fs');
+        function isexe(path5, options2, cb) {
+            fs4.stat(path5, function (er, stat2) {
                 cb(er, er ? false : checkStat(stat2, options2));
             });
         }
-        function sync(path4, options2) {
-            return checkStat(fs3.statSync(path4), options2);
+        function sync(path5, options2) {
+            return checkStat(fs4.statSync(path5), options2);
         }
         function checkStat(stat2, options2) {
             return stat2.isFile() && checkMode(stat2, options2);
@@ -8795,7 +8793,7 @@ var require_mode = __commonJS({
 // node_modules/isexe/index.js
 var require_isexe = __commonJS({
     'node_modules/isexe/index.js'(exports2, module2) {
-        var fs3 = require('fs');
+        var fs4 = require('fs');
         var core;
         if (process.platform === 'win32' || global.TESTING_WINDOWS) {
             core = require_windows();
@@ -8804,7 +8802,7 @@ var require_isexe = __commonJS({
         }
         module2.exports = isexe;
         isexe.sync = sync;
-        function isexe(path4, options2, cb) {
+        function isexe(path5, options2, cb) {
             if (typeof options2 === 'function') {
                 cb = options2;
                 options2 = {};
@@ -8813,17 +8811,17 @@ var require_isexe = __commonJS({
                 if (typeof Promise !== 'function') {
                     throw new TypeError('callback not provided');
                 }
-                return new Promise(function (resolve, reject) {
-                    isexe(path4, options2 || {}, function (er, is4) {
+                return new Promise(function (resolve2, reject) {
+                    isexe(path5, options2 || {}, function (er, is4) {
                         if (er) {
                             reject(er);
                         } else {
-                            resolve(is4);
+                            resolve2(is4);
                         }
                     });
                 });
             }
-            core(path4, options2 || {}, function (er, is4) {
+            core(path5, options2 || {}, function (er, is4) {
                 if (er) {
                     if (er.code === 'EACCES' || (options2 && options2.ignoreErrors)) {
                         er = null;
@@ -8833,9 +8831,9 @@ var require_isexe = __commonJS({
                 cb(er, is4);
             });
         }
-        function sync(path4, options2) {
+        function sync(path5, options2) {
             try {
-                return core.sync(path4, options2 || {});
+                return core.sync(path5, options2 || {});
             } catch (er) {
                 if ((options2 && options2.ignoreErrors) || er.code === 'EACCES') {
                     return false;
@@ -8854,7 +8852,7 @@ var require_which = __commonJS({
             process.platform === 'win32' ||
             process.env.OSTYPE === 'cygwin' ||
             process.env.OSTYPE === 'msys';
-        var path4 = require('path');
+        var path5 = require('path');
         var COLON2 = isWindows ? ';' : ':';
         var isexe = require_isexe();
         var getNotFoundError = (cmd) =>
@@ -8895,27 +8893,27 @@ var require_which = __commonJS({
             const { pathEnv, pathExt, pathExtExe } = getPathInfo(cmd, opt);
             const found = [];
             const step = (i2) =>
-                new Promise((resolve, reject) => {
+                new Promise((resolve2, reject) => {
                     if (i2 === pathEnv.length)
                         return opt.all && found.length
-                            ? resolve(found)
+                            ? resolve2(found)
                             : reject(getNotFoundError(cmd));
                     const ppRaw = pathEnv[i2];
                     const pathPart = /^".*"$/.test(ppRaw) ? ppRaw.slice(1, -1) : ppRaw;
-                    const pCmd = path4.join(pathPart, cmd);
+                    const pCmd = path5.join(pathPart, cmd);
                     const p = !pathPart && /^\.[\\\/]/.test(cmd) ? cmd.slice(0, 2) + pCmd : pCmd;
-                    resolve(subStep(p, i2, 0));
+                    resolve2(subStep(p, i2, 0));
                 });
             const subStep = (p, i2, ii) =>
-                new Promise((resolve, reject) => {
-                    if (ii === pathExt.length) return resolve(step(i2 + 1));
+                new Promise((resolve2, reject) => {
+                    if (ii === pathExt.length) return resolve2(step(i2 + 1));
                     const ext = pathExt[ii];
                     isexe(p + ext, { pathExt: pathExtExe }, (er, is4) => {
                         if (!er && is4) {
                             if (opt.all) found.push(p + ext);
-                            else return resolve(p + ext);
+                            else return resolve2(p + ext);
                         }
-                        return resolve(subStep(p, i2, ii + 1));
+                        return resolve2(subStep(p, i2, ii + 1));
                     });
                 });
             return cb ? step(0).then((res) => cb(null, res), cb) : step(0);
@@ -8927,7 +8925,7 @@ var require_which = __commonJS({
             for (let i2 = 0; i2 < pathEnv.length; i2++) {
                 const ppRaw = pathEnv[i2];
                 const pathPart = /^".*"$/.test(ppRaw) ? ppRaw.slice(1, -1) : ppRaw;
-                const pCmd = path4.join(pathPart, cmd);
+                const pCmd = path5.join(pathPart, cmd);
                 const p = !pathPart && /^\.[\\\/]/.test(cmd) ? cmd.slice(0, 2) + pCmd : pCmd;
                 for (let j = 0; j < pathExt.length; j++) {
                     const cur = p + pathExt[j];
@@ -8974,7 +8972,7 @@ var require_path_key = __commonJS({
 var require_resolveCommand = __commonJS({
     'node_modules/cross-spawn/lib/util/resolveCommand.js'(exports2, module2) {
         'use strict';
-        var path4 = require('path');
+        var path5 = require('path');
         var which = require_which();
         var getPathKey = require_path_key();
         function resolveCommandAttempt(parsed, withoutPathExt) {
@@ -8992,7 +8990,7 @@ var require_resolveCommand = __commonJS({
             try {
                 resolved = which.sync(parsed.command, {
                     path: env[getPathKey({ env })],
-                    pathExt: withoutPathExt ? path4.delimiter : void 0,
+                    pathExt: withoutPathExt ? path5.delimiter : void 0,
                 });
             } catch (e2) {
             } finally {
@@ -9001,7 +8999,7 @@ var require_resolveCommand = __commonJS({
                 }
             }
             if (resolved) {
-                resolved = path4.resolve(hasCustomCwd ? parsed.options.cwd : '', resolved);
+                resolved = path5.resolve(hasCustomCwd ? parsed.options.cwd : '', resolved);
             }
             return resolved;
         }
@@ -9055,8 +9053,8 @@ var require_shebang_command = __commonJS({
             if (!match) {
                 return null;
             }
-            const [path4, argument] = match[0].replace(/#! ?/, '').split(' ');
-            const binary = path4.split('/').pop();
+            const [path5, argument] = match[0].replace(/#! ?/, '').split(' ');
+            const binary = path5.split('/').pop();
             if (binary === 'env') {
                 return argument;
             }
@@ -9069,16 +9067,16 @@ var require_shebang_command = __commonJS({
 var require_readShebang = __commonJS({
     'node_modules/cross-spawn/lib/util/readShebang.js'(exports2, module2) {
         'use strict';
-        var fs3 = require('fs');
+        var fs4 = require('fs');
         var shebangCommand = require_shebang_command();
         function readShebang(command) {
             const size = 150;
             const buffer = Buffer.alloc(size);
             let fd;
             try {
-                fd = fs3.openSync(command, 'r');
-                fs3.readSync(fd, buffer, 0, size, 0);
-                fs3.closeSync(fd);
+                fd = fs4.openSync(command, 'r');
+                fs4.readSync(fd, buffer, 0, size, 0);
+                fs4.closeSync(fd);
             } catch (e2) {}
             return shebangCommand(buffer.toString());
         }
@@ -9090,7 +9088,7 @@ var require_readShebang = __commonJS({
 var require_parse = __commonJS({
     'node_modules/cross-spawn/lib/parse.js'(exports2, module2) {
         'use strict';
-        var path4 = require('path');
+        var path5 = require('path');
         var resolveCommand = require_resolveCommand();
         var escape2 = require_escape();
         var readShebang = require_readShebang();
@@ -9115,7 +9113,7 @@ var require_parse = __commonJS({
             const needsShell = !isExecutableRegExp.test(commandFile);
             if (parsed.options.forceShell || needsShell) {
                 const needsDoubleEscapeMetaChars = isCmdShimRegExp.test(commandFile);
-                parsed.command = path4.normalize(parsed.command);
+                parsed.command = path5.normalize(parsed.command);
                 parsed.command = escape2.command(parsed.command);
                 parsed.args = parsed.args.map((arg) =>
                     escape2.argument(arg, needsDoubleEscapeMetaChars),
@@ -16872,9 +16870,9 @@ var require_xlsx = __commonJS({
                     }
                     return o;
                 }
-                var fs3;
+                var fs4;
                 function get_fs() {
-                    return fs3 || (fs3 = require('fs'));
+                    return fs4 || (fs4 = require('fs'));
                 }
                 function parse8(file, options2) {
                     if (file[0] == 80 && file[1] == 75) return parse_zip2(file, options2);
@@ -17235,7 +17233,7 @@ var require_xlsx = __commonJS({
                 }
                 function read_file(filename2, options2) {
                     get_fs();
-                    return parse8(fs3.readFileSync(filename2), options2);
+                    return parse8(fs4.readFileSync(filename2), options2);
                 }
                 function read(blob, options2) {
                     var type = options2 && options2.type;
@@ -17537,7 +17535,7 @@ var require_xlsx = __commonJS({
                     }
                     return o;
                 }
-                function find4(cfb, path4) {
+                function find4(cfb, path5) {
                     var UCFullPaths = cfb.FullPaths.map(function (x2) {
                         return x2.toUpperCase();
                     });
@@ -17546,11 +17544,11 @@ var require_xlsx = __commonJS({
                         return y[y.length - (x2.slice(-1) == '/' ? 2 : 1)];
                     });
                     var k = false;
-                    if (path4.charCodeAt(0) === 47) {
+                    if (path5.charCodeAt(0) === 47) {
                         k = true;
-                        path4 = UCFullPaths[0].slice(0, -1) + path4;
-                    } else k = path4.indexOf('/') !== -1;
-                    var UCPath = path4.toUpperCase();
+                        path5 = UCFullPaths[0].slice(0, -1) + path5;
+                    } else k = path5.indexOf('/') !== -1;
+                    var UCPath = path5.toUpperCase();
                     var w = k === true ? UCFullPaths.indexOf(UCPath) : UCPaths.indexOf(UCPath);
                     if (w !== -1) return cfb.FileIndex[w];
                     var m2 = !UCPath.match(chr1);
@@ -17596,7 +17594,7 @@ var require_xlsx = __commonJS({
                 function write_file(cfb, filename2, options2) {
                     get_fs();
                     var o = _write(cfb, options2);
-                    fs3.writeFileSync(filename2, o);
+                    fs4.writeFileSync(filename2, o);
                 }
                 function a2s2(o) {
                     var out = new Array(o.length);
@@ -17608,7 +17606,7 @@ var require_xlsx = __commonJS({
                     switch ((options2 && options2.type) || 'buffer') {
                         case 'file':
                             get_fs();
-                            fs3.writeFileSync(options2.filename, o);
+                            fs4.writeFileSync(options2.filename, o);
                             return o;
                         case 'binary':
                             return typeof o == 'string' ? o : a2s2(o);
@@ -18655,16 +18653,16 @@ var require_xlsx = __commonJS({
                     }
                 throw new Error('cannot save file ' + fname);
             }
-            function read_binary(path4) {
-                if (typeof _fs !== 'undefined') return _fs.readFileSync(path4);
-                if (typeof Deno !== 'undefined') return Deno.readFileSync(path4);
+            function read_binary(path5) {
+                if (typeof _fs !== 'undefined') return _fs.readFileSync(path5);
+                if (typeof Deno !== 'undefined') return Deno.readFileSync(path5);
                 if (
                     typeof $ !== 'undefined' &&
                     typeof File !== 'undefined' &&
                     typeof Folder !== 'undefined'
                 )
                     try {
-                        var infile = File(path4);
+                        var infile = File(path5);
                         infile.open('r');
                         infile.encoding = 'binary';
                         var data2 = infile.read();
@@ -18673,7 +18671,7 @@ var require_xlsx = __commonJS({
                     } catch (e2) {
                         if (!e2.message || !e2.message.match(/onstruct/)) throw e2;
                     }
-                throw new Error('Cannot access file ' + path4);
+                throw new Error('Cannot access file ' + path5);
             }
             function keys(o) {
                 var ks = Object.keys(o),
@@ -19004,16 +19002,16 @@ var require_xlsx = __commonJS({
                     if (k[i2].slice(-1) != '/') o.push(k[i2].replace(/^Root Entry[\/]/, ''));
                 return o.sort();
             }
-            function zip_add_file(zip, path4, content) {
+            function zip_add_file(zip, path5, content) {
                 if (zip.FullPaths) {
                     if (typeof content == 'string') {
                         var res;
                         if (has_buf) res = Buffer_from(content);
                         else res = utf8decode(content);
-                        return CFB.utils.cfb_add(zip, path4, res);
+                        return CFB.utils.cfb_add(zip, path5, res);
                     }
-                    CFB.utils.cfb_add(zip, path4, content);
-                } else zip.file(path4, content);
+                    CFB.utils.cfb_add(zip, path5, content);
+                } else zip.file(path5, content);
             }
             function zip_new() {
                 return CFB.utils.cfb_new();
@@ -19030,11 +19028,11 @@ var require_xlsx = __commonJS({
                 }
                 throw new Error('Unrecognized type ' + o.type);
             }
-            function resolve_path(path4, base) {
-                if (path4.charAt(0) == '/') return path4.slice(1);
+            function resolve_path(path5, base) {
+                if (path5.charAt(0) == '/') return path5.slice(1);
                 var result = base.split('/');
                 if (base.slice(-1) != '/') result.pop();
-                var target = path4.split('/');
+                var target = path5.split('/');
                 while (target.length !== 0) {
                     var step = target.shift();
                     if (step === '..') result.pop();
@@ -45246,7 +45244,7 @@ var require_xlsx = __commonJS({
             }
             function safe_parse_sheet(
                 zip,
-                path4,
+                path5,
                 relsPath,
                 sheet,
                 idx,
@@ -45259,14 +45257,14 @@ var require_xlsx = __commonJS({
                 styles,
             ) {
                 try {
-                    sheetRels[sheet] = parse_rels(getzipstr(zip, relsPath, true), path4);
-                    var data2 = getzipdata(zip, path4);
+                    sheetRels[sheet] = parse_rels(getzipstr(zip, relsPath, true), path5);
+                    var data2 = getzipdata(zip, path5);
                     var _ws;
                     switch (stype) {
                         case 'sheet':
                             _ws = parse_ws(
                                 data2,
-                                path4,
+                                path5,
                                 idx,
                                 opts,
                                 sheetRels[sheet],
@@ -45278,7 +45276,7 @@ var require_xlsx = __commonJS({
                         case 'chart':
                             _ws = parse_cs(
                                 data2,
-                                path4,
+                                path5,
                                 idx,
                                 opts,
                                 sheetRels[sheet],
@@ -45287,7 +45285,7 @@ var require_xlsx = __commonJS({
                                 styles,
                             );
                             if (!_ws || !_ws['!drawel']) break;
-                            var dfile = resolve_path(_ws['!drawel'].Target, path4);
+                            var dfile = resolve_path(_ws['!drawel'].Target, path5);
                             var drelsp = get_rels_path(dfile);
                             var draw = parse_drawing(
                                 getzipstr(zip, dfile, true),
@@ -45307,7 +45305,7 @@ var require_xlsx = __commonJS({
                         case 'macro':
                             _ws = parse_ms(
                                 data2,
-                                path4,
+                                path5,
                                 idx,
                                 opts,
                                 sheetRels[sheet],
@@ -45319,7 +45317,7 @@ var require_xlsx = __commonJS({
                         case 'dialog':
                             _ws = parse_ds(
                                 data2,
-                                path4,
+                                path5,
                                 idx,
                                 opts,
                                 sheetRels[sheet],
@@ -45337,7 +45335,7 @@ var require_xlsx = __commonJS({
                         keys(sheetRels[sheet]).forEach(function (n) {
                             var dfile2 = '';
                             if (sheetRels[sheet][n].Type == RELS.CMNT) {
-                                dfile2 = resolve_path(sheetRels[sheet][n].Target, path4);
+                                dfile2 = resolve_path(sheetRels[sheet][n].Target, path5);
                                 var comments = parse_cmnt(
                                     getzipdata(zip, dfile2, true),
                                     dfile2,
@@ -45347,7 +45345,7 @@ var require_xlsx = __commonJS({
                                 sheet_insert_comments(_ws, comments, false);
                             }
                             if (sheetRels[sheet][n].Type == RELS.TCMNT) {
-                                dfile2 = resolve_path(sheetRels[sheet][n].Target, path4);
+                                dfile2 = resolve_path(sheetRels[sheet][n].Target, path5);
                                 tcomments = tcomments.concat(
                                     parse_tcmnt_xml(getzipdata(zip, dfile2, true), opts),
                                 );
@@ -45492,7 +45490,7 @@ var require_xlsx = __commonJS({
                     );
                 var i2 = 0;
                 var sheetRels = {};
-                var path4, relsPath;
+                var path5, relsPath;
                 {
                     var wbsheets = wb.Sheets;
                     props.Worksheets = wbsheets.length;
@@ -45533,16 +45531,16 @@ var require_xlsx = __commonJS({
                 wsloop: for (i2 = 0; i2 != props.Worksheets; ++i2) {
                     var stype = 'sheet';
                     if (wbrels && wbrels[i2]) {
-                        path4 = 'xl/' + wbrels[i2][1].replace(/[\/]?xl\//, '');
-                        if (!safegetzipfile(zip, path4)) path4 = wbrels[i2][1];
-                        if (!safegetzipfile(zip, path4))
-                            path4 = wbrelsfile.replace(/_rels\/.*$/, '') + wbrels[i2][1];
+                        path5 = 'xl/' + wbrels[i2][1].replace(/[\/]?xl\//, '');
+                        if (!safegetzipfile(zip, path5)) path5 = wbrels[i2][1];
+                        if (!safegetzipfile(zip, path5))
+                            path5 = wbrelsfile.replace(/_rels\/.*$/, '') + wbrels[i2][1];
                         stype = wbrels[i2][2];
                     } else {
-                        path4 = 'xl/worksheets/sheet' + (i2 + 1 - nmode) + '.' + wbext;
-                        path4 = path4.replace(/sheet0\./, 'sheet.');
+                        path5 = 'xl/worksheets/sheet' + (i2 + 1 - nmode) + '.' + wbext;
+                        path5 = path5.replace(/sheet0\./, 'sheet.');
                     }
-                    relsPath = path4.replace(/^(.*)(\/)([^\/]*)$/, '$1/_rels/$3.rels');
+                    relsPath = path5.replace(/^(.*)(\/)([^\/]*)$/, '$1/_rels/$3.rels');
                     if (opts && opts.sheets != null)
                         switch (typeof opts.sheets) {
                             case 'number':
@@ -45573,7 +45571,7 @@ var require_xlsx = __commonJS({
                         }
                     safe_parse_sheet(
                         zip,
-                        path4,
+                        path5,
                         relsPath,
                         props.SheetNames[i2],
                         i2,
@@ -46628,7 +46626,7 @@ var require_xlsx = __commonJS({
                 return out;
             }
             var qreg = /"/g;
-            function make_csv_row(sheet, r2, R, cols, fs3, rs, FS, o) {
+            function make_csv_row(sheet, r2, R, cols, fs4, rs, FS, o) {
                 var isempty = true;
                 var row = [],
                     txt = '',
@@ -46644,7 +46642,7 @@ var require_xlsx = __commonJS({
                             (o.rawNumbers && val2.t == 'n' ? val2.v : format_cell(val2, null, o));
                         for (var i2 = 0, cc = 0; i2 !== txt.length; ++i2)
                             if (
-                                (cc = txt.charCodeAt(i2)) === fs3 ||
+                                (cc = txt.charCodeAt(i2)) === fs4 ||
                                 cc === rs ||
                                 cc === 34 ||
                                 o.forceQuotes
@@ -46669,7 +46667,7 @@ var require_xlsx = __commonJS({
                 if (sheet == null || sheet['!ref'] == null) return '';
                 var r2 = safe_decode_range(sheet['!ref']);
                 var FS = o.FS !== void 0 ? o.FS : ',',
-                    fs3 = FS.charCodeAt(0);
+                    fs4 = FS.charCodeAt(0);
                 var RS = o.RS !== void 0 ? o.RS : '\n',
                     rs = RS.charCodeAt(0);
                 var endregex = new RegExp((FS == '|' ? '\\|' : FS) + '+$');
@@ -46683,7 +46681,7 @@ var require_xlsx = __commonJS({
                 var w = 0;
                 for (var R = r2.s.r; R <= r2.e.r; ++R) {
                     if ((rowinfo[R] || {}).hidden) continue;
-                    row = make_csv_row(sheet, r2, R, cols, fs3, rs, FS, o);
+                    row = make_csv_row(sheet, r2, R, cols, fs4, rs, FS, o);
                     if (row == null) {
                         continue;
                     }
@@ -46970,7 +46968,7 @@ var require_xlsx = __commonJS({
                 }
                 var r2 = safe_decode_range(sheet['!ref']);
                 var FS = o.FS !== void 0 ? o.FS : ',',
-                    fs3 = FS.charCodeAt(0);
+                    fs4 = FS.charCodeAt(0);
                 var RS = o.RS !== void 0 ? o.RS : '\n',
                     rs = RS.charCodeAt(0);
                 var endregex = new RegExp((FS == '|' ? '\\|' : FS) + '+$');
@@ -46992,7 +46990,7 @@ var require_xlsx = __commonJS({
                     while (R <= r2.e.r) {
                         ++R;
                         if ((rowinfo[R - 1] || {}).hidden) continue;
-                        row = make_csv_row(sheet, r2, R - 1, cols, fs3, rs, FS, o);
+                        row = make_csv_row(sheet, r2, R - 1, cols, fs4, rs, FS, o);
                         if (row != null) {
                             if (o.strip) row = row.replace(endregex, '');
                             if (row || o.blankrows !== false)
@@ -47167,8 +47165,8 @@ var require_universalify = __commonJS({
                 function (...args) {
                     if (typeof args[args.length - 1] === 'function') fn.apply(this, args);
                     else {
-                        return new Promise((resolve, reject) => {
-                            args.push((err, res) => (err != null ? reject(err) : resolve(res)));
+                        return new Promise((resolve2, reject) => {
+                            args.push((err, res) => (err != null ? reject(err) : resolve2(res)));
                             fn.apply(this, args);
                         });
                     }
@@ -47218,50 +47216,50 @@ var require_polyfills = __commonJS({
         }
         var chdir;
         module2.exports = patch;
-        function patch(fs3) {
+        function patch(fs4) {
             if (
                 constants3.hasOwnProperty('O_SYMLINK') &&
                 process.version.match(/^v0\.6\.[0-2]|^v0\.5\./)
             ) {
-                patchLchmod(fs3);
+                patchLchmod(fs4);
             }
-            if (!fs3.lutimes) {
-                patchLutimes(fs3);
+            if (!fs4.lutimes) {
+                patchLutimes(fs4);
             }
-            fs3.chown = chownFix(fs3.chown);
-            fs3.fchown = chownFix(fs3.fchown);
-            fs3.lchown = chownFix(fs3.lchown);
-            fs3.chmod = chmodFix(fs3.chmod);
-            fs3.fchmod = chmodFix(fs3.fchmod);
-            fs3.lchmod = chmodFix(fs3.lchmod);
-            fs3.chownSync = chownFixSync(fs3.chownSync);
-            fs3.fchownSync = chownFixSync(fs3.fchownSync);
-            fs3.lchownSync = chownFixSync(fs3.lchownSync);
-            fs3.chmodSync = chmodFixSync(fs3.chmodSync);
-            fs3.fchmodSync = chmodFixSync(fs3.fchmodSync);
-            fs3.lchmodSync = chmodFixSync(fs3.lchmodSync);
-            fs3.stat = statFix(fs3.stat);
-            fs3.fstat = statFix(fs3.fstat);
-            fs3.lstat = statFix(fs3.lstat);
-            fs3.statSync = statFixSync(fs3.statSync);
-            fs3.fstatSync = statFixSync(fs3.fstatSync);
-            fs3.lstatSync = statFixSync(fs3.lstatSync);
-            if (fs3.chmod && !fs3.lchmod) {
-                fs3.lchmod = function (path4, mode, cb) {
+            fs4.chown = chownFix(fs4.chown);
+            fs4.fchown = chownFix(fs4.fchown);
+            fs4.lchown = chownFix(fs4.lchown);
+            fs4.chmod = chmodFix(fs4.chmod);
+            fs4.fchmod = chmodFix(fs4.fchmod);
+            fs4.lchmod = chmodFix(fs4.lchmod);
+            fs4.chownSync = chownFixSync(fs4.chownSync);
+            fs4.fchownSync = chownFixSync(fs4.fchownSync);
+            fs4.lchownSync = chownFixSync(fs4.lchownSync);
+            fs4.chmodSync = chmodFixSync(fs4.chmodSync);
+            fs4.fchmodSync = chmodFixSync(fs4.fchmodSync);
+            fs4.lchmodSync = chmodFixSync(fs4.lchmodSync);
+            fs4.stat = statFix(fs4.stat);
+            fs4.fstat = statFix(fs4.fstat);
+            fs4.lstat = statFix(fs4.lstat);
+            fs4.statSync = statFixSync(fs4.statSync);
+            fs4.fstatSync = statFixSync(fs4.fstatSync);
+            fs4.lstatSync = statFixSync(fs4.lstatSync);
+            if (fs4.chmod && !fs4.lchmod) {
+                fs4.lchmod = function (path5, mode, cb) {
                     if (cb) process.nextTick(cb);
                 };
-                fs3.lchmodSync = function () {};
+                fs4.lchmodSync = function () {};
             }
-            if (fs3.chown && !fs3.lchown) {
-                fs3.lchown = function (path4, uid, gid, cb) {
+            if (fs4.chown && !fs4.lchown) {
+                fs4.lchown = function (path5, uid, gid, cb) {
                     if (cb) process.nextTick(cb);
                 };
-                fs3.lchownSync = function () {};
+                fs4.lchownSync = function () {};
             }
             if (platform === 'win32') {
-                fs3.rename =
-                    typeof fs3.rename !== 'function'
-                        ? fs3.rename
+                fs4.rename =
+                    typeof fs4.rename !== 'function'
+                        ? fs4.rename
                         : (function (fs$rename) {
                               function rename(from, to, cb) {
                                   var start = Date.now();
@@ -47275,7 +47273,7 @@ var require_polyfills = __commonJS({
                                           Date.now() - start < 6e4
                                       ) {
                                           setTimeout(function () {
-                                              fs3.stat(to, function (stater, st) {
+                                              fs4.stat(to, function (stater, st) {
                                                   if (stater && stater.code === 'ENOENT')
                                                       fs$rename(from, to, CB);
                                                   else cb(er);
@@ -47289,11 +47287,11 @@ var require_polyfills = __commonJS({
                               }
                               if (Object.setPrototypeOf) Object.setPrototypeOf(rename, fs$rename);
                               return rename;
-                          })(fs3.rename);
+                          })(fs4.rename);
             }
-            fs3.read =
-                typeof fs3.read !== 'function'
-                    ? fs3.read
+            fs4.read =
+                typeof fs4.read !== 'function'
+                    ? fs4.read
                     : (function (fs$read) {
                           function read(fd, buffer, offset, length, position, callback_) {
                               var callback;
@@ -47303,7 +47301,7 @@ var require_polyfills = __commonJS({
                                       if (er && er.code === 'EAGAIN' && eagCounter < 10) {
                                           eagCounter++;
                                           return fs$read.call(
-                                              fs3,
+                                              fs4,
                                               fd,
                                               buffer,
                                               offset,
@@ -47316,7 +47314,7 @@ var require_polyfills = __commonJS({
                                   };
                               }
                               return fs$read.call(
-                                  fs3,
+                                  fs4,
                                   fd,
                                   buffer,
                                   offset,
@@ -47327,17 +47325,17 @@ var require_polyfills = __commonJS({
                           }
                           if (Object.setPrototypeOf) Object.setPrototypeOf(read, fs$read);
                           return read;
-                      })(fs3.read);
-            fs3.readSync =
-                typeof fs3.readSync !== 'function'
-                    ? fs3.readSync
+                      })(fs4.read);
+            fs4.readSync =
+                typeof fs4.readSync !== 'function'
+                    ? fs4.readSync
                     : /* @__PURE__ */ (function (fs$readSync) {
                           return function (fd, buffer, offset, length, position) {
                               var eagCounter = 0;
                               while (true) {
                                   try {
                                       return fs$readSync.call(
-                                          fs3,
+                                          fs4,
                                           fd,
                                           buffer,
                                           offset,
@@ -47353,11 +47351,11 @@ var require_polyfills = __commonJS({
                                   }
                               }
                           };
-                      })(fs3.readSync);
-            function patchLchmod(fs4) {
-                fs4.lchmod = function (path4, mode, callback) {
-                    fs4.open(
-                        path4,
+                      })(fs4.readSync);
+            function patchLchmod(fs5) {
+                fs5.lchmod = function (path5, mode, callback) {
+                    fs5.open(
+                        path5,
                         constants3.O_WRONLY | constants3.O_SYMLINK,
                         mode,
                         function (err, fd) {
@@ -47365,77 +47363,77 @@ var require_polyfills = __commonJS({
                                 if (callback) callback(err);
                                 return;
                             }
-                            fs4.fchmod(fd, mode, function (err2) {
-                                fs4.close(fd, function (err22) {
+                            fs5.fchmod(fd, mode, function (err2) {
+                                fs5.close(fd, function (err22) {
                                     if (callback) callback(err2 || err22);
                                 });
                             });
                         },
                     );
                 };
-                fs4.lchmodSync = function (path4, mode) {
-                    var fd = fs4.openSync(path4, constants3.O_WRONLY | constants3.O_SYMLINK, mode);
+                fs5.lchmodSync = function (path5, mode) {
+                    var fd = fs5.openSync(path5, constants3.O_WRONLY | constants3.O_SYMLINK, mode);
                     var threw = true;
                     var ret;
                     try {
-                        ret = fs4.fchmodSync(fd, mode);
+                        ret = fs5.fchmodSync(fd, mode);
                         threw = false;
                     } finally {
                         if (threw) {
                             try {
-                                fs4.closeSync(fd);
+                                fs5.closeSync(fd);
                             } catch (er) {}
                         } else {
-                            fs4.closeSync(fd);
+                            fs5.closeSync(fd);
                         }
                     }
                     return ret;
                 };
             }
-            function patchLutimes(fs4) {
-                if (constants3.hasOwnProperty('O_SYMLINK') && fs4.futimes) {
-                    fs4.lutimes = function (path4, at, mt, cb) {
-                        fs4.open(path4, constants3.O_SYMLINK, function (er, fd) {
+            function patchLutimes(fs5) {
+                if (constants3.hasOwnProperty('O_SYMLINK') && fs5.futimes) {
+                    fs5.lutimes = function (path5, at, mt, cb) {
+                        fs5.open(path5, constants3.O_SYMLINK, function (er, fd) {
                             if (er) {
                                 if (cb) cb(er);
                                 return;
                             }
-                            fs4.futimes(fd, at, mt, function (er2) {
-                                fs4.close(fd, function (er22) {
+                            fs5.futimes(fd, at, mt, function (er2) {
+                                fs5.close(fd, function (er22) {
                                     if (cb) cb(er2 || er22);
                                 });
                             });
                         });
                     };
-                    fs4.lutimesSync = function (path4, at, mt) {
-                        var fd = fs4.openSync(path4, constants3.O_SYMLINK);
+                    fs5.lutimesSync = function (path5, at, mt) {
+                        var fd = fs5.openSync(path5, constants3.O_SYMLINK);
                         var ret;
                         var threw = true;
                         try {
-                            ret = fs4.futimesSync(fd, at, mt);
+                            ret = fs5.futimesSync(fd, at, mt);
                             threw = false;
                         } finally {
                             if (threw) {
                                 try {
-                                    fs4.closeSync(fd);
+                                    fs5.closeSync(fd);
                                 } catch (er) {}
                             } else {
-                                fs4.closeSync(fd);
+                                fs5.closeSync(fd);
                             }
                         }
                         return ret;
                     };
-                } else if (fs4.futimes) {
-                    fs4.lutimes = function (_a5, _b, _c, cb) {
+                } else if (fs5.futimes) {
+                    fs5.lutimes = function (_a5, _b, _c, cb) {
                         if (cb) process.nextTick(cb);
                     };
-                    fs4.lutimesSync = function () {};
+                    fs5.lutimesSync = function () {};
                 }
             }
             function chmodFix(orig) {
                 if (!orig) return orig;
                 return function (target, mode, cb) {
-                    return orig.call(fs3, target, mode, function (er) {
+                    return orig.call(fs4, target, mode, function (er) {
                         if (chownErOk(er)) er = null;
                         if (cb) cb.apply(this, arguments);
                     });
@@ -47445,7 +47443,7 @@ var require_polyfills = __commonJS({
                 if (!orig) return orig;
                 return function (target, mode) {
                     try {
-                        return orig.call(fs3, target, mode);
+                        return orig.call(fs4, target, mode);
                     } catch (er) {
                         if (!chownErOk(er)) throw er;
                     }
@@ -47454,7 +47452,7 @@ var require_polyfills = __commonJS({
             function chownFix(orig) {
                 if (!orig) return orig;
                 return function (target, uid, gid, cb) {
-                    return orig.call(fs3, target, uid, gid, function (er) {
+                    return orig.call(fs4, target, uid, gid, function (er) {
                         if (chownErOk(er)) er = null;
                         if (cb) cb.apply(this, arguments);
                     });
@@ -47464,7 +47462,7 @@ var require_polyfills = __commonJS({
                 if (!orig) return orig;
                 return function (target, uid, gid) {
                     try {
-                        return orig.call(fs3, target, uid, gid);
+                        return orig.call(fs4, target, uid, gid);
                     } catch (er) {
                         if (!chownErOk(er)) throw er;
                     }
@@ -47485,16 +47483,16 @@ var require_polyfills = __commonJS({
                         if (cb) cb.apply(this, arguments);
                     }
                     return options2
-                        ? orig.call(fs3, target, options2, callback)
-                        : orig.call(fs3, target, callback);
+                        ? orig.call(fs4, target, options2, callback)
+                        : orig.call(fs4, target, callback);
                 };
             }
             function statFixSync(orig) {
                 if (!orig) return orig;
                 return function (target, options2) {
                     var stats = options2
-                        ? orig.call(fs3, target, options2)
-                        : orig.call(fs3, target);
+                        ? orig.call(fs4, target, options2)
+                        : orig.call(fs4, target);
                     if (stats) {
                         if (stats.uid < 0) stats.uid += 4294967296;
                         if (stats.gid < 0) stats.gid += 4294967296;
@@ -47520,16 +47518,16 @@ var require_legacy_streams = __commonJS({
     'node_modules/graceful-fs/legacy-streams.js'(exports2, module2) {
         var Stream3 = require('stream').Stream;
         module2.exports = legacy;
-        function legacy(fs3) {
+        function legacy(fs4) {
             return {
                 ReadStream,
                 WriteStream,
             };
-            function ReadStream(path4, options2) {
-                if (!(this instanceof ReadStream)) return new ReadStream(path4, options2);
+            function ReadStream(path5, options2) {
+                if (!(this instanceof ReadStream)) return new ReadStream(path5, options2);
                 Stream3.call(this);
                 var self2 = this;
-                this.path = path4;
+                this.path = path5;
                 this.fd = null;
                 this.readable = true;
                 this.paused = false;
@@ -47563,7 +47561,7 @@ var require_legacy_streams = __commonJS({
                     });
                     return;
                 }
-                fs3.open(this.path, this.flags, this.mode, function (err, fd) {
+                fs4.open(this.path, this.flags, this.mode, function (err, fd) {
                     if (err) {
                         self2.emit('error', err);
                         self2.readable = false;
@@ -47574,10 +47572,10 @@ var require_legacy_streams = __commonJS({
                     self2._read();
                 });
             }
-            function WriteStream(path4, options2) {
-                if (!(this instanceof WriteStream)) return new WriteStream(path4, options2);
+            function WriteStream(path5, options2) {
+                if (!(this instanceof WriteStream)) return new WriteStream(path5, options2);
                 Stream3.call(this);
-                this.path = path4;
+                this.path = path5;
                 this.fd = null;
                 this.writable = true;
                 this.flags = 'w';
@@ -47602,7 +47600,7 @@ var require_legacy_streams = __commonJS({
                 this.busy = false;
                 this._queue = [];
                 if (this.fd === null) {
-                    this._open = fs3.open;
+                    this._open = fs4.open;
                     this._queue.push([this._open, this.path, this.flags, this.mode, void 0]);
                     this.flush();
                 }
@@ -47636,7 +47634,7 @@ var require_clone = __commonJS({
 // node_modules/graceful-fs/graceful-fs.js
 var require_graceful_fs = __commonJS({
     'node_modules/graceful-fs/graceful-fs.js'(exports2, module2) {
-        var fs3 = require('fs');
+        var fs4 = require('fs');
         var polyfills = require_polyfills();
         var legacy = require_legacy_streams();
         var clone3 = require_clone();
@@ -47666,12 +47664,12 @@ var require_graceful_fs = __commonJS({
                 m2 = 'GFS4: ' + m2.split(/\n/).join('\nGFS4: ');
                 console.error(m2);
             };
-        if (!fs3[gracefulQueue]) {
+        if (!fs4[gracefulQueue]) {
             queue = global[gracefulQueue] || [];
-            publishQueue(fs3, queue);
-            fs3.close = (function (fs$close) {
+            publishQueue(fs4, queue);
+            fs4.close = (function (fs$close) {
                 function close(fd, cb) {
-                    return fs$close.call(fs3, fd, function (err) {
+                    return fs$close.call(fs4, fd, function (err) {
                         if (!err) {
                             resetQueue();
                         }
@@ -47682,49 +47680,49 @@ var require_graceful_fs = __commonJS({
                     value: fs$close,
                 });
                 return close;
-            })(fs3.close);
-            fs3.closeSync = (function (fs$closeSync) {
+            })(fs4.close);
+            fs4.closeSync = (function (fs$closeSync) {
                 function closeSync(fd) {
-                    fs$closeSync.apply(fs3, arguments);
+                    fs$closeSync.apply(fs4, arguments);
                     resetQueue();
                 }
                 Object.defineProperty(closeSync, previousSymbol, {
                     value: fs$closeSync,
                 });
                 return closeSync;
-            })(fs3.closeSync);
+            })(fs4.closeSync);
             if (/\bgfs4\b/i.test(process.env.NODE_DEBUG || '')) {
                 process.on('exit', function () {
-                    debug(fs3[gracefulQueue]);
-                    require('assert').equal(fs3[gracefulQueue].length, 0);
+                    debug(fs4[gracefulQueue]);
+                    require('assert').equal(fs4[gracefulQueue].length, 0);
                 });
             }
         }
         var queue;
         if (!global[gracefulQueue]) {
-            publishQueue(global, fs3[gracefulQueue]);
+            publishQueue(global, fs4[gracefulQueue]);
         }
-        module2.exports = patch(clone3(fs3));
-        if (process.env.TEST_GRACEFUL_FS_GLOBAL_PATCH && !fs3.__patched) {
-            module2.exports = patch(fs3);
-            fs3.__patched = true;
+        module2.exports = patch(clone3(fs4));
+        if (process.env.TEST_GRACEFUL_FS_GLOBAL_PATCH && !fs4.__patched) {
+            module2.exports = patch(fs4);
+            fs4.__patched = true;
         }
-        function patch(fs4) {
-            polyfills(fs4);
-            fs4.gracefulify = patch;
-            fs4.createReadStream = createReadStream3;
-            fs4.createWriteStream = createWriteStream2;
-            var fs$readFile = fs4.readFile;
-            fs4.readFile = readFile;
-            function readFile(path4, options2, cb) {
+        function patch(fs5) {
+            polyfills(fs5);
+            fs5.gracefulify = patch;
+            fs5.createReadStream = createReadStream3;
+            fs5.createWriteStream = createWriteStream2;
+            var fs$readFile = fs5.readFile;
+            fs5.readFile = readFile;
+            function readFile(path5, options2, cb) {
                 if (typeof options2 === 'function') (cb = options2), (options2 = null);
-                return go$readFile(path4, options2, cb);
-                function go$readFile(path5, options3, cb2, startTime) {
-                    return fs$readFile(path5, options3, function (err) {
+                return go$readFile(path5, options2, cb);
+                function go$readFile(path6, options3, cb2, startTime) {
+                    return fs$readFile(path6, options3, function (err) {
                         if (err && (err.code === 'EMFILE' || err.code === 'ENFILE'))
                             enqueue([
                                 go$readFile,
-                                [path5, options3, cb2],
+                                [path6, options3, cb2],
                                 err,
                                 startTime || Date.now(),
                                 Date.now(),
@@ -47735,17 +47733,17 @@ var require_graceful_fs = __commonJS({
                     });
                 }
             }
-            var fs$writeFile = fs4.writeFile;
-            fs4.writeFile = writeFile;
-            function writeFile(path4, data2, options2, cb) {
+            var fs$writeFile = fs5.writeFile;
+            fs5.writeFile = writeFile;
+            function writeFile(path5, data2, options2, cb) {
                 if (typeof options2 === 'function') (cb = options2), (options2 = null);
-                return go$writeFile(path4, data2, options2, cb);
-                function go$writeFile(path5, data3, options3, cb2, startTime) {
-                    return fs$writeFile(path5, data3, options3, function (err) {
+                return go$writeFile(path5, data2, options2, cb);
+                function go$writeFile(path6, data3, options3, cb2, startTime) {
+                    return fs$writeFile(path6, data3, options3, function (err) {
                         if (err && (err.code === 'EMFILE' || err.code === 'ENFILE'))
                             enqueue([
                                 go$writeFile,
-                                [path5, data3, options3, cb2],
+                                [path6, data3, options3, cb2],
                                 err,
                                 startTime || Date.now(),
                                 Date.now(),
@@ -47756,17 +47754,17 @@ var require_graceful_fs = __commonJS({
                     });
                 }
             }
-            var fs$appendFile = fs4.appendFile;
-            if (fs$appendFile) fs4.appendFile = appendFile;
-            function appendFile(path4, data2, options2, cb) {
+            var fs$appendFile = fs5.appendFile;
+            if (fs$appendFile) fs5.appendFile = appendFile;
+            function appendFile(path5, data2, options2, cb) {
                 if (typeof options2 === 'function') (cb = options2), (options2 = null);
-                return go$appendFile(path4, data2, options2, cb);
-                function go$appendFile(path5, data3, options3, cb2, startTime) {
-                    return fs$appendFile(path5, data3, options3, function (err) {
+                return go$appendFile(path5, data2, options2, cb);
+                function go$appendFile(path6, data3, options3, cb2, startTime) {
+                    return fs$appendFile(path6, data3, options3, function (err) {
                         if (err && (err.code === 'EMFILE' || err.code === 'ENFILE'))
                             enqueue([
                                 go$appendFile,
-                                [path5, data3, options3, cb2],
+                                [path6, data3, options3, cb2],
                                 err,
                                 startTime || Date.now(),
                                 Date.now(),
@@ -47777,8 +47775,8 @@ var require_graceful_fs = __commonJS({
                     });
                 }
             }
-            var fs$copyFile = fs4.copyFile;
-            if (fs$copyFile) fs4.copyFile = copyFile;
+            var fs$copyFile = fs5.copyFile;
+            if (fs$copyFile) fs5.copyFile = copyFile;
             function copyFile(src, dest, flags, cb) {
                 if (typeof flags === 'function') {
                     cb = flags;
@@ -47801,32 +47799,32 @@ var require_graceful_fs = __commonJS({
                     });
                 }
             }
-            var fs$readdir = fs4.readdir;
-            fs4.readdir = readdir;
+            var fs$readdir = fs5.readdir;
+            fs5.readdir = readdir;
             var noReaddirOptionVersions = /^v[0-5]\./;
-            function readdir(path4, options2, cb) {
+            function readdir(path5, options2, cb) {
                 if (typeof options2 === 'function') (cb = options2), (options2 = null);
                 var go$readdir = noReaddirOptionVersions.test(process.version)
-                    ? function go$readdir2(path5, options3, cb2, startTime) {
+                    ? function go$readdir2(path6, options3, cb2, startTime) {
                           return fs$readdir(
-                              path5,
-                              fs$readdirCallback(path5, options3, cb2, startTime),
+                              path6,
+                              fs$readdirCallback(path6, options3, cb2, startTime),
                           );
                       }
-                    : function go$readdir2(path5, options3, cb2, startTime) {
+                    : function go$readdir2(path6, options3, cb2, startTime) {
                           return fs$readdir(
-                              path5,
+                              path6,
                               options3,
-                              fs$readdirCallback(path5, options3, cb2, startTime),
+                              fs$readdirCallback(path6, options3, cb2, startTime),
                           );
                       };
-                return go$readdir(path4, options2, cb);
-                function fs$readdirCallback(path5, options3, cb2, startTime) {
+                return go$readdir(path5, options2, cb);
+                function fs$readdirCallback(path6, options3, cb2, startTime) {
                     return function (err, files) {
                         if (err && (err.code === 'EMFILE' || err.code === 'ENFILE'))
                             enqueue([
                                 go$readdir,
-                                [path5, options3, cb2],
+                                [path6, options3, cb2],
                                 err,
                                 startTime || Date.now(),
                                 Date.now(),
@@ -47839,21 +47837,21 @@ var require_graceful_fs = __commonJS({
                 }
             }
             if (process.version.substr(0, 4) === 'v0.8') {
-                var legStreams = legacy(fs4);
+                var legStreams = legacy(fs5);
                 ReadStream = legStreams.ReadStream;
                 WriteStream = legStreams.WriteStream;
             }
-            var fs$ReadStream = fs4.ReadStream;
+            var fs$ReadStream = fs5.ReadStream;
             if (fs$ReadStream) {
                 ReadStream.prototype = Object.create(fs$ReadStream.prototype);
                 ReadStream.prototype.open = ReadStream$open;
             }
-            var fs$WriteStream = fs4.WriteStream;
+            var fs$WriteStream = fs5.WriteStream;
             if (fs$WriteStream) {
                 WriteStream.prototype = Object.create(fs$WriteStream.prototype);
                 WriteStream.prototype.open = WriteStream$open;
             }
-            Object.defineProperty(fs4, 'ReadStream', {
+            Object.defineProperty(fs5, 'ReadStream', {
                 get: function () {
                     return ReadStream;
                 },
@@ -47863,7 +47861,7 @@ var require_graceful_fs = __commonJS({
                 enumerable: true,
                 configurable: true,
             });
-            Object.defineProperty(fs4, 'WriteStream', {
+            Object.defineProperty(fs5, 'WriteStream', {
                 get: function () {
                     return WriteStream;
                 },
@@ -47874,7 +47872,7 @@ var require_graceful_fs = __commonJS({
                 configurable: true,
             });
             var FileReadStream = ReadStream;
-            Object.defineProperty(fs4, 'FileReadStream', {
+            Object.defineProperty(fs5, 'FileReadStream', {
                 get: function () {
                     return FileReadStream;
                 },
@@ -47885,7 +47883,7 @@ var require_graceful_fs = __commonJS({
                 configurable: true,
             });
             var FileWriteStream = WriteStream;
-            Object.defineProperty(fs4, 'FileWriteStream', {
+            Object.defineProperty(fs5, 'FileWriteStream', {
                 get: function () {
                     return FileWriteStream;
                 },
@@ -47895,7 +47893,7 @@ var require_graceful_fs = __commonJS({
                 enumerable: true,
                 configurable: true,
             });
-            function ReadStream(path4, options2) {
+            function ReadStream(path5, options2) {
                 if (this instanceof ReadStream) return fs$ReadStream.apply(this, arguments), this;
                 else return ReadStream.apply(Object.create(ReadStream.prototype), arguments);
             }
@@ -47912,7 +47910,7 @@ var require_graceful_fs = __commonJS({
                     }
                 });
             }
-            function WriteStream(path4, options2) {
+            function WriteStream(path5, options2) {
                 if (this instanceof WriteStream) return fs$WriteStream.apply(this, arguments), this;
                 else return WriteStream.apply(Object.create(WriteStream.prototype), arguments);
             }
@@ -47928,23 +47926,23 @@ var require_graceful_fs = __commonJS({
                     }
                 });
             }
-            function createReadStream3(path4, options2) {
-                return new fs4.ReadStream(path4, options2);
+            function createReadStream3(path5, options2) {
+                return new fs5.ReadStream(path5, options2);
             }
-            function createWriteStream2(path4, options2) {
-                return new fs4.WriteStream(path4, options2);
+            function createWriteStream2(path5, options2) {
+                return new fs5.WriteStream(path5, options2);
             }
-            var fs$open = fs4.open;
-            fs4.open = open;
-            function open(path4, flags, mode, cb) {
+            var fs$open = fs5.open;
+            fs5.open = open;
+            function open(path5, flags, mode, cb) {
                 if (typeof mode === 'function') (cb = mode), (mode = null);
-                return go$open(path4, flags, mode, cb);
-                function go$open(path5, flags2, mode2, cb2, startTime) {
-                    return fs$open(path5, flags2, mode2, function (err, fd) {
+                return go$open(path5, flags, mode, cb);
+                function go$open(path6, flags2, mode2, cb2, startTime) {
+                    return fs$open(path6, flags2, mode2, function (err, fd) {
                         if (err && (err.code === 'EMFILE' || err.code === 'ENFILE'))
                             enqueue([
                                 go$open,
-                                [path5, flags2, mode2, cb2],
+                                [path6, flags2, mode2, cb2],
                                 err,
                                 startTime || Date.now(),
                                 Date.now(),
@@ -47955,20 +47953,20 @@ var require_graceful_fs = __commonJS({
                     });
                 }
             }
-            return fs4;
+            return fs5;
         }
         function enqueue(elem) {
             debug('ENQUEUE', elem[0].name, elem[1]);
-            fs3[gracefulQueue].push(elem);
+            fs4[gracefulQueue].push(elem);
             retry();
         }
         var retryTimer;
         function resetQueue() {
             var now = Date.now();
-            for (var i2 = 0; i2 < fs3[gracefulQueue].length; ++i2) {
-                if (fs3[gracefulQueue][i2].length > 2) {
-                    fs3[gracefulQueue][i2][3] = now;
-                    fs3[gracefulQueue][i2][4] = now;
+            for (var i2 = 0; i2 < fs4[gracefulQueue].length; ++i2) {
+                if (fs4[gracefulQueue][i2].length > 2) {
+                    fs4[gracefulQueue][i2][3] = now;
+                    fs4[gracefulQueue][i2][4] = now;
                 }
             }
             retry();
@@ -47976,8 +47974,8 @@ var require_graceful_fs = __commonJS({
         function retry() {
             clearTimeout(retryTimer);
             retryTimer = void 0;
-            if (fs3[gracefulQueue].length === 0) return;
-            var elem = fs3[gracefulQueue].shift();
+            if (fs4[gracefulQueue].length === 0) return;
+            var elem = fs4[gracefulQueue].shift();
             var fn = elem[0];
             var args = elem[1];
             var err = elem[2];
@@ -47998,7 +47996,7 @@ var require_graceful_fs = __commonJS({
                     debug('RETRY', fn.name, args);
                     fn.apply(null, args.concat([startTime]));
                 } else {
-                    fs3[gracefulQueue].push(elem);
+                    fs4[gracefulQueue].push(elem);
                 }
             }
             if (retryTimer === void 0) {
@@ -48013,7 +48011,7 @@ var require_fs = __commonJS({
     'node_modules/fs-extra/lib/fs/index.js'(exports2) {
         'use strict';
         var u = require_universalify().fromCallback;
-        var fs3 = require_graceful_fs();
+        var fs4 = require_graceful_fs();
         var api = [
             'access',
             'appendFile',
@@ -48050,66 +48048,66 @@ var require_fs = __commonJS({
             'utimes',
             'writeFile',
         ].filter((key) => {
-            return typeof fs3[key] === 'function';
+            return typeof fs4[key] === 'function';
         });
-        Object.assign(exports2, fs3);
+        Object.assign(exports2, fs4);
         api.forEach((method) => {
-            exports2[method] = u(fs3[method]);
+            exports2[method] = u(fs4[method]);
         });
         exports2.exists = function (filename, callback) {
             if (typeof callback === 'function') {
-                return fs3.exists(filename, callback);
+                return fs4.exists(filename, callback);
             }
-            return new Promise((resolve) => {
-                return fs3.exists(filename, resolve);
+            return new Promise((resolve2) => {
+                return fs4.exists(filename, resolve2);
             });
         };
         exports2.read = function (fd, buffer, offset, length, position, callback) {
             if (typeof callback === 'function') {
-                return fs3.read(fd, buffer, offset, length, position, callback);
+                return fs4.read(fd, buffer, offset, length, position, callback);
             }
-            return new Promise((resolve, reject) => {
-                fs3.read(fd, buffer, offset, length, position, (err, bytesRead, buffer2) => {
+            return new Promise((resolve2, reject) => {
+                fs4.read(fd, buffer, offset, length, position, (err, bytesRead, buffer2) => {
                     if (err) return reject(err);
-                    resolve({ bytesRead, buffer: buffer2 });
+                    resolve2({ bytesRead, buffer: buffer2 });
                 });
             });
         };
         exports2.write = function (fd, buffer, ...args) {
             if (typeof args[args.length - 1] === 'function') {
-                return fs3.write(fd, buffer, ...args);
+                return fs4.write(fd, buffer, ...args);
             }
-            return new Promise((resolve, reject) => {
-                fs3.write(fd, buffer, ...args, (err, bytesWritten, buffer2) => {
+            return new Promise((resolve2, reject) => {
+                fs4.write(fd, buffer, ...args, (err, bytesWritten, buffer2) => {
                     if (err) return reject(err);
-                    resolve({ bytesWritten, buffer: buffer2 });
+                    resolve2({ bytesWritten, buffer: buffer2 });
                 });
             });
         };
         exports2.readv = function (fd, buffers, ...args) {
             if (typeof args[args.length - 1] === 'function') {
-                return fs3.readv(fd, buffers, ...args);
+                return fs4.readv(fd, buffers, ...args);
             }
-            return new Promise((resolve, reject) => {
-                fs3.readv(fd, buffers, ...args, (err, bytesRead, buffers2) => {
+            return new Promise((resolve2, reject) => {
+                fs4.readv(fd, buffers, ...args, (err, bytesRead, buffers2) => {
                     if (err) return reject(err);
-                    resolve({ bytesRead, buffers: buffers2 });
+                    resolve2({ bytesRead, buffers: buffers2 });
                 });
             });
         };
         exports2.writev = function (fd, buffers, ...args) {
             if (typeof args[args.length - 1] === 'function') {
-                return fs3.writev(fd, buffers, ...args);
+                return fs4.writev(fd, buffers, ...args);
             }
-            return new Promise((resolve, reject) => {
-                fs3.writev(fd, buffers, ...args, (err, bytesWritten, buffers2) => {
+            return new Promise((resolve2, reject) => {
+                fs4.writev(fd, buffers, ...args, (err, bytesWritten, buffers2) => {
                     if (err) return reject(err);
-                    resolve({ bytesWritten, buffers: buffers2 });
+                    resolve2({ bytesWritten, buffers: buffers2 });
                 });
             });
         };
-        if (typeof fs3.realpath.native === 'function') {
-            exports2.realpath.native = u(fs3.realpath.native);
+        if (typeof fs4.realpath.native === 'function') {
+            exports2.realpath.native = u(fs4.realpath.native);
         } else {
             process.emitWarning(
                 'fs.realpath.native is not a function. Is fs being monkey-patched?',
@@ -48124,11 +48122,11 @@ var require_fs = __commonJS({
 var require_utils = __commonJS({
     'node_modules/fs-extra/lib/mkdirs/utils.js'(exports2, module2) {
         'use strict';
-        var path4 = require('path');
+        var path5 = require('path');
         module2.exports.checkPath = function checkPath(pth) {
             if (process.platform === 'win32') {
                 const pathHasInvalidWinCharacters = /[<>:"|?*]/.test(
-                    pth.replace(path4.parse(pth).root, ''),
+                    pth.replace(path5.parse(pth).root, ''),
                 );
                 if (pathHasInvalidWinCharacters) {
                     const error = new Error(`Path contains invalid characters: ${pth}`);
@@ -48144,7 +48142,7 @@ var require_utils = __commonJS({
 var require_make_dir = __commonJS({
     'node_modules/fs-extra/lib/mkdirs/make-dir.js'(exports2, module2) {
         'use strict';
-        var fs3 = require_fs();
+        var fs4 = require_fs();
         var { checkPath } = require_utils();
         var getMode = (options2) => {
             const defaults = { mode: 511 };
@@ -48153,14 +48151,14 @@ var require_make_dir = __commonJS({
         };
         module2.exports.makeDir = async (dir, options2) => {
             checkPath(dir);
-            return fs3.mkdir(dir, {
+            return fs4.mkdir(dir, {
                 mode: getMode(options2),
                 recursive: true,
             });
         };
         module2.exports.makeDirSync = (dir, options2) => {
             checkPath(dir);
-            return fs3.mkdirSync(dir, {
+            return fs4.mkdirSync(dir, {
                 mode: getMode(options2),
                 recursive: true,
             });
@@ -48192,16 +48190,16 @@ var require_path_exists = __commonJS({
     'node_modules/fs-extra/lib/path-exists/index.js'(exports2, module2) {
         'use strict';
         var u = require_universalify().fromPromise;
-        var fs3 = require_fs();
-        function pathExists(path4) {
-            return fs3
-                .access(path4)
+        var fs4 = require_fs();
+        function pathExists(path5) {
+            return fs4
+                .access(path5)
                 .then(() => true)
                 .catch(() => false);
         }
         module2.exports = {
             pathExists: u(pathExists),
-            pathExistsSync: fs3.existsSync,
+            pathExistsSync: fs4.existsSync,
         };
     },
 });
@@ -48210,16 +48208,16 @@ var require_path_exists = __commonJS({
 var require_utimes = __commonJS({
     'node_modules/fs-extra/lib/util/utimes.js'(exports2, module2) {
         'use strict';
-        var fs3 = require_fs();
+        var fs4 = require_fs();
         var u = require_universalify().fromPromise;
-        async function utimesMillis(path4, atime, mtime) {
-            const fd = await fs3.open(path4, 'r+');
+        async function utimesMillis(path5, atime, mtime) {
+            const fd = await fs4.open(path5, 'r+');
             let closeErr = null;
             try {
-                await fs3.futimes(fd, atime, mtime);
+                await fs4.futimes(fd, atime, mtime);
             } finally {
                 try {
-                    await fs3.close(fd);
+                    await fs4.close(fd);
                 } catch (e2) {
                     closeErr = e2;
                 }
@@ -48228,10 +48226,10 @@ var require_utimes = __commonJS({
                 throw closeErr;
             }
         }
-        function utimesMillisSync(path4, atime, mtime) {
-            const fd = fs3.openSync(path4, 'r+');
-            fs3.futimesSync(fd, atime, mtime);
-            return fs3.closeSync(fd);
+        function utimesMillisSync(path5, atime, mtime) {
+            const fd = fs4.openSync(path5, 'r+');
+            fs4.futimesSync(fd, atime, mtime);
+            return fs4.closeSync(fd);
         }
         module2.exports = {
             utimesMillis: u(utimesMillis),
@@ -48244,13 +48242,13 @@ var require_utimes = __commonJS({
 var require_stat = __commonJS({
     'node_modules/fs-extra/lib/util/stat.js'(exports2, module2) {
         'use strict';
-        var fs3 = require_fs();
-        var path4 = require('path');
+        var fs4 = require_fs();
+        var path5 = require('path');
         var u = require_universalify().fromPromise;
         function getStats(src, dest, opts) {
             const statFunc = opts.dereference
-                ? (file) => fs3.stat(file, { bigint: true })
-                : (file) => fs3.lstat(file, { bigint: true });
+                ? (file) => fs4.stat(file, { bigint: true })
+                : (file) => fs4.lstat(file, { bigint: true });
             return Promise.all([
                 statFunc(src),
                 statFunc(dest).catch((err) => {
@@ -48262,8 +48260,8 @@ var require_stat = __commonJS({
         function getStatsSync(src, dest, opts) {
             let destStat;
             const statFunc = opts.dereference
-                ? (file) => fs3.statSync(file, { bigint: true })
-                : (file) => fs3.lstatSync(file, { bigint: true });
+                ? (file) => fs4.statSync(file, { bigint: true })
+                : (file) => fs4.lstatSync(file, { bigint: true });
             const srcStat = statFunc(src);
             try {
                 destStat = statFunc(dest);
@@ -48277,8 +48275,8 @@ var require_stat = __commonJS({
             const { srcStat, destStat } = await getStats(src, dest, opts);
             if (destStat) {
                 if (areIdentical(srcStat, destStat)) {
-                    const srcBaseName = path4.basename(src);
-                    const destBaseName = path4.basename(dest);
+                    const srcBaseName = path5.basename(src);
+                    const destBaseName = path5.basename(dest);
                     if (
                         funcName === 'move' &&
                         srcBaseName !== destBaseName &&
@@ -48308,8 +48306,8 @@ var require_stat = __commonJS({
             const { srcStat, destStat } = getStatsSync(src, dest, opts);
             if (destStat) {
                 if (areIdentical(srcStat, destStat)) {
-                    const srcBaseName = path4.basename(src);
-                    const destBaseName = path4.basename(dest);
+                    const srcBaseName = path5.basename(src);
+                    const destBaseName = path5.basename(dest);
                     if (
                         funcName === 'move' &&
                         srcBaseName !== destBaseName &&
@@ -48336,12 +48334,12 @@ var require_stat = __commonJS({
             return { srcStat, destStat };
         }
         async function checkParentPaths(src, srcStat, dest, funcName) {
-            const srcParent = path4.resolve(path4.dirname(src));
-            const destParent = path4.resolve(path4.dirname(dest));
-            if (destParent === srcParent || destParent === path4.parse(destParent).root) return;
+            const srcParent = path5.resolve(path5.dirname(src));
+            const destParent = path5.resolve(path5.dirname(dest));
+            if (destParent === srcParent || destParent === path5.parse(destParent).root) return;
             let destStat;
             try {
-                destStat = await fs3.stat(destParent, { bigint: true });
+                destStat = await fs4.stat(destParent, { bigint: true });
             } catch (err) {
                 if (err.code === 'ENOENT') return;
                 throw err;
@@ -48352,12 +48350,12 @@ var require_stat = __commonJS({
             return checkParentPaths(src, srcStat, destParent, funcName);
         }
         function checkParentPathsSync(src, srcStat, dest, funcName) {
-            const srcParent = path4.resolve(path4.dirname(src));
-            const destParent = path4.resolve(path4.dirname(dest));
-            if (destParent === srcParent || destParent === path4.parse(destParent).root) return;
+            const srcParent = path5.resolve(path5.dirname(src));
+            const destParent = path5.resolve(path5.dirname(dest));
+            if (destParent === srcParent || destParent === path5.parse(destParent).root) return;
             let destStat;
             try {
-                destStat = fs3.statSync(destParent, { bigint: true });
+                destStat = fs4.statSync(destParent, { bigint: true });
             } catch (err) {
                 if (err.code === 'ENOENT') return;
                 throw err;
@@ -48376,13 +48374,13 @@ var require_stat = __commonJS({
             );
         }
         function isSrcSubdir(src, dest) {
-            const srcArr = path4
+            const srcArr = path5
                 .resolve(src)
-                .split(path4.sep)
+                .split(path5.sep)
                 .filter((i2) => i2);
-            const destArr = path4
+            const destArr = path5
                 .resolve(dest)
-                .split(path4.sep)
+                .split(path5.sep)
                 .filter((i2) => i2);
             return srcArr.every((cur, i2) => destArr[i2] === cur);
         }
@@ -48407,8 +48405,8 @@ var require_stat = __commonJS({
 var require_copy = __commonJS({
     'node_modules/fs-extra/lib/copy/copy.js'(exports2, module2) {
         'use strict';
-        var fs3 = require_fs();
-        var path4 = require('path');
+        var fs4 = require_fs();
+        var path5 = require('path');
         var { mkdirs } = require_mkdirs();
         var { pathExists } = require_path_exists();
         var { utimesMillis } = require_utimes();
@@ -48430,7 +48428,7 @@ var require_copy = __commonJS({
             await stat2.checkParentPaths(src, srcStat, dest, 'copy');
             const include = await runFilter(src, dest, opts);
             if (!include) return;
-            const destParent = path4.dirname(dest);
+            const destParent = path5.dirname(dest);
             const dirExists = await pathExists(destParent);
             if (!dirExists) {
                 await mkdirs(destParent);
@@ -48442,7 +48440,7 @@ var require_copy = __commonJS({
             return opts.filter(src, dest);
         }
         async function getStatsAndPerformCopy(destStat, src, dest, opts) {
-            const statFn = opts.dereference ? fs3.stat : fs3.lstat;
+            const statFn = opts.dereference ? fs4.stat : fs4.lstat;
             const srcStat = await statFn(src);
             if (srcStat.isDirectory()) return onDir(srcStat, destStat, src, dest, opts);
             if (srcStat.isFile() || srcStat.isCharacterDevice() || srcStat.isBlockDevice())
@@ -48455,7 +48453,7 @@ var require_copy = __commonJS({
         async function onFile(srcStat, destStat, src, dest, opts) {
             if (!destStat) return copyFile(srcStat, src, dest, opts);
             if (opts.overwrite) {
-                await fs3.unlink(dest);
+                await fs4.unlink(dest);
                 return copyFile(srcStat, src, dest, opts);
             }
             if (opts.errorOnExist) {
@@ -48463,31 +48461,31 @@ var require_copy = __commonJS({
             }
         }
         async function copyFile(srcStat, src, dest, opts) {
-            await fs3.copyFile(src, dest);
+            await fs4.copyFile(src, dest);
             if (opts.preserveTimestamps) {
                 if (fileIsNotWritable(srcStat.mode)) {
                     await makeFileWritable(dest, srcStat.mode);
                 }
-                const updatedSrcStat = await fs3.stat(src);
+                const updatedSrcStat = await fs4.stat(src);
                 await utimesMillis(dest, updatedSrcStat.atime, updatedSrcStat.mtime);
             }
-            return fs3.chmod(dest, srcStat.mode);
+            return fs4.chmod(dest, srcStat.mode);
         }
         function fileIsNotWritable(srcMode) {
             return (srcMode & 128) === 0;
         }
         function makeFileWritable(dest, srcMode) {
-            return fs3.chmod(dest, srcMode | 128);
+            return fs4.chmod(dest, srcMode | 128);
         }
         async function onDir(srcStat, destStat, src, dest, opts) {
             if (!destStat) {
-                await fs3.mkdir(dest);
+                await fs4.mkdir(dest);
             }
-            const items = await fs3.readdir(src);
+            const items = await fs4.readdir(src);
             await Promise.all(
                 items.map(async (item) => {
-                    const srcItem = path4.join(src, item);
-                    const destItem = path4.join(dest, item);
+                    const srcItem = path5.join(src, item);
+                    const destItem = path5.join(dest, item);
                     const include = await runFilter(srcItem, destItem, opts);
                     if (!include) return;
                     const { destStat: destStat2 } = await stat2.checkPaths(
@@ -48500,27 +48498,27 @@ var require_copy = __commonJS({
                 }),
             );
             if (!destStat) {
-                await fs3.chmod(dest, srcStat.mode);
+                await fs4.chmod(dest, srcStat.mode);
             }
         }
         async function onLink(destStat, src, dest, opts) {
-            let resolvedSrc = await fs3.readlink(src);
+            let resolvedSrc = await fs4.readlink(src);
             if (opts.dereference) {
-                resolvedSrc = path4.resolve(process.cwd(), resolvedSrc);
+                resolvedSrc = path5.resolve(process.cwd(), resolvedSrc);
             }
             if (!destStat) {
-                return fs3.symlink(resolvedSrc, dest);
+                return fs4.symlink(resolvedSrc, dest);
             }
             let resolvedDest = null;
             try {
-                resolvedDest = await fs3.readlink(dest);
+                resolvedDest = await fs4.readlink(dest);
             } catch (e2) {
                 if (e2.code === 'EINVAL' || e2.code === 'UNKNOWN')
-                    return fs3.symlink(resolvedSrc, dest);
+                    return fs4.symlink(resolvedSrc, dest);
                 throw e2;
             }
             if (opts.dereference) {
-                resolvedDest = path4.resolve(process.cwd(), resolvedDest);
+                resolvedDest = path5.resolve(process.cwd(), resolvedDest);
             }
             if (stat2.isSrcSubdir(resolvedSrc, resolvedDest)) {
                 throw new Error(
@@ -48530,8 +48528,8 @@ var require_copy = __commonJS({
             if (stat2.isSrcSubdir(resolvedDest, resolvedSrc)) {
                 throw new Error(`Cannot overwrite '${resolvedDest}' with '${resolvedSrc}'.`);
             }
-            await fs3.unlink(dest);
-            return fs3.symlink(resolvedSrc, dest);
+            await fs4.unlink(dest);
+            return fs4.symlink(resolvedSrc, dest);
         }
         module2.exports = copy;
     },
@@ -48541,8 +48539,8 @@ var require_copy = __commonJS({
 var require_copy_sync = __commonJS({
     'node_modules/fs-extra/lib/copy/copy-sync.js'(exports2, module2) {
         'use strict';
-        var fs3 = require_graceful_fs();
-        var path4 = require('path');
+        var fs4 = require_graceful_fs();
+        var path5 = require('path');
         var mkdirsSync = require_mkdirs().mkdirsSync;
         var utimesMillisSync = require_utimes().utimesMillisSync;
         var stat2 = require_stat();
@@ -48563,12 +48561,12 @@ var require_copy_sync = __commonJS({
             const { srcStat, destStat } = stat2.checkPathsSync(src, dest, 'copy', opts);
             stat2.checkParentPathsSync(src, srcStat, dest, 'copy');
             if (opts.filter && !opts.filter(src, dest)) return;
-            const destParent = path4.dirname(dest);
-            if (!fs3.existsSync(destParent)) mkdirsSync(destParent);
+            const destParent = path5.dirname(dest);
+            if (!fs4.existsSync(destParent)) mkdirsSync(destParent);
             return getStats(destStat, src, dest, opts);
         }
         function getStats(destStat, src, dest, opts) {
-            const statSync2 = opts.dereference ? fs3.statSync : fs3.lstatSync;
+            const statSync2 = opts.dereference ? fs4.statSync : fs4.lstatSync;
             const srcStat = statSync2(src);
             if (srcStat.isDirectory()) return onDir(srcStat, destStat, src, dest, opts);
             else if (srcStat.isFile() || srcStat.isCharacterDevice() || srcStat.isBlockDevice())
@@ -48584,14 +48582,14 @@ var require_copy_sync = __commonJS({
         }
         function mayCopyFile(srcStat, src, dest, opts) {
             if (opts.overwrite) {
-                fs3.unlinkSync(dest);
+                fs4.unlinkSync(dest);
                 return copyFile(srcStat, src, dest, opts);
             } else if (opts.errorOnExist) {
                 throw new Error(`'${dest}' already exists`);
             }
         }
         function copyFile(srcStat, src, dest, opts) {
-            fs3.copyFileSync(src, dest);
+            fs4.copyFileSync(src, dest);
             if (opts.preserveTimestamps) handleTimestamps(srcStat.mode, src, dest);
             return setDestMode(dest, srcStat.mode);
         }
@@ -48606,10 +48604,10 @@ var require_copy_sync = __commonJS({
             return setDestMode(dest, srcMode | 128);
         }
         function setDestMode(dest, srcMode) {
-            return fs3.chmodSync(dest, srcMode);
+            return fs4.chmodSync(dest, srcMode);
         }
         function setDestTimestamps(src, dest) {
-            const updatedSrcStat = fs3.statSync(src);
+            const updatedSrcStat = fs4.statSync(src);
             return utimesMillisSync(dest, updatedSrcStat.atime, updatedSrcStat.mtime);
         }
         function onDir(srcStat, destStat, src, dest, opts) {
@@ -48617,38 +48615,38 @@ var require_copy_sync = __commonJS({
             return copyDir(src, dest, opts);
         }
         function mkDirAndCopy(srcMode, src, dest, opts) {
-            fs3.mkdirSync(dest);
+            fs4.mkdirSync(dest);
             copyDir(src, dest, opts);
             return setDestMode(dest, srcMode);
         }
         function copyDir(src, dest, opts) {
-            fs3.readdirSync(src).forEach((item) => copyDirItem(item, src, dest, opts));
+            fs4.readdirSync(src).forEach((item) => copyDirItem(item, src, dest, opts));
         }
         function copyDirItem(item, src, dest, opts) {
-            const srcItem = path4.join(src, item);
-            const destItem = path4.join(dest, item);
+            const srcItem = path5.join(src, item);
+            const destItem = path5.join(dest, item);
             if (opts.filter && !opts.filter(srcItem, destItem)) return;
             const { destStat } = stat2.checkPathsSync(srcItem, destItem, 'copy', opts);
             return getStats(destStat, srcItem, destItem, opts);
         }
         function onLink(destStat, src, dest, opts) {
-            let resolvedSrc = fs3.readlinkSync(src);
+            let resolvedSrc = fs4.readlinkSync(src);
             if (opts.dereference) {
-                resolvedSrc = path4.resolve(process.cwd(), resolvedSrc);
+                resolvedSrc = path5.resolve(process.cwd(), resolvedSrc);
             }
             if (!destStat) {
-                return fs3.symlinkSync(resolvedSrc, dest);
+                return fs4.symlinkSync(resolvedSrc, dest);
             } else {
                 let resolvedDest;
                 try {
-                    resolvedDest = fs3.readlinkSync(dest);
+                    resolvedDest = fs4.readlinkSync(dest);
                 } catch (err) {
                     if (err.code === 'EINVAL' || err.code === 'UNKNOWN')
-                        return fs3.symlinkSync(resolvedSrc, dest);
+                        return fs4.symlinkSync(resolvedSrc, dest);
                     throw err;
                 }
                 if (opts.dereference) {
-                    resolvedDest = path4.resolve(process.cwd(), resolvedDest);
+                    resolvedDest = path5.resolve(process.cwd(), resolvedDest);
                 }
                 if (stat2.isSrcSubdir(resolvedSrc, resolvedDest)) {
                     throw new Error(
@@ -48662,8 +48660,8 @@ var require_copy_sync = __commonJS({
             }
         }
         function copyLink(resolvedSrc, dest) {
-            fs3.unlinkSync(dest);
-            return fs3.symlinkSync(resolvedSrc, dest);
+            fs4.unlinkSync(dest);
+            return fs4.symlinkSync(resolvedSrc, dest);
         }
         module2.exports = copySync;
     },
@@ -48685,13 +48683,13 @@ var require_copy2 = __commonJS({
 var require_remove = __commonJS({
     'node_modules/fs-extra/lib/remove/index.js'(exports2, module2) {
         'use strict';
-        var fs3 = require_graceful_fs();
+        var fs4 = require_graceful_fs();
         var u = require_universalify().fromCallback;
-        function remove2(path4, callback) {
-            fs3.rm(path4, { recursive: true, force: true }, callback);
+        function remove2(path5, callback) {
+            fs4.rm(path5, { recursive: true, force: true }, callback);
         }
-        function removeSync(path4) {
-            fs3.rmSync(path4, { recursive: true, force: true });
+        function removeSync(path5) {
+            fs4.rmSync(path5, { recursive: true, force: true });
         }
         module2.exports = {
             remove: u(remove2),
@@ -48705,28 +48703,28 @@ var require_empty = __commonJS({
     'node_modules/fs-extra/lib/empty/index.js'(exports2, module2) {
         'use strict';
         var u = require_universalify().fromPromise;
-        var fs3 = require_fs();
-        var path4 = require('path');
+        var fs4 = require_fs();
+        var path5 = require('path');
         var mkdir = require_mkdirs();
         var remove2 = require_remove();
         var emptyDir = u(async function emptyDir2(dir) {
             let items;
             try {
-                items = await fs3.readdir(dir);
+                items = await fs4.readdir(dir);
             } catch {
                 return mkdir.mkdirs(dir);
             }
-            return Promise.all(items.map((item) => remove2.remove(path4.join(dir, item))));
+            return Promise.all(items.map((item) => remove2.remove(path5.join(dir, item))));
         });
         function emptyDirSync(dir) {
             let items;
             try {
-                items = fs3.readdirSync(dir);
+                items = fs4.readdirSync(dir);
             } catch {
                 return mkdir.mkdirsSync(dir);
             }
             items.forEach((item) => {
-                item = path4.join(dir, item);
+                item = path5.join(dir, item);
                 remove2.removeSync(item);
             });
         }
@@ -48744,50 +48742,50 @@ var require_file = __commonJS({
     'node_modules/fs-extra/lib/ensure/file.js'(exports2, module2) {
         'use strict';
         var u = require_universalify().fromPromise;
-        var path4 = require('path');
-        var fs3 = require_fs();
+        var path5 = require('path');
+        var fs4 = require_fs();
         var mkdir = require_mkdirs();
         async function createFile(file) {
             let stats;
             try {
-                stats = await fs3.stat(file);
+                stats = await fs4.stat(file);
             } catch {}
             if (stats && stats.isFile()) return;
-            const dir = path4.dirname(file);
+            const dir = path5.dirname(file);
             let dirStats = null;
             try {
-                dirStats = await fs3.stat(dir);
+                dirStats = await fs4.stat(dir);
             } catch (err) {
                 if (err.code === 'ENOENT') {
                     await mkdir.mkdirs(dir);
-                    await fs3.writeFile(file, '');
+                    await fs4.writeFile(file, '');
                     return;
                 } else {
                     throw err;
                 }
             }
             if (dirStats.isDirectory()) {
-                await fs3.writeFile(file, '');
+                await fs4.writeFile(file, '');
             } else {
-                await fs3.readdir(dir);
+                await fs4.readdir(dir);
             }
         }
         function createFileSync(file) {
             let stats;
             try {
-                stats = fs3.statSync(file);
+                stats = fs4.statSync(file);
             } catch {}
             if (stats && stats.isFile()) return;
-            const dir = path4.dirname(file);
+            const dir = path5.dirname(file);
             try {
-                if (!fs3.statSync(dir).isDirectory()) {
-                    fs3.readdirSync(dir);
+                if (!fs4.statSync(dir).isDirectory()) {
+                    fs4.readdirSync(dir);
                 }
             } catch (err) {
                 if (err && err.code === 'ENOENT') mkdir.mkdirsSync(dir);
                 else throw err;
             }
-            fs3.writeFileSync(file, '');
+            fs4.writeFileSync(file, '');
         }
         module2.exports = {
             createFile: u(createFile),
@@ -48801,48 +48799,48 @@ var require_link = __commonJS({
     'node_modules/fs-extra/lib/ensure/link.js'(exports2, module2) {
         'use strict';
         var u = require_universalify().fromPromise;
-        var path4 = require('path');
-        var fs3 = require_fs();
+        var path5 = require('path');
+        var fs4 = require_fs();
         var mkdir = require_mkdirs();
         var { pathExists } = require_path_exists();
         var { areIdentical } = require_stat();
         async function createLink(srcpath, dstpath) {
             let dstStat;
             try {
-                dstStat = await fs3.lstat(dstpath);
+                dstStat = await fs4.lstat(dstpath);
             } catch {}
             let srcStat;
             try {
-                srcStat = await fs3.lstat(srcpath);
+                srcStat = await fs4.lstat(srcpath);
             } catch (err) {
                 err.message = err.message.replace('lstat', 'ensureLink');
                 throw err;
             }
             if (dstStat && areIdentical(srcStat, dstStat)) return;
-            const dir = path4.dirname(dstpath);
+            const dir = path5.dirname(dstpath);
             const dirExists = await pathExists(dir);
             if (!dirExists) {
                 await mkdir.mkdirs(dir);
             }
-            await fs3.link(srcpath, dstpath);
+            await fs4.link(srcpath, dstpath);
         }
         function createLinkSync(srcpath, dstpath) {
             let dstStat;
             try {
-                dstStat = fs3.lstatSync(dstpath);
+                dstStat = fs4.lstatSync(dstpath);
             } catch {}
             try {
-                const srcStat = fs3.lstatSync(srcpath);
+                const srcStat = fs4.lstatSync(srcpath);
                 if (dstStat && areIdentical(srcStat, dstStat)) return;
             } catch (err) {
                 err.message = err.message.replace('lstat', 'ensureLink');
                 throw err;
             }
-            const dir = path4.dirname(dstpath);
-            const dirExists = fs3.existsSync(dir);
-            if (dirExists) return fs3.linkSync(srcpath, dstpath);
+            const dir = path5.dirname(dstpath);
+            const dirExists = fs4.existsSync(dir);
+            if (dirExists) return fs4.linkSync(srcpath, dstpath);
             mkdir.mkdirsSync(dir);
-            return fs3.linkSync(srcpath, dstpath);
+            return fs4.linkSync(srcpath, dstpath);
         }
         module2.exports = {
             createLink: u(createLink),
@@ -48855,14 +48853,14 @@ var require_link = __commonJS({
 var require_symlink_paths = __commonJS({
     'node_modules/fs-extra/lib/ensure/symlink-paths.js'(exports2, module2) {
         'use strict';
-        var path4 = require('path');
-        var fs3 = require_fs();
+        var path5 = require('path');
+        var fs4 = require_fs();
         var { pathExists } = require_path_exists();
         var u = require_universalify().fromPromise;
         async function symlinkPaths(srcpath, dstpath) {
-            if (path4.isAbsolute(srcpath)) {
+            if (path5.isAbsolute(srcpath)) {
                 try {
-                    await fs3.lstat(srcpath);
+                    await fs4.lstat(srcpath);
                 } catch (err) {
                     err.message = err.message.replace('lstat', 'ensureSymlink');
                     throw err;
@@ -48872,8 +48870,8 @@ var require_symlink_paths = __commonJS({
                     toDst: srcpath,
                 };
             }
-            const dstdir = path4.dirname(dstpath);
-            const relativeToDst = path4.join(dstdir, srcpath);
+            const dstdir = path5.dirname(dstpath);
+            const relativeToDst = path5.join(dstdir, srcpath);
             const exists = await pathExists(relativeToDst);
             if (exists) {
                 return {
@@ -48882,39 +48880,39 @@ var require_symlink_paths = __commonJS({
                 };
             }
             try {
-                await fs3.lstat(srcpath);
+                await fs4.lstat(srcpath);
             } catch (err) {
                 err.message = err.message.replace('lstat', 'ensureSymlink');
                 throw err;
             }
             return {
                 toCwd: srcpath,
-                toDst: path4.relative(dstdir, srcpath),
+                toDst: path5.relative(dstdir, srcpath),
             };
         }
         function symlinkPathsSync(srcpath, dstpath) {
-            if (path4.isAbsolute(srcpath)) {
-                const exists2 = fs3.existsSync(srcpath);
+            if (path5.isAbsolute(srcpath)) {
+                const exists2 = fs4.existsSync(srcpath);
                 if (!exists2) throw new Error('absolute srcpath does not exist');
                 return {
                     toCwd: srcpath,
                     toDst: srcpath,
                 };
             }
-            const dstdir = path4.dirname(dstpath);
-            const relativeToDst = path4.join(dstdir, srcpath);
-            const exists = fs3.existsSync(relativeToDst);
+            const dstdir = path5.dirname(dstpath);
+            const relativeToDst = path5.join(dstdir, srcpath);
+            const exists = fs4.existsSync(relativeToDst);
             if (exists) {
                 return {
                     toCwd: relativeToDst,
                     toDst: srcpath,
                 };
             }
-            const srcExists = fs3.existsSync(srcpath);
+            const srcExists = fs4.existsSync(srcpath);
             if (!srcExists) throw new Error('relative srcpath does not exist');
             return {
                 toCwd: srcpath,
-                toDst: path4.relative(dstdir, srcpath),
+                toDst: path5.relative(dstdir, srcpath),
             };
         }
         module2.exports = {
@@ -48928,13 +48926,13 @@ var require_symlink_paths = __commonJS({
 var require_symlink_type = __commonJS({
     'node_modules/fs-extra/lib/ensure/symlink-type.js'(exports2, module2) {
         'use strict';
-        var fs3 = require_fs();
+        var fs4 = require_fs();
         var u = require_universalify().fromPromise;
         async function symlinkType(srcpath, type) {
             if (type) return type;
             let stats;
             try {
-                stats = await fs3.lstat(srcpath);
+                stats = await fs4.lstat(srcpath);
             } catch {
                 return 'file';
             }
@@ -48944,7 +48942,7 @@ var require_symlink_type = __commonJS({
             if (type) return type;
             let stats;
             try {
-                stats = fs3.lstatSync(srcpath);
+                stats = fs4.lstatSync(srcpath);
             } catch {
                 return 'file';
             }
@@ -48962,8 +48960,8 @@ var require_symlink = __commonJS({
     'node_modules/fs-extra/lib/ensure/symlink.js'(exports2, module2) {
         'use strict';
         var u = require_universalify().fromPromise;
-        var path4 = require('path');
-        var fs3 = require_fs();
+        var path5 = require('path');
+        var fs4 = require_fs();
         var { mkdirs, mkdirsSync } = require_mkdirs();
         var { symlinkPaths, symlinkPathsSync } = require_symlink_paths();
         var { symlinkType, symlinkTypeSync } = require_symlink_type();
@@ -48972,42 +48970,42 @@ var require_symlink = __commonJS({
         async function createSymlink(srcpath, dstpath, type) {
             let stats;
             try {
-                stats = await fs3.lstat(dstpath);
+                stats = await fs4.lstat(dstpath);
             } catch {}
             if (stats && stats.isSymbolicLink()) {
                 const [srcStat, dstStat] = await Promise.all([
-                    fs3.stat(srcpath),
-                    fs3.stat(dstpath),
+                    fs4.stat(srcpath),
+                    fs4.stat(dstpath),
                 ]);
                 if (areIdentical(srcStat, dstStat)) return;
             }
             const relative = await symlinkPaths(srcpath, dstpath);
             srcpath = relative.toDst;
             const toType = await symlinkType(relative.toCwd, type);
-            const dir = path4.dirname(dstpath);
+            const dir = path5.dirname(dstpath);
             if (!(await pathExists(dir))) {
                 await mkdirs(dir);
             }
-            return fs3.symlink(srcpath, dstpath, toType);
+            return fs4.symlink(srcpath, dstpath, toType);
         }
         function createSymlinkSync(srcpath, dstpath, type) {
             let stats;
             try {
-                stats = fs3.lstatSync(dstpath);
+                stats = fs4.lstatSync(dstpath);
             } catch {}
             if (stats && stats.isSymbolicLink()) {
-                const srcStat = fs3.statSync(srcpath);
-                const dstStat = fs3.statSync(dstpath);
+                const srcStat = fs4.statSync(srcpath);
+                const dstStat = fs4.statSync(dstpath);
                 if (areIdentical(srcStat, dstStat)) return;
             }
             const relative = symlinkPathsSync(srcpath, dstpath);
             srcpath = relative.toDst;
             type = symlinkTypeSync(relative.toCwd, type);
-            const dir = path4.dirname(dstpath);
-            const exists = fs3.existsSync(dir);
-            if (exists) return fs3.symlinkSync(srcpath, dstpath, type);
+            const dir = path5.dirname(dstpath);
+            const exists = fs4.existsSync(dir);
+            if (exists) return fs4.symlinkSync(srcpath, dstpath, type);
             mkdirsSync(dir);
-            return fs3.symlinkSync(srcpath, dstpath, type);
+            return fs4.symlinkSync(srcpath, dstpath, type);
         }
         module2.exports = {
             createSymlink: u(createSymlink),
@@ -49074,9 +49072,9 @@ var require_jsonfile = __commonJS({
             if (typeof options2 === 'string') {
                 options2 = { encoding: options2 };
             }
-            const fs3 = options2.fs || _fs;
+            const fs4 = options2.fs || _fs;
             const shouldThrow = 'throws' in options2 ? options2.throws : true;
-            let data2 = await universalify.fromCallback(fs3.readFile)(file, options2);
+            let data2 = await universalify.fromCallback(fs4.readFile)(file, options2);
             data2 = stripBom(data2);
             let obj;
             try {
@@ -49096,10 +49094,10 @@ var require_jsonfile = __commonJS({
             if (typeof options2 === 'string') {
                 options2 = { encoding: options2 };
             }
-            const fs3 = options2.fs || _fs;
+            const fs4 = options2.fs || _fs;
             const shouldThrow = 'throws' in options2 ? options2.throws : true;
             try {
-                let content = fs3.readFileSync(file, options2);
+                let content = fs4.readFileSync(file, options2);
                 content = stripBom(content);
                 return JSON.parse(content, options2.reviver);
             } catch (err) {
@@ -49112,15 +49110,15 @@ var require_jsonfile = __commonJS({
             }
         }
         async function _writeFile(file, obj, options2 = {}) {
-            const fs3 = options2.fs || _fs;
+            const fs4 = options2.fs || _fs;
             const str = stringify2(obj, options2);
-            await universalify.fromCallback(fs3.writeFile)(file, str, options2);
+            await universalify.fromCallback(fs4.writeFile)(file, str, options2);
         }
         var writeFile = universalify.fromPromise(_writeFile);
         function writeFileSync(file, obj, options2 = {}) {
-            const fs3 = options2.fs || _fs;
+            const fs4 = options2.fs || _fs;
             const str = stringify2(obj, options2);
-            return fs3.writeFileSync(file, str, options2);
+            return fs4.writeFileSync(file, str, options2);
         }
         var jsonfile = {
             readFile,
@@ -49152,23 +49150,23 @@ var require_output_file = __commonJS({
     'node_modules/fs-extra/lib/output-file/index.js'(exports2, module2) {
         'use strict';
         var u = require_universalify().fromPromise;
-        var fs3 = require_fs();
-        var path4 = require('path');
+        var fs4 = require_fs();
+        var path5 = require('path');
         var mkdir = require_mkdirs();
         var pathExists = require_path_exists().pathExists;
         async function outputFile(file, data2, encoding = 'utf-8') {
-            const dir = path4.dirname(file);
+            const dir = path5.dirname(file);
             if (!(await pathExists(dir))) {
                 await mkdir.mkdirs(dir);
             }
-            return fs3.writeFile(file, data2, encoding);
+            return fs4.writeFile(file, data2, encoding);
         }
         function outputFileSync(file, ...args) {
-            const dir = path4.dirname(file);
-            if (!fs3.existsSync(dir)) {
+            const dir = path5.dirname(file);
+            if (!fs4.existsSync(dir)) {
                 mkdir.mkdirsSync(dir);
             }
-            fs3.writeFileSync(file, ...args);
+            fs4.writeFileSync(file, ...args);
         }
         module2.exports = {
             outputFile: u(outputFile),
@@ -49227,8 +49225,8 @@ var require_json = __commonJS({
 var require_move = __commonJS({
     'node_modules/fs-extra/lib/move/move.js'(exports2, module2) {
         'use strict';
-        var fs3 = require_fs();
-        var path4 = require('path');
+        var fs4 = require_fs();
+        var path5 = require('path');
         var { copy } = require_copy2();
         var { remove: remove2 } = require_remove();
         var { mkdirp } = require_mkdirs();
@@ -49243,8 +49241,8 @@ var require_move = __commonJS({
                 opts,
             );
             await stat2.checkParentPaths(src, srcStat, dest, 'move');
-            const destParent = path4.dirname(dest);
-            const parsedParentPath = path4.parse(destParent);
+            const destParent = path5.dirname(dest);
+            const parsedParentPath = path5.parse(destParent);
             if (parsedParentPath.root !== destParent) {
                 await mkdirp(destParent);
             }
@@ -49259,7 +49257,7 @@ var require_move = __commonJS({
                 }
             }
             try {
-                await fs3.rename(src, dest);
+                await fs4.rename(src, dest);
             } catch (err) {
                 if (err.code !== 'EXDEV') {
                     throw err;
@@ -49284,8 +49282,8 @@ var require_move = __commonJS({
 var require_move_sync = __commonJS({
     'node_modules/fs-extra/lib/move/move-sync.js'(exports2, module2) {
         'use strict';
-        var fs3 = require_graceful_fs();
-        var path4 = require('path');
+        var fs4 = require_graceful_fs();
+        var path5 = require('path');
         var copySync = require_copy2().copySync;
         var removeSync = require_remove().removeSync;
         var mkdirpSync = require_mkdirs().mkdirpSync;
@@ -49300,12 +49298,12 @@ var require_move_sync = __commonJS({
                 opts,
             );
             stat2.checkParentPathsSync(src, srcStat, dest, 'move');
-            if (!isParentRoot(dest)) mkdirpSync(path4.dirname(dest));
+            if (!isParentRoot(dest)) mkdirpSync(path5.dirname(dest));
             return doRename(src, dest, overwrite, isChangingCase);
         }
         function isParentRoot(dest) {
-            const parent2 = path4.dirname(dest);
-            const parsedPath = path4.parse(parent2);
+            const parent2 = path5.dirname(dest);
+            const parsedPath = path5.parse(parent2);
             return parsedPath.root === parent2;
         }
         function doRename(src, dest, overwrite, isChangingCase) {
@@ -49314,12 +49312,12 @@ var require_move_sync = __commonJS({
                 removeSync(dest);
                 return rename(src, dest, overwrite);
             }
-            if (fs3.existsSync(dest)) throw new Error('dest already exists.');
+            if (fs4.existsSync(dest)) throw new Error('dest already exists.');
             return rename(src, dest, overwrite);
         }
         function rename(src, dest, overwrite) {
             try {
-                fs3.renameSync(src, dest);
+                fs4.renameSync(src, dest);
             } catch (err) {
                 if (err.code !== 'EXDEV') throw err;
                 return moveAcrossDevice(src, dest, overwrite);
@@ -49405,7 +49403,7 @@ var require_ponyfill_es2018 = __commonJS({
                 return new originalPromise(executor);
             }
             function promiseResolvedWith(value) {
-                return newPromise((resolve) => resolve(value));
+                return newPromise((resolve2) => resolve2(value));
             }
             function promiseRejectedWith(reason) {
                 return originalPromiseReject(reason);
@@ -49589,8 +49587,8 @@ var require_ponyfill_es2018 = __commonJS({
                 return new TypeError('Cannot ' + name + ' a stream using a released reader');
             }
             function defaultReaderClosedPromiseInitialize(reader) {
-                reader._closedPromise = newPromise((resolve, reject) => {
-                    reader._closedPromise_resolve = resolve;
+                reader._closedPromise = newPromise((resolve2, reject) => {
+                    reader._closedPromise_resolve = resolve2;
                     reader._closedPromise_reject = reject;
                 });
             }
@@ -49772,8 +49770,8 @@ var require_ponyfill_es2018 = __commonJS({
                     }
                     let resolvePromise;
                     let rejectPromise;
-                    const promise = newPromise((resolve, reject) => {
-                        resolvePromise = resolve;
+                    const promise = newPromise((resolve2, reject) => {
+                        resolvePromise = resolve2;
                         rejectPromise = reject;
                     });
                     const readRequest = {
@@ -49885,8 +49883,8 @@ var require_ponyfill_es2018 = __commonJS({
                     const reader = this._reader;
                     let resolvePromise;
                     let rejectPromise;
-                    const promise = newPromise((resolve, reject) => {
-                        resolvePromise = resolve;
+                    const promise = newPromise((resolve2, reject) => {
+                        resolvePromise = resolve2;
                         rejectPromise = reject;
                     });
                     const readRequest = {
@@ -51168,8 +51166,8 @@ var require_ponyfill_es2018 = __commonJS({
                     }
                     let resolvePromise;
                     let rejectPromise;
-                    const promise = newPromise((resolve, reject) => {
-                        resolvePromise = resolve;
+                    const promise = newPromise((resolve2, reject) => {
+                        resolvePromise = resolve2;
                         rejectPromise = reject;
                     });
                     const readIntoRequest = {
@@ -51555,10 +51553,10 @@ var require_ponyfill_es2018 = __commonJS({
                     wasAlreadyErroring = true;
                     reason = void 0;
                 }
-                const promise = newPromise((resolve, reject) => {
+                const promise = newPromise((resolve2, reject) => {
                     stream._pendingAbortRequest = {
                         _promise: void 0,
-                        _resolve: resolve,
+                        _resolve: resolve2,
                         _reject: reject,
                         _reason: reason,
                         _wasAlreadyErroring: wasAlreadyErroring,
@@ -51579,9 +51577,9 @@ var require_ponyfill_es2018 = __commonJS({
                         ),
                     );
                 }
-                const promise = newPromise((resolve, reject) => {
+                const promise = newPromise((resolve2, reject) => {
                     const closeRequest = {
-                        _resolve: resolve,
+                        _resolve: resolve2,
                         _reject: reject,
                     };
                     stream._closeRequest = closeRequest;
@@ -51594,9 +51592,9 @@ var require_ponyfill_es2018 = __commonJS({
                 return promise;
             }
             function WritableStreamAddWriteRequest(stream) {
-                const promise = newPromise((resolve, reject) => {
+                const promise = newPromise((resolve2, reject) => {
                     const writeRequest = {
-                        _resolve: resolve,
+                        _resolve: resolve2,
                         _reject: reject,
                     };
                     stream._writeRequests.push(writeRequest);
@@ -52277,8 +52275,8 @@ var require_ponyfill_es2018 = __commonJS({
                 return new TypeError('Cannot ' + name + ' a stream using a released writer');
             }
             function defaultWriterClosedPromiseInitialize(writer) {
-                writer._closedPromise = newPromise((resolve, reject) => {
-                    writer._closedPromise_resolve = resolve;
+                writer._closedPromise = newPromise((resolve2, reject) => {
+                    writer._closedPromise_resolve = resolve2;
                     writer._closedPromise_reject = reject;
                     writer._closedPromiseState = 'pending';
                 });
@@ -52314,8 +52312,8 @@ var require_ponyfill_es2018 = __commonJS({
                 writer._closedPromiseState = 'resolved';
             }
             function defaultWriterReadyPromiseInitialize(writer) {
-                writer._readyPromise = newPromise((resolve, reject) => {
-                    writer._readyPromise_resolve = resolve;
+                writer._readyPromise = newPromise((resolve2, reject) => {
+                    writer._readyPromise_resolve = resolve2;
                     writer._readyPromise_reject = reject;
                 });
                 writer._readyPromiseState = 'pending';
@@ -52413,7 +52411,7 @@ var require_ponyfill_es2018 = __commonJS({
                 source._disturbed = true;
                 let shuttingDown = false;
                 let currentWrite = promiseResolvedWith(void 0);
-                return newPromise((resolve, reject) => {
+                return newPromise((resolve2, reject) => {
                     let abortAlgorithm;
                     if (signal !== void 0) {
                         abortAlgorithm = () => {
@@ -52599,7 +52597,7 @@ var require_ponyfill_es2018 = __commonJS({
                         if (isError) {
                             reject(error);
                         } else {
-                            resolve(void 0);
+                            resolve2(void 0);
                         }
                         return null;
                     }
@@ -52920,8 +52918,8 @@ var require_ponyfill_es2018 = __commonJS({
                 let branch1;
                 let branch2;
                 let resolveCancelPromise;
-                const cancelPromise = newPromise((resolve) => {
-                    resolveCancelPromise = resolve;
+                const cancelPromise = newPromise((resolve2) => {
+                    resolveCancelPromise = resolve2;
                 });
                 function pullAlgorithm() {
                     if (reading) {
@@ -53021,8 +53019,8 @@ var require_ponyfill_es2018 = __commonJS({
                 let branch1;
                 let branch2;
                 let resolveCancelPromise;
-                const cancelPromise = newPromise((resolve) => {
-                    resolveCancelPromise = resolve;
+                const cancelPromise = newPromise((resolve2) => {
+                    resolveCancelPromise = resolve2;
                 });
                 function forwardReaderError(thisReader) {
                     uponRejection(thisReader._closedPromise, (r2) => {
@@ -54039,8 +54037,8 @@ var require_ponyfill_es2018 = __commonJS({
                     const writableHighWaterMark = ExtractHighWaterMark(writableStrategy, 1);
                     const writableSizeAlgorithm = ExtractSizeAlgorithm(writableStrategy);
                     let startPromise_resolve;
-                    const startPromise = newPromise((resolve) => {
-                        startPromise_resolve = resolve;
+                    const startPromise = newPromise((resolve2) => {
+                        startPromise_resolve = resolve2;
                     });
                     InitializeTransformStream(
                         this,
@@ -54166,8 +54164,8 @@ var require_ponyfill_es2018 = __commonJS({
                 if (stream._backpressureChangePromise !== void 0) {
                     stream._backpressureChangePromise_resolve();
                 }
-                stream._backpressureChangePromise = newPromise((resolve) => {
-                    stream._backpressureChangePromise_resolve = resolve;
+                stream._backpressureChangePromise = newPromise((resolve2) => {
+                    stream._backpressureChangePromise_resolve = resolve2;
                 });
                 stream._backpressure = backpressure;
             }
@@ -54353,8 +54351,8 @@ var require_ponyfill_es2018 = __commonJS({
                     return controller._finishPromise;
                 }
                 const readable = stream._readable;
-                controller._finishPromise = newPromise((resolve, reject) => {
-                    controller._finishPromise_resolve = resolve;
+                controller._finishPromise = newPromise((resolve2, reject) => {
+                    controller._finishPromise_resolve = resolve2;
                     controller._finishPromise_reject = reject;
                 });
                 const cancelPromise = controller._cancelAlgorithm(reason);
@@ -54390,8 +54388,8 @@ var require_ponyfill_es2018 = __commonJS({
                     return controller._finishPromise;
                 }
                 const readable = stream._readable;
-                controller._finishPromise = newPromise((resolve, reject) => {
-                    controller._finishPromise_resolve = resolve;
+                controller._finishPromise = newPromise((resolve2, reject) => {
+                    controller._finishPromise_resolve = resolve2;
                     controller._finishPromise_reject = reject;
                 });
                 const flushPromise = controller._flushAlgorithm();
@@ -54430,8 +54428,8 @@ var require_ponyfill_es2018 = __commonJS({
                     return controller._finishPromise;
                 }
                 const writable = stream._writable;
-                controller._finishPromise = newPromise((resolve, reject) => {
-                    controller._finishPromise_resolve = resolve;
+                controller._finishPromise = newPromise((resolve2, reject) => {
+                    controller._finishPromise_resolve = resolve2;
                     controller._finishPromise_reject = reject;
                 });
                 const cancelPromise = controller._cancelAlgorithm(reason);
@@ -56078,8 +56076,6663 @@ var require_boolbase = __commonJS({
     },
 });
 
-// index.ts
-var import_prompts = __toESM(require_prompts3(), 1);
+// node_modules/sharp/lib/is.js
+var require_is = __commonJS({
+    'node_modules/sharp/lib/is.js'(exports2, module2) {
+        'use strict';
+        var defined = function (val2) {
+            return typeof val2 !== 'undefined' && val2 !== null;
+        };
+        var object = function (val2) {
+            return typeof val2 === 'object';
+        };
+        var plainObject = function (val2) {
+            return Object.prototype.toString.call(val2) === '[object Object]';
+        };
+        var fn = function (val2) {
+            return typeof val2 === 'function';
+        };
+        var bool = function (val2) {
+            return typeof val2 === 'boolean';
+        };
+        var buffer = function (val2) {
+            return val2 instanceof Buffer;
+        };
+        var typedArray = function (val2) {
+            if (defined(val2)) {
+                switch (val2.constructor) {
+                    case Uint8Array:
+                    case Uint8ClampedArray:
+                    case Int8Array:
+                    case Uint16Array:
+                    case Int16Array:
+                    case Uint32Array:
+                    case Int32Array:
+                    case Float32Array:
+                    case Float64Array:
+                        return true;
+                }
+            }
+            return false;
+        };
+        var arrayBuffer = function (val2) {
+            return val2 instanceof ArrayBuffer;
+        };
+        var string = function (val2) {
+            return typeof val2 === 'string' && val2.length > 0;
+        };
+        var number = function (val2) {
+            return typeof val2 === 'number' && !Number.isNaN(val2);
+        };
+        var integer = function (val2) {
+            return Number.isInteger(val2);
+        };
+        var inRange = function (val2, min, max) {
+            return val2 >= min && val2 <= max;
+        };
+        var inArray = function (val2, list) {
+            return list.includes(val2);
+        };
+        var invalidParameterError = function (name, expected, actual) {
+            return new Error(
+                `Expected ${expected} for ${name} but received ${actual} of type ${typeof actual}`,
+            );
+        };
+        var nativeError = function (native, context) {
+            context.message = native.message;
+            return context;
+        };
+        module2.exports = {
+            defined,
+            object,
+            plainObject,
+            fn,
+            bool,
+            buffer,
+            typedArray,
+            arrayBuffer,
+            string,
+            number,
+            integer,
+            inRange,
+            inArray,
+            invalidParameterError,
+            nativeError,
+        };
+    },
+});
+
+// node_modules/detect-libc/lib/process.js
+var require_process = __commonJS({
+    'node_modules/detect-libc/lib/process.js'(exports2, module2) {
+        'use strict';
+        var isLinux = () => process.platform === 'linux';
+        var report = null;
+        var getReport = () => {
+            if (!report) {
+                report = isLinux() && process.report ? process.report.getReport() : {};
+            }
+            return report;
+        };
+        module2.exports = { isLinux, getReport };
+    },
+});
+
+// node_modules/detect-libc/lib/filesystem.js
+var require_filesystem = __commonJS({
+    'node_modules/detect-libc/lib/filesystem.js'(exports2, module2) {
+        'use strict';
+        var fs4 = require('fs');
+        var LDD_PATH = '/usr/bin/ldd';
+        var readFileSync2 = (path5) => fs4.readFileSync(path5, 'utf-8');
+        var readFile = (path5) =>
+            new Promise((resolve2, reject) => {
+                fs4.readFile(path5, 'utf-8', (err, data2) => {
+                    if (err) {
+                        reject(err);
+                    } else {
+                        resolve2(data2);
+                    }
+                });
+            });
+        module2.exports = {
+            LDD_PATH,
+            readFileSync: readFileSync2,
+            readFile,
+        };
+    },
+});
+
+// node_modules/detect-libc/lib/detect-libc.js
+var require_detect_libc = __commonJS({
+    'node_modules/detect-libc/lib/detect-libc.js'(exports2, module2) {
+        'use strict';
+        var childProcess2 = require('child_process');
+        var { isLinux, getReport } = require_process();
+        var { LDD_PATH, readFile, readFileSync: readFileSync2 } = require_filesystem();
+        var cachedFamilyFilesystem;
+        var cachedVersionFilesystem;
+        var command = 'getconf GNU_LIBC_VERSION 2>&1 || true; ldd --version 2>&1 || true';
+        var commandOut = '';
+        var safeCommand = () => {
+            if (!commandOut) {
+                return new Promise((resolve2) => {
+                    childProcess2.exec(command, (err, out) => {
+                        commandOut = err ? ' ' : out;
+                        resolve2(commandOut);
+                    });
+                });
+            }
+            return commandOut;
+        };
+        var safeCommandSync = () => {
+            if (!commandOut) {
+                try {
+                    commandOut = childProcess2.execSync(command, { encoding: 'utf8' });
+                } catch (_err) {
+                    commandOut = ' ';
+                }
+            }
+            return commandOut;
+        };
+        var GLIBC = 'glibc';
+        var RE_GLIBC_VERSION = /GLIBC\s(\d+\.\d+)/;
+        var MUSL = 'musl';
+        var GLIBC_ON_LDD = GLIBC.toUpperCase();
+        var MUSL_ON_LDD = MUSL.toLowerCase();
+        var isFileMusl = (f3) => f3.includes('libc.musl-') || f3.includes('ld-musl-');
+        var familyFromReport = () => {
+            const report = getReport();
+            if (report.header && report.header.glibcVersionRuntime) {
+                return GLIBC;
+            }
+            if (Array.isArray(report.sharedObjects)) {
+                if (report.sharedObjects.some(isFileMusl)) {
+                    return MUSL;
+                }
+            }
+            return null;
+        };
+        var familyFromCommand = (out) => {
+            const [getconf, ldd1] = out.split(/[\r\n]+/);
+            if (getconf && getconf.includes(GLIBC)) {
+                return GLIBC;
+            }
+            if (ldd1 && ldd1.includes(MUSL)) {
+                return MUSL;
+            }
+            return null;
+        };
+        var getFamilyFromLddContent = (content) => {
+            if (content.includes(MUSL_ON_LDD)) {
+                return MUSL;
+            }
+            if (content.includes(GLIBC_ON_LDD)) {
+                return GLIBC;
+            }
+            return null;
+        };
+        var familyFromFilesystem = async () => {
+            if (cachedFamilyFilesystem !== void 0) {
+                return cachedFamilyFilesystem;
+            }
+            cachedFamilyFilesystem = null;
+            try {
+                const lddContent = await readFile(LDD_PATH);
+                cachedFamilyFilesystem = getFamilyFromLddContent(lddContent);
+            } catch (e2) {}
+            return cachedFamilyFilesystem;
+        };
+        var familyFromFilesystemSync = () => {
+            if (cachedFamilyFilesystem !== void 0) {
+                return cachedFamilyFilesystem;
+            }
+            cachedFamilyFilesystem = null;
+            try {
+                const lddContent = readFileSync2(LDD_PATH);
+                cachedFamilyFilesystem = getFamilyFromLddContent(lddContent);
+            } catch (e2) {}
+            return cachedFamilyFilesystem;
+        };
+        var family = async () => {
+            let family2 = null;
+            if (isLinux()) {
+                family2 = await familyFromFilesystem();
+                if (!family2) {
+                    family2 = familyFromReport();
+                }
+                if (!family2) {
+                    const out = await safeCommand();
+                    family2 = familyFromCommand(out);
+                }
+            }
+            return family2;
+        };
+        var familySync = () => {
+            let family2 = null;
+            if (isLinux()) {
+                family2 = familyFromFilesystemSync();
+                if (!family2) {
+                    family2 = familyFromReport();
+                }
+                if (!family2) {
+                    const out = safeCommandSync();
+                    family2 = familyFromCommand(out);
+                }
+            }
+            return family2;
+        };
+        var isNonGlibcLinux = async () => isLinux() && (await family()) !== GLIBC;
+        var isNonGlibcLinuxSync = () => isLinux() && familySync() !== GLIBC;
+        var versionFromFilesystem = async () => {
+            if (cachedVersionFilesystem !== void 0) {
+                return cachedVersionFilesystem;
+            }
+            cachedVersionFilesystem = null;
+            try {
+                const lddContent = await readFile(LDD_PATH);
+                const versionMatch = lddContent.match(RE_GLIBC_VERSION);
+                if (versionMatch) {
+                    cachedVersionFilesystem = versionMatch[1];
+                }
+            } catch (e2) {}
+            return cachedVersionFilesystem;
+        };
+        var versionFromFilesystemSync = () => {
+            if (cachedVersionFilesystem !== void 0) {
+                return cachedVersionFilesystem;
+            }
+            cachedVersionFilesystem = null;
+            try {
+                const lddContent = readFileSync2(LDD_PATH);
+                const versionMatch = lddContent.match(RE_GLIBC_VERSION);
+                if (versionMatch) {
+                    cachedVersionFilesystem = versionMatch[1];
+                }
+            } catch (e2) {}
+            return cachedVersionFilesystem;
+        };
+        var versionFromReport = () => {
+            const report = getReport();
+            if (report.header && report.header.glibcVersionRuntime) {
+                return report.header.glibcVersionRuntime;
+            }
+            return null;
+        };
+        var versionSuffix = (s2) => s2.trim().split(/\s+/)[1];
+        var versionFromCommand = (out) => {
+            const [getconf, ldd1, ldd2] = out.split(/[\r\n]+/);
+            if (getconf && getconf.includes(GLIBC)) {
+                return versionSuffix(getconf);
+            }
+            if (ldd1 && ldd2 && ldd1.includes(MUSL)) {
+                return versionSuffix(ldd2);
+            }
+            return null;
+        };
+        var version = async () => {
+            let version2 = null;
+            if (isLinux()) {
+                version2 = await versionFromFilesystem();
+                if (!version2) {
+                    version2 = versionFromReport();
+                }
+                if (!version2) {
+                    const out = await safeCommand();
+                    version2 = versionFromCommand(out);
+                }
+            }
+            return version2;
+        };
+        var versionSync = () => {
+            let version2 = null;
+            if (isLinux()) {
+                version2 = versionFromFilesystemSync();
+                if (!version2) {
+                    version2 = versionFromReport();
+                }
+                if (!version2) {
+                    const out = safeCommandSync();
+                    version2 = versionFromCommand(out);
+                }
+            }
+            return version2;
+        };
+        module2.exports = {
+            GLIBC,
+            MUSL,
+            family,
+            familySync,
+            isNonGlibcLinux,
+            isNonGlibcLinuxSync,
+            version,
+            versionSync,
+        };
+    },
+});
+
+// node_modules/semver/internal/debug.js
+var require_debug = __commonJS({
+    'node_modules/semver/internal/debug.js'(exports2, module2) {
+        var debug =
+            typeof process === 'object' &&
+            process.env &&
+            process.env.NODE_DEBUG &&
+            /\bsemver\b/i.test(process.env.NODE_DEBUG)
+                ? (...args) => console.error('SEMVER', ...args)
+                : () => {};
+        module2.exports = debug;
+    },
+});
+
+// node_modules/semver/internal/constants.js
+var require_constants = __commonJS({
+    'node_modules/semver/internal/constants.js'(exports2, module2) {
+        var SEMVER_SPEC_VERSION = '2.0.0';
+        var MAX_LENGTH = 256;
+        var MAX_SAFE_INTEGER =
+            Number.MAX_SAFE_INTEGER /* istanbul ignore next */ || 9007199254740991;
+        var MAX_SAFE_COMPONENT_LENGTH = 16;
+        var MAX_SAFE_BUILD_LENGTH = MAX_LENGTH - 6;
+        var RELEASE_TYPES = [
+            'major',
+            'premajor',
+            'minor',
+            'preminor',
+            'patch',
+            'prepatch',
+            'prerelease',
+        ];
+        module2.exports = {
+            MAX_LENGTH,
+            MAX_SAFE_COMPONENT_LENGTH,
+            MAX_SAFE_BUILD_LENGTH,
+            MAX_SAFE_INTEGER,
+            RELEASE_TYPES,
+            SEMVER_SPEC_VERSION,
+            FLAG_INCLUDE_PRERELEASE: 1,
+            FLAG_LOOSE: 2,
+        };
+    },
+});
+
+// node_modules/semver/internal/re.js
+var require_re = __commonJS({
+    'node_modules/semver/internal/re.js'(exports2, module2) {
+        var { MAX_SAFE_COMPONENT_LENGTH, MAX_SAFE_BUILD_LENGTH, MAX_LENGTH } = require_constants();
+        var debug = require_debug();
+        exports2 = module2.exports = {};
+        var re = (exports2.re = []);
+        var safeRe = (exports2.safeRe = []);
+        var src = (exports2.src = []);
+        var t2 = (exports2.t = {});
+        var R = 0;
+        var LETTERDASHNUMBER = '[a-zA-Z0-9-]';
+        var safeRegexReplacements = [
+            ['\\s', 1],
+            ['\\d', MAX_LENGTH],
+            [LETTERDASHNUMBER, MAX_SAFE_BUILD_LENGTH],
+        ];
+        var makeSafeRegex = (value) => {
+            for (const [token, max] of safeRegexReplacements) {
+                value = value
+                    .split(`${token}*`)
+                    .join(`${token}{0,${max}}`)
+                    .split(`${token}+`)
+                    .join(`${token}{1,${max}}`);
+            }
+            return value;
+        };
+        var createToken = (name, value, isGlobal) => {
+            const safe = makeSafeRegex(value);
+            const index2 = R++;
+            debug(name, index2, value);
+            t2[name] = index2;
+            src[index2] = value;
+            re[index2] = new RegExp(value, isGlobal ? 'g' : void 0);
+            safeRe[index2] = new RegExp(safe, isGlobal ? 'g' : void 0);
+        };
+        createToken('NUMERICIDENTIFIER', '0|[1-9]\\d*');
+        createToken('NUMERICIDENTIFIERLOOSE', '\\d+');
+        createToken('NONNUMERICIDENTIFIER', `\\d*[a-zA-Z-]${LETTERDASHNUMBER}*`);
+        createToken(
+            'MAINVERSION',
+            `(${src[t2.NUMERICIDENTIFIER]})\\.(${src[t2.NUMERICIDENTIFIER]})\\.(${src[t2.NUMERICIDENTIFIER]})`,
+        );
+        createToken(
+            'MAINVERSIONLOOSE',
+            `(${src[t2.NUMERICIDENTIFIERLOOSE]})\\.(${src[t2.NUMERICIDENTIFIERLOOSE]})\\.(${src[t2.NUMERICIDENTIFIERLOOSE]})`,
+        );
+        createToken(
+            'PRERELEASEIDENTIFIER',
+            `(?:${src[t2.NUMERICIDENTIFIER]}|${src[t2.NONNUMERICIDENTIFIER]})`,
+        );
+        createToken(
+            'PRERELEASEIDENTIFIERLOOSE',
+            `(?:${src[t2.NUMERICIDENTIFIERLOOSE]}|${src[t2.NONNUMERICIDENTIFIER]})`,
+        );
+        createToken(
+            'PRERELEASE',
+            `(?:-(${src[t2.PRERELEASEIDENTIFIER]}(?:\\.${src[t2.PRERELEASEIDENTIFIER]})*))`,
+        );
+        createToken(
+            'PRERELEASELOOSE',
+            `(?:-?(${src[t2.PRERELEASEIDENTIFIERLOOSE]}(?:\\.${src[t2.PRERELEASEIDENTIFIERLOOSE]})*))`,
+        );
+        createToken('BUILDIDENTIFIER', `${LETTERDASHNUMBER}+`);
+        createToken(
+            'BUILD',
+            `(?:\\+(${src[t2.BUILDIDENTIFIER]}(?:\\.${src[t2.BUILDIDENTIFIER]})*))`,
+        );
+        createToken('FULLPLAIN', `v?${src[t2.MAINVERSION]}${src[t2.PRERELEASE]}?${src[t2.BUILD]}?`);
+        createToken('FULL', `^${src[t2.FULLPLAIN]}$`);
+        createToken(
+            'LOOSEPLAIN',
+            `[v=\\s]*${src[t2.MAINVERSIONLOOSE]}${src[t2.PRERELEASELOOSE]}?${src[t2.BUILD]}?`,
+        );
+        createToken('LOOSE', `^${src[t2.LOOSEPLAIN]}$`);
+        createToken('GTLT', '((?:<|>)?=?)');
+        createToken('XRANGEIDENTIFIERLOOSE', `${src[t2.NUMERICIDENTIFIERLOOSE]}|x|X|\\*`);
+        createToken('XRANGEIDENTIFIER', `${src[t2.NUMERICIDENTIFIER]}|x|X|\\*`);
+        createToken(
+            'XRANGEPLAIN',
+            `[v=\\s]*(${src[t2.XRANGEIDENTIFIER]})(?:\\.(${src[t2.XRANGEIDENTIFIER]})(?:\\.(${src[t2.XRANGEIDENTIFIER]})(?:${src[t2.PRERELEASE]})?${src[t2.BUILD]}?)?)?`,
+        );
+        createToken(
+            'XRANGEPLAINLOOSE',
+            `[v=\\s]*(${src[t2.XRANGEIDENTIFIERLOOSE]})(?:\\.(${src[t2.XRANGEIDENTIFIERLOOSE]})(?:\\.(${src[t2.XRANGEIDENTIFIERLOOSE]})(?:${src[t2.PRERELEASELOOSE]})?${src[t2.BUILD]}?)?)?`,
+        );
+        createToken('XRANGE', `^${src[t2.GTLT]}\\s*${src[t2.XRANGEPLAIN]}$`);
+        createToken('XRANGELOOSE', `^${src[t2.GTLT]}\\s*${src[t2.XRANGEPLAINLOOSE]}$`);
+        createToken(
+            'COERCEPLAIN',
+            `${'(^|[^\\d])(\\d{1,'}${MAX_SAFE_COMPONENT_LENGTH}})(?:\\.(\\d{1,${MAX_SAFE_COMPONENT_LENGTH}}))?(?:\\.(\\d{1,${MAX_SAFE_COMPONENT_LENGTH}}))?`,
+        );
+        createToken('COERCE', `${src[t2.COERCEPLAIN]}(?:$|[^\\d])`);
+        createToken(
+            'COERCEFULL',
+            src[t2.COERCEPLAIN] + `(?:${src[t2.PRERELEASE]})?(?:${src[t2.BUILD]})?(?:$|[^\\d])`,
+        );
+        createToken('COERCERTL', src[t2.COERCE], true);
+        createToken('COERCERTLFULL', src[t2.COERCEFULL], true);
+        createToken('LONETILDE', '(?:~>?)');
+        createToken('TILDETRIM', `(\\s*)${src[t2.LONETILDE]}\\s+`, true);
+        exports2.tildeTrimReplace = '$1~';
+        createToken('TILDE', `^${src[t2.LONETILDE]}${src[t2.XRANGEPLAIN]}$`);
+        createToken('TILDELOOSE', `^${src[t2.LONETILDE]}${src[t2.XRANGEPLAINLOOSE]}$`);
+        createToken('LONECARET', '(?:\\^)');
+        createToken('CARETTRIM', `(\\s*)${src[t2.LONECARET]}\\s+`, true);
+        exports2.caretTrimReplace = '$1^';
+        createToken('CARET', `^${src[t2.LONECARET]}${src[t2.XRANGEPLAIN]}$`);
+        createToken('CARETLOOSE', `^${src[t2.LONECARET]}${src[t2.XRANGEPLAINLOOSE]}$`);
+        createToken('COMPARATORLOOSE', `^${src[t2.GTLT]}\\s*(${src[t2.LOOSEPLAIN]})$|^$`);
+        createToken('COMPARATOR', `^${src[t2.GTLT]}\\s*(${src[t2.FULLPLAIN]})$|^$`);
+        createToken(
+            'COMPARATORTRIM',
+            `(\\s*)${src[t2.GTLT]}\\s*(${src[t2.LOOSEPLAIN]}|${src[t2.XRANGEPLAIN]})`,
+            true,
+        );
+        exports2.comparatorTrimReplace = '$1$2$3';
+        createToken(
+            'HYPHENRANGE',
+            `^\\s*(${src[t2.XRANGEPLAIN]})\\s+-\\s+(${src[t2.XRANGEPLAIN]})\\s*$`,
+        );
+        createToken(
+            'HYPHENRANGELOOSE',
+            `^\\s*(${src[t2.XRANGEPLAINLOOSE]})\\s+-\\s+(${src[t2.XRANGEPLAINLOOSE]})\\s*$`,
+        );
+        createToken('STAR', '(<|>)?=?\\s*\\*');
+        createToken('GTE0', '^\\s*>=\\s*0\\.0\\.0\\s*$');
+        createToken('GTE0PRE', '^\\s*>=\\s*0\\.0\\.0-0\\s*$');
+    },
+});
+
+// node_modules/semver/internal/parse-options.js
+var require_parse_options = __commonJS({
+    'node_modules/semver/internal/parse-options.js'(exports2, module2) {
+        var looseOption = Object.freeze({ loose: true });
+        var emptyOpts = Object.freeze({});
+        var parseOptions = (options2) => {
+            if (!options2) {
+                return emptyOpts;
+            }
+            if (typeof options2 !== 'object') {
+                return looseOption;
+            }
+            return options2;
+        };
+        module2.exports = parseOptions;
+    },
+});
+
+// node_modules/semver/internal/identifiers.js
+var require_identifiers = __commonJS({
+    'node_modules/semver/internal/identifiers.js'(exports2, module2) {
+        var numeric = /^[0-9]+$/;
+        var compareIdentifiers = (a, b) => {
+            const anum = numeric.test(a);
+            const bnum = numeric.test(b);
+            if (anum && bnum) {
+                a = +a;
+                b = +b;
+            }
+            return a === b ? 0 : anum && !bnum ? -1 : bnum && !anum ? 1 : a < b ? -1 : 1;
+        };
+        var rcompareIdentifiers = (a, b) => compareIdentifiers(b, a);
+        module2.exports = {
+            compareIdentifiers,
+            rcompareIdentifiers,
+        };
+    },
+});
+
+// node_modules/semver/classes/semver.js
+var require_semver = __commonJS({
+    'node_modules/semver/classes/semver.js'(exports2, module2) {
+        var debug = require_debug();
+        var { MAX_LENGTH, MAX_SAFE_INTEGER } = require_constants();
+        var { safeRe: re, t: t2 } = require_re();
+        var parseOptions = require_parse_options();
+        var { compareIdentifiers } = require_identifiers();
+        var SemVer = class _SemVer {
+            constructor(version, options2) {
+                options2 = parseOptions(options2);
+                if (version instanceof _SemVer) {
+                    if (
+                        version.loose === !!options2.loose &&
+                        version.includePrerelease === !!options2.includePrerelease
+                    ) {
+                        return version;
+                    } else {
+                        version = version.version;
+                    }
+                } else if (typeof version !== 'string') {
+                    throw new TypeError(
+                        `Invalid version. Must be a string. Got type "${typeof version}".`,
+                    );
+                }
+                if (version.length > MAX_LENGTH) {
+                    throw new TypeError(`version is longer than ${MAX_LENGTH} characters`);
+                }
+                debug('SemVer', version, options2);
+                this.options = options2;
+                this.loose = !!options2.loose;
+                this.includePrerelease = !!options2.includePrerelease;
+                const m2 = version.trim().match(options2.loose ? re[t2.LOOSE] : re[t2.FULL]);
+                if (!m2) {
+                    throw new TypeError(`Invalid Version: ${version}`);
+                }
+                this.raw = version;
+                this.major = +m2[1];
+                this.minor = +m2[2];
+                this.patch = +m2[3];
+                if (this.major > MAX_SAFE_INTEGER || this.major < 0) {
+                    throw new TypeError('Invalid major version');
+                }
+                if (this.minor > MAX_SAFE_INTEGER || this.minor < 0) {
+                    throw new TypeError('Invalid minor version');
+                }
+                if (this.patch > MAX_SAFE_INTEGER || this.patch < 0) {
+                    throw new TypeError('Invalid patch version');
+                }
+                if (!m2[4]) {
+                    this.prerelease = [];
+                } else {
+                    this.prerelease = m2[4].split('.').map((id) => {
+                        if (/^[0-9]+$/.test(id)) {
+                            const num = +id;
+                            if (num >= 0 && num < MAX_SAFE_INTEGER) {
+                                return num;
+                            }
+                        }
+                        return id;
+                    });
+                }
+                this.build = m2[5] ? m2[5].split('.') : [];
+                this.format();
+            }
+            format() {
+                this.version = `${this.major}.${this.minor}.${this.patch}`;
+                if (this.prerelease.length) {
+                    this.version += `-${this.prerelease.join('.')}`;
+                }
+                return this.version;
+            }
+            toString() {
+                return this.version;
+            }
+            compare(other) {
+                debug('SemVer.compare', this.version, this.options, other);
+                if (!(other instanceof _SemVer)) {
+                    if (typeof other === 'string' && other === this.version) {
+                        return 0;
+                    }
+                    other = new _SemVer(other, this.options);
+                }
+                if (other.version === this.version) {
+                    return 0;
+                }
+                return this.compareMain(other) || this.comparePre(other);
+            }
+            compareMain(other) {
+                if (!(other instanceof _SemVer)) {
+                    other = new _SemVer(other, this.options);
+                }
+                return (
+                    compareIdentifiers(this.major, other.major) ||
+                    compareIdentifiers(this.minor, other.minor) ||
+                    compareIdentifiers(this.patch, other.patch)
+                );
+            }
+            comparePre(other) {
+                if (!(other instanceof _SemVer)) {
+                    other = new _SemVer(other, this.options);
+                }
+                if (this.prerelease.length && !other.prerelease.length) {
+                    return -1;
+                } else if (!this.prerelease.length && other.prerelease.length) {
+                    return 1;
+                } else if (!this.prerelease.length && !other.prerelease.length) {
+                    return 0;
+                }
+                let i2 = 0;
+                do {
+                    const a = this.prerelease[i2];
+                    const b = other.prerelease[i2];
+                    debug('prerelease compare', i2, a, b);
+                    if (a === void 0 && b === void 0) {
+                        return 0;
+                    } else if (b === void 0) {
+                        return 1;
+                    } else if (a === void 0) {
+                        return -1;
+                    } else if (a === b) {
+                        continue;
+                    } else {
+                        return compareIdentifiers(a, b);
+                    }
+                } while (++i2);
+            }
+            compareBuild(other) {
+                if (!(other instanceof _SemVer)) {
+                    other = new _SemVer(other, this.options);
+                }
+                let i2 = 0;
+                do {
+                    const a = this.build[i2];
+                    const b = other.build[i2];
+                    debug('prerelease compare', i2, a, b);
+                    if (a === void 0 && b === void 0) {
+                        return 0;
+                    } else if (b === void 0) {
+                        return 1;
+                    } else if (a === void 0) {
+                        return -1;
+                    } else if (a === b) {
+                        continue;
+                    } else {
+                        return compareIdentifiers(a, b);
+                    }
+                } while (++i2);
+            }
+            // preminor will bump the version up to the next minor release, and immediately
+            // down to pre-release. premajor and prepatch work the same way.
+            inc(release, identifier, identifierBase) {
+                switch (release) {
+                    case 'premajor':
+                        this.prerelease.length = 0;
+                        this.patch = 0;
+                        this.minor = 0;
+                        this.major++;
+                        this.inc('pre', identifier, identifierBase);
+                        break;
+                    case 'preminor':
+                        this.prerelease.length = 0;
+                        this.patch = 0;
+                        this.minor++;
+                        this.inc('pre', identifier, identifierBase);
+                        break;
+                    case 'prepatch':
+                        this.prerelease.length = 0;
+                        this.inc('patch', identifier, identifierBase);
+                        this.inc('pre', identifier, identifierBase);
+                        break;
+                    case 'prerelease':
+                        if (this.prerelease.length === 0) {
+                            this.inc('patch', identifier, identifierBase);
+                        }
+                        this.inc('pre', identifier, identifierBase);
+                        break;
+                    case 'major':
+                        if (this.minor !== 0 || this.patch !== 0 || this.prerelease.length === 0) {
+                            this.major++;
+                        }
+                        this.minor = 0;
+                        this.patch = 0;
+                        this.prerelease = [];
+                        break;
+                    case 'minor':
+                        if (this.patch !== 0 || this.prerelease.length === 0) {
+                            this.minor++;
+                        }
+                        this.patch = 0;
+                        this.prerelease = [];
+                        break;
+                    case 'patch':
+                        if (this.prerelease.length === 0) {
+                            this.patch++;
+                        }
+                        this.prerelease = [];
+                        break;
+                    case 'pre': {
+                        const base = Number(identifierBase) ? 1 : 0;
+                        if (!identifier && identifierBase === false) {
+                            throw new Error('invalid increment argument: identifier is empty');
+                        }
+                        if (this.prerelease.length === 0) {
+                            this.prerelease = [base];
+                        } else {
+                            let i2 = this.prerelease.length;
+                            while (--i2 >= 0) {
+                                if (typeof this.prerelease[i2] === 'number') {
+                                    this.prerelease[i2]++;
+                                    i2 = -2;
+                                }
+                            }
+                            if (i2 === -1) {
+                                if (
+                                    identifier === this.prerelease.join('.') &&
+                                    identifierBase === false
+                                ) {
+                                    throw new Error(
+                                        'invalid increment argument: identifier already exists',
+                                    );
+                                }
+                                this.prerelease.push(base);
+                            }
+                        }
+                        if (identifier) {
+                            let prerelease = [identifier, base];
+                            if (identifierBase === false) {
+                                prerelease = [identifier];
+                            }
+                            if (compareIdentifiers(this.prerelease[0], identifier) === 0) {
+                                if (isNaN(this.prerelease[1])) {
+                                    this.prerelease = prerelease;
+                                }
+                            } else {
+                                this.prerelease = prerelease;
+                            }
+                        }
+                        break;
+                    }
+                    default:
+                        throw new Error(`invalid increment argument: ${release}`);
+                }
+                this.raw = this.format();
+                if (this.build.length) {
+                    this.raw += `+${this.build.join('.')}`;
+                }
+                return this;
+            }
+        };
+        module2.exports = SemVer;
+    },
+});
+
+// node_modules/semver/functions/parse.js
+var require_parse3 = __commonJS({
+    'node_modules/semver/functions/parse.js'(exports2, module2) {
+        var SemVer = require_semver();
+        var parse8 = (version, options2, throwErrors = false) => {
+            if (version instanceof SemVer) {
+                return version;
+            }
+            try {
+                return new SemVer(version, options2);
+            } catch (er) {
+                if (!throwErrors) {
+                    return null;
+                }
+                throw er;
+            }
+        };
+        module2.exports = parse8;
+    },
+});
+
+// node_modules/semver/functions/coerce.js
+var require_coerce = __commonJS({
+    'node_modules/semver/functions/coerce.js'(exports2, module2) {
+        var SemVer = require_semver();
+        var parse8 = require_parse3();
+        var { safeRe: re, t: t2 } = require_re();
+        var coerce = (version, options2) => {
+            if (version instanceof SemVer) {
+                return version;
+            }
+            if (typeof version === 'number') {
+                version = String(version);
+            }
+            if (typeof version !== 'string') {
+                return null;
+            }
+            options2 = options2 || {};
+            let match = null;
+            if (!options2.rtl) {
+                match = version.match(
+                    options2.includePrerelease ? re[t2.COERCEFULL] : re[t2.COERCE],
+                );
+            } else {
+                const coerceRtlRegex = options2.includePrerelease
+                    ? re[t2.COERCERTLFULL]
+                    : re[t2.COERCERTL];
+                let next2;
+                while (
+                    (next2 = coerceRtlRegex.exec(version)) &&
+                    (!match || match.index + match[0].length !== version.length)
+                ) {
+                    if (!match || next2.index + next2[0].length !== match.index + match[0].length) {
+                        match = next2;
+                    }
+                    coerceRtlRegex.lastIndex = next2.index + next2[1].length + next2[2].length;
+                }
+                coerceRtlRegex.lastIndex = -1;
+            }
+            if (match === null) {
+                return null;
+            }
+            const major = match[2];
+            const minor = match[3] || '0';
+            const patch = match[4] || '0';
+            const prerelease = options2.includePrerelease && match[5] ? `-${match[5]}` : '';
+            const build = options2.includePrerelease && match[6] ? `+${match[6]}` : '';
+            return parse8(`${major}.${minor}.${patch}${prerelease}${build}`, options2);
+        };
+        module2.exports = coerce;
+    },
+});
+
+// node_modules/semver/functions/compare.js
+var require_compare = __commonJS({
+    'node_modules/semver/functions/compare.js'(exports2, module2) {
+        var SemVer = require_semver();
+        var compare = (a, b, loose) => new SemVer(a, loose).compare(new SemVer(b, loose));
+        module2.exports = compare;
+    },
+});
+
+// node_modules/semver/functions/gte.js
+var require_gte = __commonJS({
+    'node_modules/semver/functions/gte.js'(exports2, module2) {
+        var compare = require_compare();
+        var gte = (a, b, loose) => compare(a, b, loose) >= 0;
+        module2.exports = gte;
+    },
+});
+
+// node_modules/yallist/iterator.js
+var require_iterator = __commonJS({
+    'node_modules/yallist/iterator.js'(exports2, module2) {
+        'use strict';
+        module2.exports = function (Yallist) {
+            Yallist.prototype[Symbol.iterator] = function* () {
+                for (let walker = this.head; walker; walker = walker.next) {
+                    yield walker.value;
+                }
+            };
+        };
+    },
+});
+
+// node_modules/yallist/yallist.js
+var require_yallist = __commonJS({
+    'node_modules/yallist/yallist.js'(exports2, module2) {
+        'use strict';
+        module2.exports = Yallist;
+        Yallist.Node = Node2;
+        Yallist.create = Yallist;
+        function Yallist(list) {
+            var self2 = this;
+            if (!(self2 instanceof Yallist)) {
+                self2 = new Yallist();
+            }
+            self2.tail = null;
+            self2.head = null;
+            self2.length = 0;
+            if (list && typeof list.forEach === 'function') {
+                list.forEach(function (item) {
+                    self2.push(item);
+                });
+            } else if (arguments.length > 0) {
+                for (var i2 = 0, l = arguments.length; i2 < l; i2++) {
+                    self2.push(arguments[i2]);
+                }
+            }
+            return self2;
+        }
+        Yallist.prototype.removeNode = function (node) {
+            if (node.list !== this) {
+                throw new Error('removing node which does not belong to this list');
+            }
+            var next2 = node.next;
+            var prev2 = node.prev;
+            if (next2) {
+                next2.prev = prev2;
+            }
+            if (prev2) {
+                prev2.next = next2;
+            }
+            if (node === this.head) {
+                this.head = next2;
+            }
+            if (node === this.tail) {
+                this.tail = prev2;
+            }
+            node.list.length--;
+            node.next = null;
+            node.prev = null;
+            node.list = null;
+            return next2;
+        };
+        Yallist.prototype.unshiftNode = function (node) {
+            if (node === this.head) {
+                return;
+            }
+            if (node.list) {
+                node.list.removeNode(node);
+            }
+            var head = this.head;
+            node.list = this;
+            node.next = head;
+            if (head) {
+                head.prev = node;
+            }
+            this.head = node;
+            if (!this.tail) {
+                this.tail = node;
+            }
+            this.length++;
+        };
+        Yallist.prototype.pushNode = function (node) {
+            if (node === this.tail) {
+                return;
+            }
+            if (node.list) {
+                node.list.removeNode(node);
+            }
+            var tail = this.tail;
+            node.list = this;
+            node.prev = tail;
+            if (tail) {
+                tail.next = node;
+            }
+            this.tail = node;
+            if (!this.head) {
+                this.head = node;
+            }
+            this.length++;
+        };
+        Yallist.prototype.push = function () {
+            for (var i2 = 0, l = arguments.length; i2 < l; i2++) {
+                push(this, arguments[i2]);
+            }
+            return this.length;
+        };
+        Yallist.prototype.unshift = function () {
+            for (var i2 = 0, l = arguments.length; i2 < l; i2++) {
+                unshift(this, arguments[i2]);
+            }
+            return this.length;
+        };
+        Yallist.prototype.pop = function () {
+            if (!this.tail) {
+                return void 0;
+            }
+            var res = this.tail.value;
+            this.tail = this.tail.prev;
+            if (this.tail) {
+                this.tail.next = null;
+            } else {
+                this.head = null;
+            }
+            this.length--;
+            return res;
+        };
+        Yallist.prototype.shift = function () {
+            if (!this.head) {
+                return void 0;
+            }
+            var res = this.head.value;
+            this.head = this.head.next;
+            if (this.head) {
+                this.head.prev = null;
+            } else {
+                this.tail = null;
+            }
+            this.length--;
+            return res;
+        };
+        Yallist.prototype.forEach = function (fn, thisp) {
+            thisp = thisp || this;
+            for (var walker = this.head, i2 = 0; walker !== null; i2++) {
+                fn.call(thisp, walker.value, i2, this);
+                walker = walker.next;
+            }
+        };
+        Yallist.prototype.forEachReverse = function (fn, thisp) {
+            thisp = thisp || this;
+            for (var walker = this.tail, i2 = this.length - 1; walker !== null; i2--) {
+                fn.call(thisp, walker.value, i2, this);
+                walker = walker.prev;
+            }
+        };
+        Yallist.prototype.get = function (n) {
+            for (var i2 = 0, walker = this.head; walker !== null && i2 < n; i2++) {
+                walker = walker.next;
+            }
+            if (i2 === n && walker !== null) {
+                return walker.value;
+            }
+        };
+        Yallist.prototype.getReverse = function (n) {
+            for (var i2 = 0, walker = this.tail; walker !== null && i2 < n; i2++) {
+                walker = walker.prev;
+            }
+            if (i2 === n && walker !== null) {
+                return walker.value;
+            }
+        };
+        Yallist.prototype.map = function (fn, thisp) {
+            thisp = thisp || this;
+            var res = new Yallist();
+            for (var walker = this.head; walker !== null; ) {
+                res.push(fn.call(thisp, walker.value, this));
+                walker = walker.next;
+            }
+            return res;
+        };
+        Yallist.prototype.mapReverse = function (fn, thisp) {
+            thisp = thisp || this;
+            var res = new Yallist();
+            for (var walker = this.tail; walker !== null; ) {
+                res.push(fn.call(thisp, walker.value, this));
+                walker = walker.prev;
+            }
+            return res;
+        };
+        Yallist.prototype.reduce = function (fn, initial) {
+            var acc;
+            var walker = this.head;
+            if (arguments.length > 1) {
+                acc = initial;
+            } else if (this.head) {
+                walker = this.head.next;
+                acc = this.head.value;
+            } else {
+                throw new TypeError('Reduce of empty list with no initial value');
+            }
+            for (var i2 = 0; walker !== null; i2++) {
+                acc = fn(acc, walker.value, i2);
+                walker = walker.next;
+            }
+            return acc;
+        };
+        Yallist.prototype.reduceReverse = function (fn, initial) {
+            var acc;
+            var walker = this.tail;
+            if (arguments.length > 1) {
+                acc = initial;
+            } else if (this.tail) {
+                walker = this.tail.prev;
+                acc = this.tail.value;
+            } else {
+                throw new TypeError('Reduce of empty list with no initial value');
+            }
+            for (var i2 = this.length - 1; walker !== null; i2--) {
+                acc = fn(acc, walker.value, i2);
+                walker = walker.prev;
+            }
+            return acc;
+        };
+        Yallist.prototype.toArray = function () {
+            var arr = new Array(this.length);
+            for (var i2 = 0, walker = this.head; walker !== null; i2++) {
+                arr[i2] = walker.value;
+                walker = walker.next;
+            }
+            return arr;
+        };
+        Yallist.prototype.toArrayReverse = function () {
+            var arr = new Array(this.length);
+            for (var i2 = 0, walker = this.tail; walker !== null; i2++) {
+                arr[i2] = walker.value;
+                walker = walker.prev;
+            }
+            return arr;
+        };
+        Yallist.prototype.slice = function (from, to) {
+            to = to || this.length;
+            if (to < 0) {
+                to += this.length;
+            }
+            from = from || 0;
+            if (from < 0) {
+                from += this.length;
+            }
+            var ret = new Yallist();
+            if (to < from || to < 0) {
+                return ret;
+            }
+            if (from < 0) {
+                from = 0;
+            }
+            if (to > this.length) {
+                to = this.length;
+            }
+            for (var i2 = 0, walker = this.head; walker !== null && i2 < from; i2++) {
+                walker = walker.next;
+            }
+            for (; walker !== null && i2 < to; i2++, walker = walker.next) {
+                ret.push(walker.value);
+            }
+            return ret;
+        };
+        Yallist.prototype.sliceReverse = function (from, to) {
+            to = to || this.length;
+            if (to < 0) {
+                to += this.length;
+            }
+            from = from || 0;
+            if (from < 0) {
+                from += this.length;
+            }
+            var ret = new Yallist();
+            if (to < from || to < 0) {
+                return ret;
+            }
+            if (from < 0) {
+                from = 0;
+            }
+            if (to > this.length) {
+                to = this.length;
+            }
+            for (var i2 = this.length, walker = this.tail; walker !== null && i2 > to; i2--) {
+                walker = walker.prev;
+            }
+            for (; walker !== null && i2 > from; i2--, walker = walker.prev) {
+                ret.push(walker.value);
+            }
+            return ret;
+        };
+        Yallist.prototype.splice = function (start, deleteCount, ...nodes) {
+            if (start > this.length) {
+                start = this.length - 1;
+            }
+            if (start < 0) {
+                start = this.length + start;
+            }
+            for (var i2 = 0, walker = this.head; walker !== null && i2 < start; i2++) {
+                walker = walker.next;
+            }
+            var ret = [];
+            for (var i2 = 0; walker && i2 < deleteCount; i2++) {
+                ret.push(walker.value);
+                walker = this.removeNode(walker);
+            }
+            if (walker === null) {
+                walker = this.tail;
+            }
+            if (walker !== this.head && walker !== this.tail) {
+                walker = walker.prev;
+            }
+            for (var i2 = 0; i2 < nodes.length; i2++) {
+                walker = insert(this, walker, nodes[i2]);
+            }
+            return ret;
+        };
+        Yallist.prototype.reverse = function () {
+            var head = this.head;
+            var tail = this.tail;
+            for (var walker = head; walker !== null; walker = walker.prev) {
+                var p = walker.prev;
+                walker.prev = walker.next;
+                walker.next = p;
+            }
+            this.head = tail;
+            this.tail = head;
+            return this;
+        };
+        function insert(self2, node, value) {
+            var inserted =
+                node === self2.head
+                    ? new Node2(value, null, node, self2)
+                    : new Node2(value, node, node.next, self2);
+            if (inserted.next === null) {
+                self2.tail = inserted;
+            }
+            if (inserted.prev === null) {
+                self2.head = inserted;
+            }
+            self2.length++;
+            return inserted;
+        }
+        function push(self2, item) {
+            self2.tail = new Node2(item, self2.tail, null, self2);
+            if (!self2.head) {
+                self2.head = self2.tail;
+            }
+            self2.length++;
+        }
+        function unshift(self2, item) {
+            self2.head = new Node2(item, null, self2.head, self2);
+            if (!self2.tail) {
+                self2.tail = self2.head;
+            }
+            self2.length++;
+        }
+        function Node2(value, prev2, next2, list) {
+            if (!(this instanceof Node2)) {
+                return new Node2(value, prev2, next2, list);
+            }
+            this.list = list;
+            this.value = value;
+            if (prev2) {
+                prev2.next = this;
+                this.prev = prev2;
+            } else {
+                this.prev = null;
+            }
+            if (next2) {
+                next2.prev = this;
+                this.next = next2;
+            } else {
+                this.next = null;
+            }
+        }
+        try {
+            require_iterator()(Yallist);
+        } catch (er) {}
+    },
+});
+
+// node_modules/lru-cache/index.js
+var require_lru_cache = __commonJS({
+    'node_modules/lru-cache/index.js'(exports2, module2) {
+        'use strict';
+        var Yallist = require_yallist();
+        var MAX = Symbol('max');
+        var LENGTH = Symbol('length');
+        var LENGTH_CALCULATOR = Symbol('lengthCalculator');
+        var ALLOW_STALE = Symbol('allowStale');
+        var MAX_AGE = Symbol('maxAge');
+        var DISPOSE = Symbol('dispose');
+        var NO_DISPOSE_ON_SET = Symbol('noDisposeOnSet');
+        var LRU_LIST = Symbol('lruList');
+        var CACHE = Symbol('cache');
+        var UPDATE_AGE_ON_GET = Symbol('updateAgeOnGet');
+        var naiveLength = () => 1;
+        var LRUCache = class {
+            constructor(options2) {
+                if (typeof options2 === 'number') options2 = { max: options2 };
+                if (!options2) options2 = {};
+                if (options2.max && (typeof options2.max !== 'number' || options2.max < 0))
+                    throw new TypeError('max must be a non-negative number');
+                const max = (this[MAX] = options2.max || Infinity);
+                const lc = options2.length || naiveLength;
+                this[LENGTH_CALCULATOR] = typeof lc !== 'function' ? naiveLength : lc;
+                this[ALLOW_STALE] = options2.stale || false;
+                if (options2.maxAge && typeof options2.maxAge !== 'number')
+                    throw new TypeError('maxAge must be a number');
+                this[MAX_AGE] = options2.maxAge || 0;
+                this[DISPOSE] = options2.dispose;
+                this[NO_DISPOSE_ON_SET] = options2.noDisposeOnSet || false;
+                this[UPDATE_AGE_ON_GET] = options2.updateAgeOnGet || false;
+                this.reset();
+            }
+            // resize the cache when the max changes.
+            set max(mL) {
+                if (typeof mL !== 'number' || mL < 0)
+                    throw new TypeError('max must be a non-negative number');
+                this[MAX] = mL || Infinity;
+                trim(this);
+            }
+            get max() {
+                return this[MAX];
+            }
+            set allowStale(allowStale) {
+                this[ALLOW_STALE] = !!allowStale;
+            }
+            get allowStale() {
+                return this[ALLOW_STALE];
+            }
+            set maxAge(mA) {
+                if (typeof mA !== 'number')
+                    throw new TypeError('maxAge must be a non-negative number');
+                this[MAX_AGE] = mA;
+                trim(this);
+            }
+            get maxAge() {
+                return this[MAX_AGE];
+            }
+            // resize the cache when the lengthCalculator changes.
+            set lengthCalculator(lC) {
+                if (typeof lC !== 'function') lC = naiveLength;
+                if (lC !== this[LENGTH_CALCULATOR]) {
+                    this[LENGTH_CALCULATOR] = lC;
+                    this[LENGTH] = 0;
+                    this[LRU_LIST].forEach((hit) => {
+                        hit.length = this[LENGTH_CALCULATOR](hit.value, hit.key);
+                        this[LENGTH] += hit.length;
+                    });
+                }
+                trim(this);
+            }
+            get lengthCalculator() {
+                return this[LENGTH_CALCULATOR];
+            }
+            get length() {
+                return this[LENGTH];
+            }
+            get itemCount() {
+                return this[LRU_LIST].length;
+            }
+            rforEach(fn, thisp) {
+                thisp = thisp || this;
+                for (let walker = this[LRU_LIST].tail; walker !== null; ) {
+                    const prev2 = walker.prev;
+                    forEachStep(this, fn, walker, thisp);
+                    walker = prev2;
+                }
+            }
+            forEach(fn, thisp) {
+                thisp = thisp || this;
+                for (let walker = this[LRU_LIST].head; walker !== null; ) {
+                    const next2 = walker.next;
+                    forEachStep(this, fn, walker, thisp);
+                    walker = next2;
+                }
+            }
+            keys() {
+                return this[LRU_LIST].toArray().map((k) => k.key);
+            }
+            values() {
+                return this[LRU_LIST].toArray().map((k) => k.value);
+            }
+            reset() {
+                if (this[DISPOSE] && this[LRU_LIST] && this[LRU_LIST].length) {
+                    this[LRU_LIST].forEach((hit) => this[DISPOSE](hit.key, hit.value));
+                }
+                this[CACHE] = /* @__PURE__ */ new Map();
+                this[LRU_LIST] = new Yallist();
+                this[LENGTH] = 0;
+            }
+            dump() {
+                return this[LRU_LIST].map((hit) =>
+                    isStale(this, hit)
+                        ? false
+                        : {
+                              k: hit.key,
+                              v: hit.value,
+                              e: hit.now + (hit.maxAge || 0),
+                          },
+                )
+                    .toArray()
+                    .filter((h2) => h2);
+            }
+            dumpLru() {
+                return this[LRU_LIST];
+            }
+            set(key, value, maxAge) {
+                maxAge = maxAge || this[MAX_AGE];
+                if (maxAge && typeof maxAge !== 'number')
+                    throw new TypeError('maxAge must be a number');
+                const now = maxAge ? Date.now() : 0;
+                const len = this[LENGTH_CALCULATOR](value, key);
+                if (this[CACHE].has(key)) {
+                    if (len > this[MAX]) {
+                        del(this, this[CACHE].get(key));
+                        return false;
+                    }
+                    const node = this[CACHE].get(key);
+                    const item = node.value;
+                    if (this[DISPOSE]) {
+                        if (!this[NO_DISPOSE_ON_SET]) this[DISPOSE](key, item.value);
+                    }
+                    item.now = now;
+                    item.maxAge = maxAge;
+                    item.value = value;
+                    this[LENGTH] += len - item.length;
+                    item.length = len;
+                    this.get(key);
+                    trim(this);
+                    return true;
+                }
+                const hit = new Entry(key, value, len, now, maxAge);
+                if (hit.length > this[MAX]) {
+                    if (this[DISPOSE]) this[DISPOSE](key, value);
+                    return false;
+                }
+                this[LENGTH] += hit.length;
+                this[LRU_LIST].unshift(hit);
+                this[CACHE].set(key, this[LRU_LIST].head);
+                trim(this);
+                return true;
+            }
+            has(key) {
+                if (!this[CACHE].has(key)) return false;
+                const hit = this[CACHE].get(key).value;
+                return !isStale(this, hit);
+            }
+            get(key) {
+                return get2(this, key, true);
+            }
+            peek(key) {
+                return get2(this, key, false);
+            }
+            pop() {
+                const node = this[LRU_LIST].tail;
+                if (!node) return null;
+                del(this, node);
+                return node.value;
+            }
+            del(key) {
+                del(this, this[CACHE].get(key));
+            }
+            load(arr) {
+                this.reset();
+                const now = Date.now();
+                for (let l = arr.length - 1; l >= 0; l--) {
+                    const hit = arr[l];
+                    const expiresAt = hit.e || 0;
+                    if (expiresAt === 0) this.set(hit.k, hit.v);
+                    else {
+                        const maxAge = expiresAt - now;
+                        if (maxAge > 0) {
+                            this.set(hit.k, hit.v, maxAge);
+                        }
+                    }
+                }
+            }
+            prune() {
+                this[CACHE].forEach((value, key) => get2(this, key, false));
+            }
+        };
+        var get2 = (self2, key, doUse) => {
+            const node = self2[CACHE].get(key);
+            if (node) {
+                const hit = node.value;
+                if (isStale(self2, hit)) {
+                    del(self2, node);
+                    if (!self2[ALLOW_STALE]) return void 0;
+                } else {
+                    if (doUse) {
+                        if (self2[UPDATE_AGE_ON_GET]) node.value.now = Date.now();
+                        self2[LRU_LIST].unshiftNode(node);
+                    }
+                }
+                return hit.value;
+            }
+        };
+        var isStale = (self2, hit) => {
+            if (!hit || (!hit.maxAge && !self2[MAX_AGE])) return false;
+            const diff = Date.now() - hit.now;
+            return hit.maxAge ? diff > hit.maxAge : self2[MAX_AGE] && diff > self2[MAX_AGE];
+        };
+        var trim = (self2) => {
+            if (self2[LENGTH] > self2[MAX]) {
+                for (
+                    let walker = self2[LRU_LIST].tail;
+                    self2[LENGTH] > self2[MAX] && walker !== null;
+
+                ) {
+                    const prev2 = walker.prev;
+                    del(self2, walker);
+                    walker = prev2;
+                }
+            }
+        };
+        var del = (self2, node) => {
+            if (node) {
+                const hit = node.value;
+                if (self2[DISPOSE]) self2[DISPOSE](hit.key, hit.value);
+                self2[LENGTH] -= hit.length;
+                self2[CACHE].delete(hit.key);
+                self2[LRU_LIST].removeNode(node);
+            }
+        };
+        var Entry = class {
+            constructor(key, value, length, now, maxAge) {
+                this.key = key;
+                this.value = value;
+                this.length = length;
+                this.now = now;
+                this.maxAge = maxAge || 0;
+            }
+        };
+        var forEachStep = (self2, fn, node, thisp) => {
+            let hit = node.value;
+            if (isStale(self2, hit)) {
+                del(self2, node);
+                if (!self2[ALLOW_STALE]) hit = void 0;
+            }
+            if (hit) fn.call(thisp, hit.value, hit.key, self2);
+        };
+        module2.exports = LRUCache;
+    },
+});
+
+// node_modules/semver/functions/eq.js
+var require_eq = __commonJS({
+    'node_modules/semver/functions/eq.js'(exports2, module2) {
+        var compare = require_compare();
+        var eq2 = (a, b, loose) => compare(a, b, loose) === 0;
+        module2.exports = eq2;
+    },
+});
+
+// node_modules/semver/functions/neq.js
+var require_neq = __commonJS({
+    'node_modules/semver/functions/neq.js'(exports2, module2) {
+        var compare = require_compare();
+        var neq = (a, b, loose) => compare(a, b, loose) !== 0;
+        module2.exports = neq;
+    },
+});
+
+// node_modules/semver/functions/gt.js
+var require_gt = __commonJS({
+    'node_modules/semver/functions/gt.js'(exports2, module2) {
+        var compare = require_compare();
+        var gt = (a, b, loose) => compare(a, b, loose) > 0;
+        module2.exports = gt;
+    },
+});
+
+// node_modules/semver/functions/lt.js
+var require_lt = __commonJS({
+    'node_modules/semver/functions/lt.js'(exports2, module2) {
+        var compare = require_compare();
+        var lt = (a, b, loose) => compare(a, b, loose) < 0;
+        module2.exports = lt;
+    },
+});
+
+// node_modules/semver/functions/lte.js
+var require_lte = __commonJS({
+    'node_modules/semver/functions/lte.js'(exports2, module2) {
+        var compare = require_compare();
+        var lte = (a, b, loose) => compare(a, b, loose) <= 0;
+        module2.exports = lte;
+    },
+});
+
+// node_modules/semver/functions/cmp.js
+var require_cmp = __commonJS({
+    'node_modules/semver/functions/cmp.js'(exports2, module2) {
+        var eq2 = require_eq();
+        var neq = require_neq();
+        var gt = require_gt();
+        var gte = require_gte();
+        var lt = require_lt();
+        var lte = require_lte();
+        var cmp = (a, op, b, loose) => {
+            switch (op) {
+                case '===':
+                    if (typeof a === 'object') {
+                        a = a.version;
+                    }
+                    if (typeof b === 'object') {
+                        b = b.version;
+                    }
+                    return a === b;
+                case '!==':
+                    if (typeof a === 'object') {
+                        a = a.version;
+                    }
+                    if (typeof b === 'object') {
+                        b = b.version;
+                    }
+                    return a !== b;
+                case '':
+                case '=':
+                case '==':
+                    return eq2(a, b, loose);
+                case '!=':
+                    return neq(a, b, loose);
+                case '>':
+                    return gt(a, b, loose);
+                case '>=':
+                    return gte(a, b, loose);
+                case '<':
+                    return lt(a, b, loose);
+                case '<=':
+                    return lte(a, b, loose);
+                default:
+                    throw new TypeError(`Invalid operator: ${op}`);
+            }
+        };
+        module2.exports = cmp;
+    },
+});
+
+// node_modules/semver/classes/comparator.js
+var require_comparator = __commonJS({
+    'node_modules/semver/classes/comparator.js'(exports2, module2) {
+        var ANY = Symbol('SemVer ANY');
+        var Comparator = class _Comparator {
+            static get ANY() {
+                return ANY;
+            }
+            constructor(comp, options2) {
+                options2 = parseOptions(options2);
+                if (comp instanceof _Comparator) {
+                    if (comp.loose === !!options2.loose) {
+                        return comp;
+                    } else {
+                        comp = comp.value;
+                    }
+                }
+                comp = comp.trim().split(/\s+/).join(' ');
+                debug('comparator', comp, options2);
+                this.options = options2;
+                this.loose = !!options2.loose;
+                this.parse(comp);
+                if (this.semver === ANY) {
+                    this.value = '';
+                } else {
+                    this.value = this.operator + this.semver.version;
+                }
+                debug('comp', this);
+            }
+            parse(comp) {
+                const r2 = this.options.loose ? re[t2.COMPARATORLOOSE] : re[t2.COMPARATOR];
+                const m2 = comp.match(r2);
+                if (!m2) {
+                    throw new TypeError(`Invalid comparator: ${comp}`);
+                }
+                this.operator = m2[1] !== void 0 ? m2[1] : '';
+                if (this.operator === '=') {
+                    this.operator = '';
+                }
+                if (!m2[2]) {
+                    this.semver = ANY;
+                } else {
+                    this.semver = new SemVer(m2[2], this.options.loose);
+                }
+            }
+            toString() {
+                return this.value;
+            }
+            test(version) {
+                debug('Comparator.test', version, this.options.loose);
+                if (this.semver === ANY || version === ANY) {
+                    return true;
+                }
+                if (typeof version === 'string') {
+                    try {
+                        version = new SemVer(version, this.options);
+                    } catch (er) {
+                        return false;
+                    }
+                }
+                return cmp(version, this.operator, this.semver, this.options);
+            }
+            intersects(comp, options2) {
+                if (!(comp instanceof _Comparator)) {
+                    throw new TypeError('a Comparator is required');
+                }
+                if (this.operator === '') {
+                    if (this.value === '') {
+                        return true;
+                    }
+                    return new Range(comp.value, options2).test(this.value);
+                } else if (comp.operator === '') {
+                    if (comp.value === '') {
+                        return true;
+                    }
+                    return new Range(this.value, options2).test(comp.semver);
+                }
+                options2 = parseOptions(options2);
+                if (
+                    options2.includePrerelease &&
+                    (this.value === '<0.0.0-0' || comp.value === '<0.0.0-0')
+                ) {
+                    return false;
+                }
+                if (
+                    !options2.includePrerelease &&
+                    (this.value.startsWith('<0.0.0') || comp.value.startsWith('<0.0.0'))
+                ) {
+                    return false;
+                }
+                if (this.operator.startsWith('>') && comp.operator.startsWith('>')) {
+                    return true;
+                }
+                if (this.operator.startsWith('<') && comp.operator.startsWith('<')) {
+                    return true;
+                }
+                if (
+                    this.semver.version === comp.semver.version &&
+                    this.operator.includes('=') &&
+                    comp.operator.includes('=')
+                ) {
+                    return true;
+                }
+                if (
+                    cmp(this.semver, '<', comp.semver, options2) &&
+                    this.operator.startsWith('>') &&
+                    comp.operator.startsWith('<')
+                ) {
+                    return true;
+                }
+                if (
+                    cmp(this.semver, '>', comp.semver, options2) &&
+                    this.operator.startsWith('<') &&
+                    comp.operator.startsWith('>')
+                ) {
+                    return true;
+                }
+                return false;
+            }
+        };
+        module2.exports = Comparator;
+        var parseOptions = require_parse_options();
+        var { safeRe: re, t: t2 } = require_re();
+        var cmp = require_cmp();
+        var debug = require_debug();
+        var SemVer = require_semver();
+        var Range = require_range();
+    },
+});
+
+// node_modules/semver/classes/range.js
+var require_range = __commonJS({
+    'node_modules/semver/classes/range.js'(exports2, module2) {
+        var Range = class _Range {
+            constructor(range, options2) {
+                options2 = parseOptions(options2);
+                if (range instanceof _Range) {
+                    if (
+                        range.loose === !!options2.loose &&
+                        range.includePrerelease === !!options2.includePrerelease
+                    ) {
+                        return range;
+                    } else {
+                        return new _Range(range.raw, options2);
+                    }
+                }
+                if (range instanceof Comparator) {
+                    this.raw = range.value;
+                    this.set = [[range]];
+                    this.format();
+                    return this;
+                }
+                this.options = options2;
+                this.loose = !!options2.loose;
+                this.includePrerelease = !!options2.includePrerelease;
+                this.raw = range.trim().split(/\s+/).join(' ');
+                this.set = this.raw
+                    .split('||')
+                    .map((r2) => this.parseRange(r2.trim()))
+                    .filter((c) => c.length);
+                if (!this.set.length) {
+                    throw new TypeError(`Invalid SemVer Range: ${this.raw}`);
+                }
+                if (this.set.length > 1) {
+                    const first2 = this.set[0];
+                    this.set = this.set.filter((c) => !isNullSet(c[0]));
+                    if (this.set.length === 0) {
+                        this.set = [first2];
+                    } else if (this.set.length > 1) {
+                        for (const c of this.set) {
+                            if (c.length === 1 && isAny(c[0])) {
+                                this.set = [c];
+                                break;
+                            }
+                        }
+                    }
+                }
+                this.format();
+            }
+            format() {
+                this.range = this.set
+                    .map((comps) => comps.join(' ').trim())
+                    .join('||')
+                    .trim();
+                return this.range;
+            }
+            toString() {
+                return this.range;
+            }
+            parseRange(range) {
+                const memoOpts =
+                    (this.options.includePrerelease && FLAG_INCLUDE_PRERELEASE) |
+                    (this.options.loose && FLAG_LOOSE);
+                const memoKey = memoOpts + ':' + range;
+                const cached = cache.get(memoKey);
+                if (cached) {
+                    return cached;
+                }
+                const loose = this.options.loose;
+                const hr = loose ? re[t2.HYPHENRANGELOOSE] : re[t2.HYPHENRANGE];
+                range = range.replace(hr, hyphenReplace(this.options.includePrerelease));
+                debug('hyphen replace', range);
+                range = range.replace(re[t2.COMPARATORTRIM], comparatorTrimReplace);
+                debug('comparator trim', range);
+                range = range.replace(re[t2.TILDETRIM], tildeTrimReplace);
+                debug('tilde trim', range);
+                range = range.replace(re[t2.CARETTRIM], caretTrimReplace);
+                debug('caret trim', range);
+                let rangeList = range
+                    .split(' ')
+                    .map((comp) => parseComparator(comp, this.options))
+                    .join(' ')
+                    .split(/\s+/)
+                    .map((comp) => replaceGTE0(comp, this.options));
+                if (loose) {
+                    rangeList = rangeList.filter((comp) => {
+                        debug('loose invalid filter', comp, this.options);
+                        return !!comp.match(re[t2.COMPARATORLOOSE]);
+                    });
+                }
+                debug('range list', rangeList);
+                const rangeMap = /* @__PURE__ */ new Map();
+                const comparators = rangeList.map((comp) => new Comparator(comp, this.options));
+                for (const comp of comparators) {
+                    if (isNullSet(comp)) {
+                        return [comp];
+                    }
+                    rangeMap.set(comp.value, comp);
+                }
+                if (rangeMap.size > 1 && rangeMap.has('')) {
+                    rangeMap.delete('');
+                }
+                const result = [...rangeMap.values()];
+                cache.set(memoKey, result);
+                return result;
+            }
+            intersects(range, options2) {
+                if (!(range instanceof _Range)) {
+                    throw new TypeError('a Range is required');
+                }
+                return this.set.some((thisComparators) => {
+                    return (
+                        isSatisfiable(thisComparators, options2) &&
+                        range.set.some((rangeComparators) => {
+                            return (
+                                isSatisfiable(rangeComparators, options2) &&
+                                thisComparators.every((thisComparator) => {
+                                    return rangeComparators.every((rangeComparator) => {
+                                        return thisComparator.intersects(rangeComparator, options2);
+                                    });
+                                })
+                            );
+                        })
+                    );
+                });
+            }
+            // if ANY of the sets match ALL of its comparators, then pass
+            test(version) {
+                if (!version) {
+                    return false;
+                }
+                if (typeof version === 'string') {
+                    try {
+                        version = new SemVer(version, this.options);
+                    } catch (er) {
+                        return false;
+                    }
+                }
+                for (let i2 = 0; i2 < this.set.length; i2++) {
+                    if (testSet(this.set[i2], version, this.options)) {
+                        return true;
+                    }
+                }
+                return false;
+            }
+        };
+        module2.exports = Range;
+        var LRU = require_lru_cache();
+        var cache = new LRU({ max: 1e3 });
+        var parseOptions = require_parse_options();
+        var Comparator = require_comparator();
+        var debug = require_debug();
+        var SemVer = require_semver();
+        var {
+            safeRe: re,
+            t: t2,
+            comparatorTrimReplace,
+            tildeTrimReplace,
+            caretTrimReplace,
+        } = require_re();
+        var { FLAG_INCLUDE_PRERELEASE, FLAG_LOOSE } = require_constants();
+        var isNullSet = (c) => c.value === '<0.0.0-0';
+        var isAny = (c) => c.value === '';
+        var isSatisfiable = (comparators, options2) => {
+            let result = true;
+            const remainingComparators = comparators.slice();
+            let testComparator = remainingComparators.pop();
+            while (result && remainingComparators.length) {
+                result = remainingComparators.every((otherComparator) => {
+                    return testComparator.intersects(otherComparator, options2);
+                });
+                testComparator = remainingComparators.pop();
+            }
+            return result;
+        };
+        var parseComparator = (comp, options2) => {
+            debug('comp', comp, options2);
+            comp = replaceCarets(comp, options2);
+            debug('caret', comp);
+            comp = replaceTildes(comp, options2);
+            debug('tildes', comp);
+            comp = replaceXRanges(comp, options2);
+            debug('xrange', comp);
+            comp = replaceStars(comp, options2);
+            debug('stars', comp);
+            return comp;
+        };
+        var isX = (id) => !id || id.toLowerCase() === 'x' || id === '*';
+        var replaceTildes = (comp, options2) => {
+            return comp
+                .trim()
+                .split(/\s+/)
+                .map((c) => replaceTilde(c, options2))
+                .join(' ');
+        };
+        var replaceTilde = (comp, options2) => {
+            const r2 = options2.loose ? re[t2.TILDELOOSE] : re[t2.TILDE];
+            return comp.replace(r2, (_, M, m2, p, pr) => {
+                debug('tilde', comp, _, M, m2, p, pr);
+                let ret;
+                if (isX(M)) {
+                    ret = '';
+                } else if (isX(m2)) {
+                    ret = `>=${M}.0.0 <${+M + 1}.0.0-0`;
+                } else if (isX(p)) {
+                    ret = `>=${M}.${m2}.0 <${M}.${+m2 + 1}.0-0`;
+                } else if (pr) {
+                    debug('replaceTilde pr', pr);
+                    ret = `>=${M}.${m2}.${p}-${pr} <${M}.${+m2 + 1}.0-0`;
+                } else {
+                    ret = `>=${M}.${m2}.${p} <${M}.${+m2 + 1}.0-0`;
+                }
+                debug('tilde return', ret);
+                return ret;
+            });
+        };
+        var replaceCarets = (comp, options2) => {
+            return comp
+                .trim()
+                .split(/\s+/)
+                .map((c) => replaceCaret(c, options2))
+                .join(' ');
+        };
+        var replaceCaret = (comp, options2) => {
+            debug('caret', comp, options2);
+            const r2 = options2.loose ? re[t2.CARETLOOSE] : re[t2.CARET];
+            const z = options2.includePrerelease ? '-0' : '';
+            return comp.replace(r2, (_, M, m2, p, pr) => {
+                debug('caret', comp, _, M, m2, p, pr);
+                let ret;
+                if (isX(M)) {
+                    ret = '';
+                } else if (isX(m2)) {
+                    ret = `>=${M}.0.0${z} <${+M + 1}.0.0-0`;
+                } else if (isX(p)) {
+                    if (M === '0') {
+                        ret = `>=${M}.${m2}.0${z} <${M}.${+m2 + 1}.0-0`;
+                    } else {
+                        ret = `>=${M}.${m2}.0${z} <${+M + 1}.0.0-0`;
+                    }
+                } else if (pr) {
+                    debug('replaceCaret pr', pr);
+                    if (M === '0') {
+                        if (m2 === '0') {
+                            ret = `>=${M}.${m2}.${p}-${pr} <${M}.${m2}.${+p + 1}-0`;
+                        } else {
+                            ret = `>=${M}.${m2}.${p}-${pr} <${M}.${+m2 + 1}.0-0`;
+                        }
+                    } else {
+                        ret = `>=${M}.${m2}.${p}-${pr} <${+M + 1}.0.0-0`;
+                    }
+                } else {
+                    debug('no pr');
+                    if (M === '0') {
+                        if (m2 === '0') {
+                            ret = `>=${M}.${m2}.${p}${z} <${M}.${m2}.${+p + 1}-0`;
+                        } else {
+                            ret = `>=${M}.${m2}.${p}${z} <${M}.${+m2 + 1}.0-0`;
+                        }
+                    } else {
+                        ret = `>=${M}.${m2}.${p} <${+M + 1}.0.0-0`;
+                    }
+                }
+                debug('caret return', ret);
+                return ret;
+            });
+        };
+        var replaceXRanges = (comp, options2) => {
+            debug('replaceXRanges', comp, options2);
+            return comp
+                .split(/\s+/)
+                .map((c) => replaceXRange(c, options2))
+                .join(' ');
+        };
+        var replaceXRange = (comp, options2) => {
+            comp = comp.trim();
+            const r2 = options2.loose ? re[t2.XRANGELOOSE] : re[t2.XRANGE];
+            return comp.replace(r2, (ret, gtlt, M, m2, p, pr) => {
+                debug('xRange', comp, ret, gtlt, M, m2, p, pr);
+                const xM = isX(M);
+                const xm = xM || isX(m2);
+                const xp = xm || isX(p);
+                const anyX = xp;
+                if (gtlt === '=' && anyX) {
+                    gtlt = '';
+                }
+                pr = options2.includePrerelease ? '-0' : '';
+                if (xM) {
+                    if (gtlt === '>' || gtlt === '<') {
+                        ret = '<0.0.0-0';
+                    } else {
+                        ret = '*';
+                    }
+                } else if (gtlt && anyX) {
+                    if (xm) {
+                        m2 = 0;
+                    }
+                    p = 0;
+                    if (gtlt === '>') {
+                        gtlt = '>=';
+                        if (xm) {
+                            M = +M + 1;
+                            m2 = 0;
+                            p = 0;
+                        } else {
+                            m2 = +m2 + 1;
+                            p = 0;
+                        }
+                    } else if (gtlt === '<=') {
+                        gtlt = '<';
+                        if (xm) {
+                            M = +M + 1;
+                        } else {
+                            m2 = +m2 + 1;
+                        }
+                    }
+                    if (gtlt === '<') {
+                        pr = '-0';
+                    }
+                    ret = `${gtlt + M}.${m2}.${p}${pr}`;
+                } else if (xm) {
+                    ret = `>=${M}.0.0${pr} <${+M + 1}.0.0-0`;
+                } else if (xp) {
+                    ret = `>=${M}.${m2}.0${pr} <${M}.${+m2 + 1}.0-0`;
+                }
+                debug('xRange return', ret);
+                return ret;
+            });
+        };
+        var replaceStars = (comp, options2) => {
+            debug('replaceStars', comp, options2);
+            return comp.trim().replace(re[t2.STAR], '');
+        };
+        var replaceGTE0 = (comp, options2) => {
+            debug('replaceGTE0', comp, options2);
+            return comp.trim().replace(re[options2.includePrerelease ? t2.GTE0PRE : t2.GTE0], '');
+        };
+        var hyphenReplace = (incPr) => ($0, from, fM, fm, fp, fpr, fb, to, tM, tm, tp, tpr, tb) => {
+            if (isX(fM)) {
+                from = '';
+            } else if (isX(fm)) {
+                from = `>=${fM}.0.0${incPr ? '-0' : ''}`;
+            } else if (isX(fp)) {
+                from = `>=${fM}.${fm}.0${incPr ? '-0' : ''}`;
+            } else if (fpr) {
+                from = `>=${from}`;
+            } else {
+                from = `>=${from}${incPr ? '-0' : ''}`;
+            }
+            if (isX(tM)) {
+                to = '';
+            } else if (isX(tm)) {
+                to = `<${+tM + 1}.0.0-0`;
+            } else if (isX(tp)) {
+                to = `<${tM}.${+tm + 1}.0-0`;
+            } else if (tpr) {
+                to = `<=${tM}.${tm}.${tp}-${tpr}`;
+            } else if (incPr) {
+                to = `<${tM}.${tm}.${+tp + 1}-0`;
+            } else {
+                to = `<=${to}`;
+            }
+            return `${from} ${to}`.trim();
+        };
+        var testSet = (set, version, options2) => {
+            for (let i2 = 0; i2 < set.length; i2++) {
+                if (!set[i2].test(version)) {
+                    return false;
+                }
+            }
+            if (version.prerelease.length && !options2.includePrerelease) {
+                for (let i2 = 0; i2 < set.length; i2++) {
+                    debug(set[i2].semver);
+                    if (set[i2].semver === Comparator.ANY) {
+                        continue;
+                    }
+                    if (set[i2].semver.prerelease.length > 0) {
+                        const allowed = set[i2].semver;
+                        if (
+                            allowed.major === version.major &&
+                            allowed.minor === version.minor &&
+                            allowed.patch === version.patch
+                        ) {
+                            return true;
+                        }
+                    }
+                }
+                return false;
+            }
+            return true;
+        };
+    },
+});
+
+// node_modules/semver/functions/satisfies.js
+var require_satisfies = __commonJS({
+    'node_modules/semver/functions/satisfies.js'(exports2, module2) {
+        var Range = require_range();
+        var satisfies = (version, range, options2) => {
+            try {
+                range = new Range(range, options2);
+            } catch (er) {
+                return false;
+            }
+            return range.test(version);
+        };
+        module2.exports = satisfies;
+    },
+});
+
+// node_modules/sharp/package.json
+var require_package = __commonJS({
+    'node_modules/sharp/package.json'(exports2, module2) {
+        module2.exports = {
+            name: 'sharp',
+            description:
+                'High performance Node.js image processing, the fastest module to resize JPEG, PNG, WebP, GIF, AVIF and TIFF images',
+            version: '0.33.2',
+            author: 'Lovell Fuller <npm@lovell.info>',
+            homepage: 'https://sharp.pixelplumbing.com',
+            contributors: [
+                'Pierre Inglebert <pierre.inglebert@gmail.com>',
+                'Jonathan Ong <jonathanrichardong@gmail.com>',
+                'Chanon Sajjamanochai <chanon.s@gmail.com>',
+                'Juliano Julio <julianojulio@gmail.com>',
+                'Daniel Gasienica <daniel@gasienica.ch>',
+                'Julian Walker <julian@fiftythree.com>',
+                'Amit Pitaru <pitaru.amit@gmail.com>',
+                'Brandon Aaron <hello.brandon@aaron.sh>',
+                'Andreas Lind <andreas@one.com>',
+                'Maurus Cuelenaere <mcuelenaere@gmail.com>',
+                'Linus Unneb\xE4ck <linus@folkdatorn.se>',
+                'Victor Mateevitsi <mvictoras@gmail.com>',
+                'Alaric Holloway <alaric.holloway@gmail.com>',
+                'Bernhard K. Weisshuhn <bkw@codingforce.com>',
+                'Chris Riley <criley@primedia.com>',
+                'David Carley <dacarley@gmail.com>',
+                'John Tobin <john@limelightmobileinc.com>',
+                'Kenton Gray <kentongray@gmail.com>',
+                'Felix B\xFCnemann <Felix.Buenemann@gmail.com>',
+                'Samy Al Zahrani <samyalzahrany@gmail.com>',
+                'Chintan Thakkar <lemnisk8@gmail.com>',
+                'F. Orlando Galashan <frulo@gmx.de>',
+                'Kleis Auke Wolthuizen <info@kleisauke.nl>',
+                'Matt Hirsch <mhirsch@media.mit.edu>',
+                'Matthias Thoemmes <thoemmes@gmail.com>',
+                'Patrick Paskaris <patrick@paskaris.gr>',
+                'J\xE9r\xE9my Lal <kapouer@melix.org>',
+                'Rahul Nanwani <r.nanwani@gmail.com>',
+                'Alice Monday <alice0meta@gmail.com>',
+                'Kristo Jorgenson <kristo.jorgenson@gmail.com>',
+                'YvesBos <yves_bos@outlook.com>',
+                'Guy Maliar <guy@tailorbrands.com>',
+                'Nicolas Coden <nicolas@ncoden.fr>',
+                'Matt Parrish <matt.r.parrish@gmail.com>',
+                'Marcel Bretschneider <marcel.bretschneider@gmail.com>',
+                'Matthew McEachen <matthew+github@mceachen.org>',
+                'Jarda Kot\u011B\u0161ovec <jarda.kotesovec@gmail.com>',
+                "Kenric D'Souza <kenric.dsouza@gmail.com>",
+                'Oleh Aleinyk <oleg.aleynik@gmail.com>',
+                'Marcel Bretschneider <marcel.bretschneider@gmail.com>',
+                'Andrea Bianco <andrea.bianco@unibas.ch>',
+                'Rik Heywood <rik@rik.org>',
+                'Thomas Parisot <hi@oncletom.io>',
+                'Nathan Graves <nathanrgraves+github@gmail.com>',
+                'Tom Lokhorst <tom@lokhorst.eu>',
+                'Espen Hovlandsdal <espen@hovlandsdal.com>',
+                'Sylvain Dumont <sylvain.dumont35@gmail.com>',
+                'Alun Davies <alun.owain.davies@googlemail.com>',
+                'Aidan Hoolachan <ajhoolachan21@gmail.com>',
+                'Axel Eirola <axel.eirola@iki.fi>',
+                'Freezy <freezy@xbmc.org>',
+                'Daiz <taneli.vatanen@gmail.com>',
+                'Julian Aubourg <j@ubourg.net>',
+                'Keith Belovay <keith@picthrive.com>',
+                'Michael B. Klein <mbklein@gmail.com>',
+                'Jordan Prudhomme <jordan@raboland.fr>',
+                'Ilya Ovdin <iovdin@gmail.com>',
+                'Andargor <andargor@yahoo.com>',
+                'Paul Neave <paul.neave@gmail.com>',
+                'Brendan Kennedy <brenwken@gmail.com>',
+                'Brychan Bennett-Odlum <git@brychan.io>',
+                'Edward Silverton <e.silverton@gmail.com>',
+                'Roman Malieiev <aromaleev@gmail.com>',
+                'Tomas Szabo <tomas.szabo@deftomat.com>',
+                "Robert O'Rourke <robert@o-rourke.org>",
+                'Guillermo Alfonso Varela Chouci\xF1o <guillevch@gmail.com>',
+                'Christian Flintrup <chr@gigahost.dk>',
+                'Manan Jadhav <manan@motionden.com>',
+                'Leon Radley <leon@radley.se>',
+                'alza54 <alza54@thiocod.in>',
+                'Jacob Smith <jacob@frende.me>',
+                'Michael Nutt <michael@nutt.im>',
+                'Brad Parham <baparham@gmail.com>',
+                'Taneli Vatanen <taneli.vatanen@gmail.com>',
+                'Joris Dugu\xE9 <zaruike10@gmail.com>',
+                'Chris Banks <christopher.bradley.banks@gmail.com>',
+                'Ompal Singh <ompal.hitm09@gmail.com>',
+                'Brodan <christopher.hranj@gmail.com',
+                'Ankur Parihar <ankur.github@gmail.com>',
+                'Brahim Ait elhaj <brahima@gmail.com>',
+                'Mart Jansink <m.jansink@gmail.com>',
+                'Lachlan Newman <lachnewman007@gmail.com>',
+                'Dennis Beatty <dennis@dcbeatty.com>',
+                'Ingvar Stepanyan <me@rreverser.com>',
+            ],
+            scripts: {
+                install: 'node install/check',
+                clean: 'rm -rf src/build/ .nyc_output/ coverage/ test/fixtures/output.*',
+                test: 'npm run test-lint && npm run test-unit && npm run test-licensing && npm run test-types',
+                'test-lint': 'semistandard && cpplint',
+                'test-unit':
+                    'nyc --reporter=lcov --reporter=text --check-coverage --branches=100 mocha',
+                'test-licensing':
+                    'license-checker --production --summary --onlyAllow="Apache-2.0;BSD;ISC;LGPL-3.0-or-later;MIT"',
+                'test-leak': './test/leak/leak.sh',
+                'test-types': 'tsd',
+                'package-from-local-build': 'node npm/from-local-build',
+                'package-from-github-release': 'node npm/from-github-release',
+                'docs-build': 'node docs/build && node docs/search-index/build',
+                'docs-serve': 'cd docs && npx serve',
+                'docs-publish':
+                    'cd docs && npx firebase-tools deploy --project pixelplumbing --only hosting:pixelplumbing-sharp',
+            },
+            type: 'commonjs',
+            main: 'lib/index.js',
+            types: 'lib/index.d.ts',
+            files: ['install', 'lib', 'src/*.{cc,h,gyp}'],
+            repository: {
+                type: 'git',
+                url: 'git://github.com/lovell/sharp.git',
+            },
+            keywords: [
+                'jpeg',
+                'png',
+                'webp',
+                'avif',
+                'tiff',
+                'gif',
+                'svg',
+                'jp2',
+                'dzi',
+                'image',
+                'resize',
+                'thumbnail',
+                'crop',
+                'embed',
+                'libvips',
+                'vips',
+            ],
+            dependencies: {
+                color: '^4.2.3',
+                'detect-libc': '^2.0.2',
+                semver: '^7.5.4',
+            },
+            optionalDependencies: {
+                '@img/sharp-darwin-arm64': '0.33.2',
+                '@img/sharp-darwin-x64': '0.33.2',
+                '@img/sharp-libvips-darwin-arm64': '1.0.1',
+                '@img/sharp-libvips-darwin-x64': '1.0.1',
+                '@img/sharp-libvips-linux-arm': '1.0.1',
+                '@img/sharp-libvips-linux-arm64': '1.0.1',
+                '@img/sharp-libvips-linux-s390x': '1.0.1',
+                '@img/sharp-libvips-linux-x64': '1.0.1',
+                '@img/sharp-libvips-linuxmusl-arm64': '1.0.1',
+                '@img/sharp-libvips-linuxmusl-x64': '1.0.1',
+                '@img/sharp-linux-arm': '0.33.2',
+                '@img/sharp-linux-arm64': '0.33.2',
+                '@img/sharp-linux-s390x': '0.33.2',
+                '@img/sharp-linux-x64': '0.33.2',
+                '@img/sharp-linuxmusl-arm64': '0.33.2',
+                '@img/sharp-linuxmusl-x64': '0.33.2',
+                '@img/sharp-wasm32': '0.33.2',
+                '@img/sharp-win32-ia32': '0.33.2',
+                '@img/sharp-win32-x64': '0.33.2',
+            },
+            devDependencies: {
+                '@emnapi/runtime': '^0.45.0',
+                '@img/sharp-libvips-dev': '1.0.1',
+                '@img/sharp-libvips-dev-wasm32': '1.0.1',
+                '@img/sharp-libvips-win32-ia32': '1.0.1',
+                '@img/sharp-libvips-win32-x64': '1.0.1',
+                '@types/node': '*',
+                async: '^3.2.5',
+                cc: '^3.0.1',
+                emnapi: '^0.45.0',
+                'exif-reader': '^2.0.0',
+                'extract-zip': '^2.0.1',
+                icc: '^3.0.0',
+                'jsdoc-to-markdown': '^8.0.0',
+                'license-checker': '^25.0.1',
+                mocha: '^10.2.0',
+                'node-addon-api': '^7.0.0',
+                nyc: '^15.1.0',
+                prebuild: '^12.1.0',
+                semistandard: '^17.0.0',
+                'tar-fs': '^3.0.4',
+                tsd: '^0.30.3',
+            },
+            license: 'Apache-2.0',
+            engines: {
+                node: '^18.17.0 || ^20.3.0 || >=21.0.0',
+                libvips: '>=8.15.1',
+            },
+            funding: {
+                url: 'https://opencollective.com/libvips',
+            },
+            binary: {
+                napi_versions: [9],
+            },
+            semistandard: {
+                env: ['mocha'],
+            },
+            cc: {
+                linelength: '120',
+                filter: ['build/include'],
+            },
+            nyc: {
+                include: ['lib'],
+            },
+            tsd: {
+                directory: 'test/types/',
+            },
+        };
+    },
+});
+
+// node_modules/sharp/lib/libvips.js
+var require_libvips = __commonJS({
+    'node_modules/sharp/lib/libvips.js'(exports2, module2) {
+        'use strict';
+        var { spawnSync } = require('child_process');
+        var { createHash } = require('crypto');
+        var semverCoerce = require_coerce();
+        var semverGreaterThanOrEqualTo = require_gte();
+        var semverSatisfies = require_satisfies();
+        var detectLibc = require_detect_libc();
+        var { engines, optionalDependencies } = require_package();
+        var minimumLibvipsVersionLabelled =
+            process.env.npm_package_config_libvips /* istanbul ignore next */ || engines.libvips;
+        var minimumLibvipsVersion = semverCoerce(minimumLibvipsVersionLabelled).version;
+        var prebuiltPlatforms = [
+            'darwin-arm64',
+            'darwin-x64',
+            'linux-arm',
+            'linux-arm64',
+            'linux-s390x',
+            'linux-x64',
+            'linuxmusl-arm64',
+            'linuxmusl-x64',
+            'win32-ia32',
+            'win32-x64',
+        ];
+        var spawnSyncOptions = {
+            encoding: 'utf8',
+            shell: true,
+        };
+        var log2 = (item) => {
+            if (item instanceof Error) {
+                console.error(`sharp: Installation error: ${item.message}`);
+            } else {
+                console.log(`sharp: ${item}`);
+            }
+        };
+        var runtimeLibc = () => (detectLibc.isNonGlibcLinuxSync() ? detectLibc.familySync() : '');
+        var runtimePlatformArch = () => `${process.platform}${runtimeLibc()}-${process.arch}`;
+        var buildPlatformArch = () => {
+            if (isEmscripten()) {
+                return 'wasm32';
+            }
+            const { npm_config_arch, npm_config_platform, npm_config_libc } = process.env;
+            const libc = typeof npm_config_libc === 'string' ? npm_config_libc : runtimeLibc();
+            return `${npm_config_platform || process.platform}${libc}-${npm_config_arch || process.arch}`;
+        };
+        var buildSharpLibvipsIncludeDir = () => {
+            try {
+                return require(`@img/sharp-libvips-dev-${buildPlatformArch()}/include`);
+            } catch {
+                try {
+                    return require('@img/sharp-libvips-dev/include');
+                } catch {}
+            }
+            return '';
+        };
+        var buildSharpLibvipsCPlusPlusDir = () => {
+            try {
+                return require('@img/sharp-libvips-dev/cplusplus');
+            } catch {}
+            return '';
+        };
+        var buildSharpLibvipsLibDir = () => {
+            try {
+                return require(`@img/sharp-libvips-dev-${buildPlatformArch()}/lib`);
+            } catch {
+                try {
+                    return require(`@img/sharp-libvips-${buildPlatformArch()}/lib`);
+                } catch {}
+            }
+            return '';
+        };
+        var isUnsupportedNodeRuntime = () => {
+            var _a5;
+            if (
+                ((_a5 = process.release) == null ? void 0 : _a5.name) === 'node' &&
+                process.versions
+            ) {
+                if (!semverSatisfies(process.versions.node, engines.node)) {
+                    return { found: process.versions.node, expected: engines.node };
+                }
+            }
+        };
+        var isEmscripten = () => {
+            const { CC } = process.env;
+            return Boolean(CC && CC.endsWith('/emcc'));
+        };
+        var isRosetta = () => {
+            if (process.platform === 'darwin' && process.arch === 'x64') {
+                const translated = spawnSync(
+                    'sysctl sysctl.proc_translated',
+                    spawnSyncOptions,
+                ).stdout;
+                return (translated || '').trim() === 'sysctl.proc_translated: 1';
+            }
+            return false;
+        };
+        var sha512 = (s2) => createHash('sha512').update(s2).digest('hex');
+        var yarnLocator = () => {
+            try {
+                const identHash = sha512(`imgsharp-libvips-${buildPlatformArch()}`);
+                const npmVersion = semverCoerce(
+                    optionalDependencies[`@img/sharp-libvips-${buildPlatformArch()}`],
+                ).version;
+                return sha512(`${identHash}npm:${npmVersion}`).slice(0, 10);
+            } catch {}
+            return '';
+        };
+        var spawnRebuild = () =>
+            spawnSync(
+                `node-gyp rebuild --directory=src ${isEmscripten() ? '--nodedir=emscripten' : ''}`,
+                {
+                    ...spawnSyncOptions,
+                    stdio: 'inherit',
+                },
+            ).status;
+        var globalLibvipsVersion = () => {
+            if (process.platform !== 'win32') {
+                const globalLibvipsVersion2 = spawnSync('pkg-config --modversion vips-cpp', {
+                    ...spawnSyncOptions,
+                    env: {
+                        ...process.env,
+                        PKG_CONFIG_PATH: pkgConfigPath(),
+                    },
+                }).stdout;
+                return (globalLibvipsVersion2 || '').trim();
+            } else {
+                return '';
+            }
+        };
+        var pkgConfigPath = () => {
+            if (process.platform !== 'win32') {
+                const brewPkgConfigPath =
+                    spawnSync(
+                        'which brew >/dev/null 2>&1 && brew environment --plain | grep PKG_CONFIG_LIBDIR | cut -d" " -f2',
+                        spawnSyncOptions,
+                    ).stdout || '';
+                return [
+                    brewPkgConfigPath.trim(),
+                    process.env.PKG_CONFIG_PATH,
+                    '/usr/local/lib/pkgconfig',
+                    '/usr/lib/pkgconfig',
+                    '/usr/local/libdata/pkgconfig',
+                    '/usr/libdata/pkgconfig',
+                ]
+                    .filter(Boolean)
+                    .join(':');
+            } else {
+                return '';
+            }
+        };
+        var useGlobalLibvips = () => {
+            if (Boolean(process.env.SHARP_IGNORE_GLOBAL_LIBVIPS) === true) {
+                log2(
+                    'Detected SHARP_IGNORE_GLOBAL_LIBVIPS, skipping search for globally-installed libvips',
+                );
+                return false;
+            }
+            if (isRosetta()) {
+                log2('Detected Rosetta, skipping search for globally-installed libvips');
+                return false;
+            }
+            const globalVipsVersion = globalLibvipsVersion();
+            return (
+                !!globalVipsVersion /* istanbul ignore next */ &&
+                semverGreaterThanOrEqualTo(globalVipsVersion, minimumLibvipsVersion)
+            );
+        };
+        module2.exports = {
+            minimumLibvipsVersion,
+            prebuiltPlatforms,
+            buildPlatformArch,
+            buildSharpLibvipsIncludeDir,
+            buildSharpLibvipsCPlusPlusDir,
+            buildSharpLibvipsLibDir,
+            isUnsupportedNodeRuntime,
+            runtimePlatformArch,
+            log: log2,
+            yarnLocator,
+            spawnRebuild,
+            globalLibvipsVersion,
+            pkgConfigPath,
+            useGlobalLibvips,
+        };
+    },
+});
+
+// node_modules/sharp/lib/sharp.js
+var require_sharp = __commonJS({
+    'node_modules/sharp/lib/sharp.js'(exports2, module2) {
+        'use strict';
+        var { familySync, versionSync } = require_detect_libc();
+        var {
+            runtimePlatformArch,
+            isUnsupportedNodeRuntime,
+            prebuiltPlatforms,
+            minimumLibvipsVersion,
+        } = require_libvips();
+        var runtimePlatform = runtimePlatformArch();
+        var paths = [
+            `../src/build/Release/sharp-${runtimePlatform}.node`,
+            '../src/build/Release/sharp-wasm32.node',
+            `@img/sharp-${runtimePlatform}/sharp.node`,
+            '@img/sharp-wasm32/sharp.node',
+        ];
+        var sharp2;
+        var errors = [];
+        for (const path5 of paths) {
+            try {
+                sharp2 = require(path5);
+                break;
+            } catch (err) {
+                errors.push(err);
+            }
+        }
+        if (sharp2) {
+            module2.exports = sharp2;
+        } else {
+            const [isLinux, isMacOs, isWindows] = ['linux', 'darwin', 'win32'].map((os2) =>
+                runtimePlatform.startsWith(os2),
+            );
+            const help = [`Could not load the "sharp" module using the ${runtimePlatform} runtime`];
+            errors.forEach((err) => {
+                if (err.code !== 'MODULE_NOT_FOUND') {
+                    help.push(`${err.code}: ${err.message}`);
+                }
+            });
+            const messages = errors.map((err) => err.message).join(' ');
+            help.push('Possible solutions:');
+            if (isUnsupportedNodeRuntime()) {
+                const { found, expected } = isUnsupportedNodeRuntime();
+                help.push(
+                    '- Please upgrade Node.js:',
+                    `    Found ${found}`,
+                    `    Requires ${expected}`,
+                );
+            } else if (prebuiltPlatforms.includes(runtimePlatform)) {
+                const [os2, cpu] = runtimePlatform.split('-');
+                const libc = os2.endsWith('musl') ? ' --libc=musl' : '';
+                help.push(
+                    '- Ensure optional dependencies can be installed:',
+                    '    npm install --include=optional sharp',
+                    '    yarn add sharp --ignore-engines',
+                    '- Ensure your package manager supports multi-platform installation:',
+                    '    See https://sharp.pixelplumbing.com/install#cross-platform',
+                    '- Add platform-specific dependencies:',
+                    `    npm install --os=${os2.replace('musl', '')}${libc} --cpu=${cpu} sharp`,
+                );
+            } else {
+                help.push(
+                    `- Manually install libvips >= ${minimumLibvipsVersion}`,
+                    '- Add experimental WebAssembly-based dependencies:',
+                    '    npm install --cpu=wasm32 sharp',
+                    '    npm install @img/sharp-wasm32',
+                );
+            }
+            if (isLinux && /(symbol not found|CXXABI_)/i.test(messages)) {
+                try {
+                    const { engines } = require(`@img/sharp-libvips-${runtimePlatform}/package`);
+                    const libcFound = `${familySync()} ${versionSync()}`;
+                    const libcRequires = `${engines.musl ? 'musl' : 'glibc'} ${engines.musl || engines.glibc}`;
+                    help.push(
+                        '- Update your OS:',
+                        `    Found ${libcFound}`,
+                        `    Requires ${libcRequires}`,
+                    );
+                } catch (errEngines) {}
+            }
+            if (isLinux && /\/snap\/core[0-9]{2}/.test(messages)) {
+                help.push(
+                    '- Remove the Node.js Snap, which does not support native modules',
+                    '    snap remove node',
+                );
+            }
+            if (isMacOs && /Incompatible library version/.test(messages)) {
+                help.push('- Update Homebrew:', '    brew update && brew upgrade vips');
+            }
+            if (errors.some((err) => err.code === 'ERR_DLOPEN_DISABLED')) {
+                help.push('- Run Node.js without using the --no-addons flag');
+            }
+            if (isWindows && /The specified procedure could not be found/.test(messages)) {
+                help.push(
+                    '- Using the canvas package on Windows?',
+                    '    See https://sharp.pixelplumbing.com/install#canvas-and-windows',
+                    '- Check for outdated versions of sharp in the dependency tree:',
+                    '    npm ls sharp',
+                );
+            }
+            help.push(
+                '- Consult the installation documentation:',
+                '    See https://sharp.pixelplumbing.com/install',
+            );
+            throw new Error(help.join('\n'));
+        }
+    },
+});
+
+// node_modules/sharp/lib/constructor.js
+var require_constructor = __commonJS({
+    'node_modules/sharp/lib/constructor.js'(exports2, module2) {
+        'use strict';
+        var util = require('util');
+        var stream = require('stream');
+        var is4 = require_is();
+        require_sharp();
+        var debuglog2 = util.debuglog('sharp');
+        var Sharp = function (input, options2) {
+            if (arguments.length === 1 && !is4.defined(input)) {
+                throw new Error('Invalid input');
+            }
+            if (!(this instanceof Sharp)) {
+                return new Sharp(input, options2);
+            }
+            stream.Duplex.call(this);
+            this.options = {
+                // resize options
+                topOffsetPre: -1,
+                leftOffsetPre: -1,
+                widthPre: -1,
+                heightPre: -1,
+                topOffsetPost: -1,
+                leftOffsetPost: -1,
+                widthPost: -1,
+                heightPost: -1,
+                width: -1,
+                height: -1,
+                canvas: 'crop',
+                position: 0,
+                resizeBackground: [0, 0, 0, 255],
+                useExifOrientation: false,
+                angle: 0,
+                rotationAngle: 0,
+                rotationBackground: [0, 0, 0, 255],
+                rotateBeforePreExtract: false,
+                flip: false,
+                flop: false,
+                extendTop: 0,
+                extendBottom: 0,
+                extendLeft: 0,
+                extendRight: 0,
+                extendBackground: [0, 0, 0, 255],
+                extendWith: 'background',
+                withoutEnlargement: false,
+                withoutReduction: false,
+                affineMatrix: [],
+                affineBackground: [0, 0, 0, 255],
+                affineIdx: 0,
+                affineIdy: 0,
+                affineOdx: 0,
+                affineOdy: 0,
+                affineInterpolator: this.constructor.interpolators.bilinear,
+                kernel: 'lanczos3',
+                fastShrinkOnLoad: true,
+                // operations
+                tint: [-1, 0, 0, 0],
+                flatten: false,
+                flattenBackground: [0, 0, 0],
+                unflatten: false,
+                negate: false,
+                negateAlpha: true,
+                medianSize: 0,
+                blurSigma: 0,
+                sharpenSigma: 0,
+                sharpenM1: 1,
+                sharpenM2: 2,
+                sharpenX1: 2,
+                sharpenY2: 10,
+                sharpenY3: 20,
+                threshold: 0,
+                thresholdGrayscale: true,
+                trimBackground: [],
+                trimThreshold: -1,
+                trimLineArt: false,
+                gamma: 0,
+                gammaOut: 0,
+                greyscale: false,
+                normalise: false,
+                normaliseLower: 1,
+                normaliseUpper: 99,
+                claheWidth: 0,
+                claheHeight: 0,
+                claheMaxSlope: 3,
+                brightness: 1,
+                saturation: 1,
+                hue: 0,
+                lightness: 0,
+                booleanBufferIn: null,
+                booleanFileIn: '',
+                joinChannelIn: [],
+                extractChannel: -1,
+                removeAlpha: false,
+                ensureAlpha: -1,
+                colourspace: 'srgb',
+                colourspaceInput: 'last',
+                composite: [],
+                // output
+                fileOut: '',
+                formatOut: 'input',
+                streamOut: false,
+                keepMetadata: 0,
+                withMetadataOrientation: -1,
+                withMetadataDensity: 0,
+                withIccProfile: '',
+                withExif: {},
+                withExifMerge: true,
+                resolveWithObject: false,
+                // output format
+                jpegQuality: 80,
+                jpegProgressive: false,
+                jpegChromaSubsampling: '4:2:0',
+                jpegTrellisQuantisation: false,
+                jpegOvershootDeringing: false,
+                jpegOptimiseScans: false,
+                jpegOptimiseCoding: true,
+                jpegQuantisationTable: 0,
+                pngProgressive: false,
+                pngCompressionLevel: 6,
+                pngAdaptiveFiltering: false,
+                pngPalette: false,
+                pngQuality: 100,
+                pngEffort: 7,
+                pngBitdepth: 8,
+                pngDither: 1,
+                jp2Quality: 80,
+                jp2TileHeight: 512,
+                jp2TileWidth: 512,
+                jp2Lossless: false,
+                jp2ChromaSubsampling: '4:4:4',
+                webpQuality: 80,
+                webpAlphaQuality: 100,
+                webpLossless: false,
+                webpNearLossless: false,
+                webpSmartSubsample: false,
+                webpPreset: 'default',
+                webpEffort: 4,
+                webpMinSize: false,
+                webpMixed: false,
+                gifBitdepth: 8,
+                gifEffort: 7,
+                gifDither: 1,
+                gifInterFrameMaxError: 0,
+                gifInterPaletteMaxError: 3,
+                gifReuse: true,
+                gifProgressive: false,
+                tiffQuality: 80,
+                tiffCompression: 'jpeg',
+                tiffPredictor: 'horizontal',
+                tiffPyramid: false,
+                tiffMiniswhite: false,
+                tiffBitdepth: 8,
+                tiffTile: false,
+                tiffTileHeight: 256,
+                tiffTileWidth: 256,
+                tiffXres: 1,
+                tiffYres: 1,
+                tiffResolutionUnit: 'inch',
+                heifQuality: 50,
+                heifLossless: false,
+                heifCompression: 'av1',
+                heifEffort: 4,
+                heifChromaSubsampling: '4:4:4',
+                jxlDistance: 1,
+                jxlDecodingTier: 0,
+                jxlEffort: 7,
+                jxlLossless: false,
+                rawDepth: 'uchar',
+                tileSize: 256,
+                tileOverlap: 0,
+                tileContainer: 'fs',
+                tileLayout: 'dz',
+                tileFormat: 'last',
+                tileDepth: 'last',
+                tileAngle: 0,
+                tileSkipBlanks: -1,
+                tileBackground: [255, 255, 255, 255],
+                tileCentre: false,
+                tileId: 'https://example.com/iiif',
+                tileBasename: '',
+                timeoutSeconds: 0,
+                linearA: [],
+                linearB: [],
+                // Function to notify of libvips warnings
+                debuglog: (warning) => {
+                    this.emit('warning', warning);
+                    debuglog2(warning);
+                },
+                // Function to notify of queue length changes
+                queueListener: function (queueLength) {
+                    Sharp.queue.emit('change', queueLength);
+                },
+            };
+            this.options.input = this._createInputDescriptor(input, options2, {
+                allowStream: true,
+            });
+            return this;
+        };
+        Object.setPrototypeOf(Sharp.prototype, stream.Duplex.prototype);
+        Object.setPrototypeOf(Sharp, stream.Duplex);
+        function clone3() {
+            const clone4 = this.constructor.call();
+            clone4.options = Object.assign({}, this.options);
+            if (this._isStreamInput()) {
+                this.on('finish', () => {
+                    this._flattenBufferIn();
+                    clone4.options.bufferIn = this.options.bufferIn;
+                    clone4.emit('finish');
+                });
+            }
+            return clone4;
+        }
+        Object.assign(Sharp.prototype, { clone: clone3 });
+        module2.exports = Sharp;
+    },
+});
+
+// node_modules/is-arrayish/index.js
+var require_is_arrayish = __commonJS({
+    'node_modules/is-arrayish/index.js'(exports2, module2) {
+        module2.exports = function isArrayish(obj) {
+            if (!obj || typeof obj === 'string') {
+                return false;
+            }
+            return (
+                obj instanceof Array ||
+                Array.isArray(obj) ||
+                (obj.length >= 0 &&
+                    (obj.splice instanceof Function ||
+                        (Object.getOwnPropertyDescriptor(obj, obj.length - 1) &&
+                            obj.constructor.name !== 'String')))
+            );
+        };
+    },
+});
+
+// node_modules/simple-swizzle/index.js
+var require_simple_swizzle = __commonJS({
+    'node_modules/simple-swizzle/index.js'(exports2, module2) {
+        'use strict';
+        var isArrayish = require_is_arrayish();
+        var concat = Array.prototype.concat;
+        var slice2 = Array.prototype.slice;
+        var swizzle = (module2.exports = function swizzle2(args) {
+            var results = [];
+            for (var i2 = 0, len = args.length; i2 < len; i2++) {
+                var arg = args[i2];
+                if (isArrayish(arg)) {
+                    results = concat.call(results, slice2.call(arg));
+                } else {
+                    results.push(arg);
+                }
+            }
+            return results;
+        });
+        swizzle.wrap = function (fn) {
+            return function () {
+                return fn(swizzle(arguments));
+            };
+        };
+    },
+});
+
+// node_modules/color-string/index.js
+var require_color_string = __commonJS({
+    'node_modules/color-string/index.js'(exports2, module2) {
+        var colorNames = require_color_name();
+        var swizzle = require_simple_swizzle();
+        var hasOwnProperty = Object.hasOwnProperty;
+        var reverseNames = /* @__PURE__ */ Object.create(null);
+        for (name in colorNames) {
+            if (hasOwnProperty.call(colorNames, name)) {
+                reverseNames[colorNames[name]] = name;
+            }
+        }
+        var name;
+        var cs = (module2.exports = {
+            to: {},
+            get: {},
+        });
+        cs.get = function (string) {
+            var prefix = string.substring(0, 3).toLowerCase();
+            var val2;
+            var model;
+            switch (prefix) {
+                case 'hsl':
+                    val2 = cs.get.hsl(string);
+                    model = 'hsl';
+                    break;
+                case 'hwb':
+                    val2 = cs.get.hwb(string);
+                    model = 'hwb';
+                    break;
+                default:
+                    val2 = cs.get.rgb(string);
+                    model = 'rgb';
+                    break;
+            }
+            if (!val2) {
+                return null;
+            }
+            return { model, value: val2 };
+        };
+        cs.get.rgb = function (string) {
+            if (!string) {
+                return null;
+            }
+            var abbr = /^#([a-f0-9]{3,4})$/i;
+            var hex = /^#([a-f0-9]{6})([a-f0-9]{2})?$/i;
+            var rgba =
+                /^rgba?\(\s*([+-]?\d+)(?=[\s,])\s*(?:,\s*)?([+-]?\d+)(?=[\s,])\s*(?:,\s*)?([+-]?\d+)\s*(?:[,|\/]\s*([+-]?[\d\.]+)(%?)\s*)?\)$/;
+            var per =
+                /^rgba?\(\s*([+-]?[\d\.]+)\%\s*,?\s*([+-]?[\d\.]+)\%\s*,?\s*([+-]?[\d\.]+)\%\s*(?:[,|\/]\s*([+-]?[\d\.]+)(%?)\s*)?\)$/;
+            var keyword = /^(\w+)$/;
+            var rgb = [0, 0, 0, 1];
+            var match;
+            var i2;
+            var hexAlpha;
+            if ((match = string.match(hex))) {
+                hexAlpha = match[2];
+                match = match[1];
+                for (i2 = 0; i2 < 3; i2++) {
+                    var i22 = i2 * 2;
+                    rgb[i2] = parseInt(match.slice(i22, i22 + 2), 16);
+                }
+                if (hexAlpha) {
+                    rgb[3] = parseInt(hexAlpha, 16) / 255;
+                }
+            } else if ((match = string.match(abbr))) {
+                match = match[1];
+                hexAlpha = match[3];
+                for (i2 = 0; i2 < 3; i2++) {
+                    rgb[i2] = parseInt(match[i2] + match[i2], 16);
+                }
+                if (hexAlpha) {
+                    rgb[3] = parseInt(hexAlpha + hexAlpha, 16) / 255;
+                }
+            } else if ((match = string.match(rgba))) {
+                for (i2 = 0; i2 < 3; i2++) {
+                    rgb[i2] = parseInt(match[i2 + 1], 0);
+                }
+                if (match[4]) {
+                    if (match[5]) {
+                        rgb[3] = parseFloat(match[4]) * 0.01;
+                    } else {
+                        rgb[3] = parseFloat(match[4]);
+                    }
+                }
+            } else if ((match = string.match(per))) {
+                for (i2 = 0; i2 < 3; i2++) {
+                    rgb[i2] = Math.round(parseFloat(match[i2 + 1]) * 2.55);
+                }
+                if (match[4]) {
+                    if (match[5]) {
+                        rgb[3] = parseFloat(match[4]) * 0.01;
+                    } else {
+                        rgb[3] = parseFloat(match[4]);
+                    }
+                }
+            } else if ((match = string.match(keyword))) {
+                if (match[1] === 'transparent') {
+                    return [0, 0, 0, 0];
+                }
+                if (!hasOwnProperty.call(colorNames, match[1])) {
+                    return null;
+                }
+                rgb = colorNames[match[1]];
+                rgb[3] = 1;
+                return rgb;
+            } else {
+                return null;
+            }
+            for (i2 = 0; i2 < 3; i2++) {
+                rgb[i2] = clamp(rgb[i2], 0, 255);
+            }
+            rgb[3] = clamp(rgb[3], 0, 1);
+            return rgb;
+        };
+        cs.get.hsl = function (string) {
+            if (!string) {
+                return null;
+            }
+            var hsl =
+                /^hsla?\(\s*([+-]?(?:\d{0,3}\.)?\d+)(?:deg)?\s*,?\s*([+-]?[\d\.]+)%\s*,?\s*([+-]?[\d\.]+)%\s*(?:[,|\/]\s*([+-]?(?=\.\d|\d)(?:0|[1-9]\d*)?(?:\.\d*)?(?:[eE][+-]?\d+)?)\s*)?\)$/;
+            var match = string.match(hsl);
+            if (match) {
+                var alpha = parseFloat(match[4]);
+                var h2 = ((parseFloat(match[1]) % 360) + 360) % 360;
+                var s2 = clamp(parseFloat(match[2]), 0, 100);
+                var l = clamp(parseFloat(match[3]), 0, 100);
+                var a = clamp(isNaN(alpha) ? 1 : alpha, 0, 1);
+                return [h2, s2, l, a];
+            }
+            return null;
+        };
+        cs.get.hwb = function (string) {
+            if (!string) {
+                return null;
+            }
+            var hwb =
+                /^hwb\(\s*([+-]?\d{0,3}(?:\.\d+)?)(?:deg)?\s*,\s*([+-]?[\d\.]+)%\s*,\s*([+-]?[\d\.]+)%\s*(?:,\s*([+-]?(?=\.\d|\d)(?:0|[1-9]\d*)?(?:\.\d*)?(?:[eE][+-]?\d+)?)\s*)?\)$/;
+            var match = string.match(hwb);
+            if (match) {
+                var alpha = parseFloat(match[4]);
+                var h2 = ((parseFloat(match[1]) % 360) + 360) % 360;
+                var w = clamp(parseFloat(match[2]), 0, 100);
+                var b = clamp(parseFloat(match[3]), 0, 100);
+                var a = clamp(isNaN(alpha) ? 1 : alpha, 0, 1);
+                return [h2, w, b, a];
+            }
+            return null;
+        };
+        cs.to.hex = function () {
+            var rgba = swizzle(arguments);
+            return (
+                '#' +
+                hexDouble(rgba[0]) +
+                hexDouble(rgba[1]) +
+                hexDouble(rgba[2]) +
+                (rgba[3] < 1 ? hexDouble(Math.round(rgba[3] * 255)) : '')
+            );
+        };
+        cs.to.rgb = function () {
+            var rgba = swizzle(arguments);
+            return rgba.length < 4 || rgba[3] === 1
+                ? 'rgb(' +
+                      Math.round(rgba[0]) +
+                      ', ' +
+                      Math.round(rgba[1]) +
+                      ', ' +
+                      Math.round(rgba[2]) +
+                      ')'
+                : 'rgba(' +
+                      Math.round(rgba[0]) +
+                      ', ' +
+                      Math.round(rgba[1]) +
+                      ', ' +
+                      Math.round(rgba[2]) +
+                      ', ' +
+                      rgba[3] +
+                      ')';
+        };
+        cs.to.rgb.percent = function () {
+            var rgba = swizzle(arguments);
+            var r2 = Math.round((rgba[0] / 255) * 100);
+            var g = Math.round((rgba[1] / 255) * 100);
+            var b = Math.round((rgba[2] / 255) * 100);
+            return rgba.length < 4 || rgba[3] === 1
+                ? 'rgb(' + r2 + '%, ' + g + '%, ' + b + '%)'
+                : 'rgba(' + r2 + '%, ' + g + '%, ' + b + '%, ' + rgba[3] + ')';
+        };
+        cs.to.hsl = function () {
+            var hsla = swizzle(arguments);
+            return hsla.length < 4 || hsla[3] === 1
+                ? 'hsl(' + hsla[0] + ', ' + hsla[1] + '%, ' + hsla[2] + '%)'
+                : 'hsla(' + hsla[0] + ', ' + hsla[1] + '%, ' + hsla[2] + '%, ' + hsla[3] + ')';
+        };
+        cs.to.hwb = function () {
+            var hwba = swizzle(arguments);
+            var a = '';
+            if (hwba.length >= 4 && hwba[3] !== 1) {
+                a = ', ' + hwba[3];
+            }
+            return 'hwb(' + hwba[0] + ', ' + hwba[1] + '%, ' + hwba[2] + '%' + a + ')';
+        };
+        cs.to.keyword = function (rgb) {
+            return reverseNames[rgb.slice(0, 3)];
+        };
+        function clamp(num, min, max) {
+            return Math.min(Math.max(min, num), max);
+        }
+        function hexDouble(num) {
+            var str = Math.round(num).toString(16).toUpperCase();
+            return str.length < 2 ? '0' + str : str;
+        }
+    },
+});
+
+// node_modules/color/index.js
+var require_color = __commonJS({
+    'node_modules/color/index.js'(exports2, module2) {
+        var colorString = require_color_string();
+        var convert = require_color_convert();
+        var skippedModels = [
+            // To be honest, I don't really feel like keyword belongs in color convert, but eh.
+            'keyword',
+            // Gray conflicts with some method names, and has its own method defined.
+            'gray',
+            // Shouldn't really be in color-convert either...
+            'hex',
+        ];
+        var hashedModelKeys = {};
+        for (const model of Object.keys(convert)) {
+            hashedModelKeys[[...convert[model].labels].sort().join('')] = model;
+        }
+        var limiters = {};
+        function Color(object, model) {
+            if (!(this instanceof Color)) {
+                return new Color(object, model);
+            }
+            if (model && model in skippedModels) {
+                model = null;
+            }
+            if (model && !(model in convert)) {
+                throw new Error('Unknown model: ' + model);
+            }
+            let i2;
+            let channels;
+            if (object == null) {
+                this.model = 'rgb';
+                this.color = [0, 0, 0];
+                this.valpha = 1;
+            } else if (object instanceof Color) {
+                this.model = object.model;
+                this.color = [...object.color];
+                this.valpha = object.valpha;
+            } else if (typeof object === 'string') {
+                const result = colorString.get(object);
+                if (result === null) {
+                    throw new Error('Unable to parse color from string: ' + object);
+                }
+                this.model = result.model;
+                channels = convert[this.model].channels;
+                this.color = result.value.slice(0, channels);
+                this.valpha =
+                    typeof result.value[channels] === 'number' ? result.value[channels] : 1;
+            } else if (object.length > 0) {
+                this.model = model || 'rgb';
+                channels = convert[this.model].channels;
+                const newArray = Array.prototype.slice.call(object, 0, channels);
+                this.color = zeroArray(newArray, channels);
+                this.valpha = typeof object[channels] === 'number' ? object[channels] : 1;
+            } else if (typeof object === 'number') {
+                this.model = 'rgb';
+                this.color = [(object >> 16) & 255, (object >> 8) & 255, object & 255];
+                this.valpha = 1;
+            } else {
+                this.valpha = 1;
+                const keys = Object.keys(object);
+                if ('alpha' in object) {
+                    keys.splice(keys.indexOf('alpha'), 1);
+                    this.valpha = typeof object.alpha === 'number' ? object.alpha : 0;
+                }
+                const hashedKeys = keys.sort().join('');
+                if (!(hashedKeys in hashedModelKeys)) {
+                    throw new Error('Unable to parse color from object: ' + JSON.stringify(object));
+                }
+                this.model = hashedModelKeys[hashedKeys];
+                const { labels } = convert[this.model];
+                const color = [];
+                for (i2 = 0; i2 < labels.length; i2++) {
+                    color.push(object[labels[i2]]);
+                }
+                this.color = zeroArray(color);
+            }
+            if (limiters[this.model]) {
+                channels = convert[this.model].channels;
+                for (i2 = 0; i2 < channels; i2++) {
+                    const limit = limiters[this.model][i2];
+                    if (limit) {
+                        this.color[i2] = limit(this.color[i2]);
+                    }
+                }
+            }
+            this.valpha = Math.max(0, Math.min(1, this.valpha));
+            if (Object.freeze) {
+                Object.freeze(this);
+            }
+        }
+        Color.prototype = {
+            toString() {
+                return this.string();
+            },
+            toJSON() {
+                return this[this.model]();
+            },
+            string(places) {
+                let self2 = this.model in colorString.to ? this : this.rgb();
+                self2 = self2.round(typeof places === 'number' ? places : 1);
+                const args = self2.valpha === 1 ? self2.color : [...self2.color, this.valpha];
+                return colorString.to[self2.model](args);
+            },
+            percentString(places) {
+                const self2 = this.rgb().round(typeof places === 'number' ? places : 1);
+                const args = self2.valpha === 1 ? self2.color : [...self2.color, this.valpha];
+                return colorString.to.rgb.percent(args);
+            },
+            array() {
+                return this.valpha === 1 ? [...this.color] : [...this.color, this.valpha];
+            },
+            object() {
+                const result = {};
+                const { channels } = convert[this.model];
+                const { labels } = convert[this.model];
+                for (let i2 = 0; i2 < channels; i2++) {
+                    result[labels[i2]] = this.color[i2];
+                }
+                if (this.valpha !== 1) {
+                    result.alpha = this.valpha;
+                }
+                return result;
+            },
+            unitArray() {
+                const rgb = this.rgb().color;
+                rgb[0] /= 255;
+                rgb[1] /= 255;
+                rgb[2] /= 255;
+                if (this.valpha !== 1) {
+                    rgb.push(this.valpha);
+                }
+                return rgb;
+            },
+            unitObject() {
+                const rgb = this.rgb().object();
+                rgb.r /= 255;
+                rgb.g /= 255;
+                rgb.b /= 255;
+                if (this.valpha !== 1) {
+                    rgb.alpha = this.valpha;
+                }
+                return rgb;
+            },
+            round(places) {
+                places = Math.max(places || 0, 0);
+                return new Color(
+                    [...this.color.map(roundToPlace(places)), this.valpha],
+                    this.model,
+                );
+            },
+            alpha(value) {
+                if (value !== void 0) {
+                    return new Color([...this.color, Math.max(0, Math.min(1, value))], this.model);
+                }
+                return this.valpha;
+            },
+            // Rgb
+            red: getset('rgb', 0, maxfn(255)),
+            green: getset('rgb', 1, maxfn(255)),
+            blue: getset('rgb', 2, maxfn(255)),
+            hue: getset(
+                ['hsl', 'hsv', 'hsl', 'hwb', 'hcg'],
+                0,
+                (value) => ((value % 360) + 360) % 360,
+            ),
+            saturationl: getset('hsl', 1, maxfn(100)),
+            lightness: getset('hsl', 2, maxfn(100)),
+            saturationv: getset('hsv', 1, maxfn(100)),
+            value: getset('hsv', 2, maxfn(100)),
+            chroma: getset('hcg', 1, maxfn(100)),
+            gray: getset('hcg', 2, maxfn(100)),
+            white: getset('hwb', 1, maxfn(100)),
+            wblack: getset('hwb', 2, maxfn(100)),
+            cyan: getset('cmyk', 0, maxfn(100)),
+            magenta: getset('cmyk', 1, maxfn(100)),
+            yellow: getset('cmyk', 2, maxfn(100)),
+            black: getset('cmyk', 3, maxfn(100)),
+            x: getset('xyz', 0, maxfn(95.047)),
+            y: getset('xyz', 1, maxfn(100)),
+            z: getset('xyz', 2, maxfn(108.833)),
+            l: getset('lab', 0, maxfn(100)),
+            a: getset('lab', 1),
+            b: getset('lab', 2),
+            keyword(value) {
+                if (value !== void 0) {
+                    return new Color(value);
+                }
+                return convert[this.model].keyword(this.color);
+            },
+            hex(value) {
+                if (value !== void 0) {
+                    return new Color(value);
+                }
+                return colorString.to.hex(this.rgb().round().color);
+            },
+            hexa(value) {
+                if (value !== void 0) {
+                    return new Color(value);
+                }
+                const rgbArray = this.rgb().round().color;
+                let alphaHex = Math.round(this.valpha * 255)
+                    .toString(16)
+                    .toUpperCase();
+                if (alphaHex.length === 1) {
+                    alphaHex = '0' + alphaHex;
+                }
+                return colorString.to.hex(rgbArray) + alphaHex;
+            },
+            rgbNumber() {
+                const rgb = this.rgb().color;
+                return ((rgb[0] & 255) << 16) | ((rgb[1] & 255) << 8) | (rgb[2] & 255);
+            },
+            luminosity() {
+                const rgb = this.rgb().color;
+                const lum = [];
+                for (const [i2, element] of rgb.entries()) {
+                    const chan = element / 255;
+                    lum[i2] = chan <= 0.04045 ? chan / 12.92 : ((chan + 0.055) / 1.055) ** 2.4;
+                }
+                return 0.2126 * lum[0] + 0.7152 * lum[1] + 0.0722 * lum[2];
+            },
+            contrast(color2) {
+                const lum1 = this.luminosity();
+                const lum2 = color2.luminosity();
+                if (lum1 > lum2) {
+                    return (lum1 + 0.05) / (lum2 + 0.05);
+                }
+                return (lum2 + 0.05) / (lum1 + 0.05);
+            },
+            level(color2) {
+                const contrastRatio = this.contrast(color2);
+                if (contrastRatio >= 7) {
+                    return 'AAA';
+                }
+                return contrastRatio >= 4.5 ? 'AA' : '';
+            },
+            isDark() {
+                const rgb = this.rgb().color;
+                const yiq = (rgb[0] * 2126 + rgb[1] * 7152 + rgb[2] * 722) / 1e4;
+                return yiq < 128;
+            },
+            isLight() {
+                return !this.isDark();
+            },
+            negate() {
+                const rgb = this.rgb();
+                for (let i2 = 0; i2 < 3; i2++) {
+                    rgb.color[i2] = 255 - rgb.color[i2];
+                }
+                return rgb;
+            },
+            lighten(ratio) {
+                const hsl = this.hsl();
+                hsl.color[2] += hsl.color[2] * ratio;
+                return hsl;
+            },
+            darken(ratio) {
+                const hsl = this.hsl();
+                hsl.color[2] -= hsl.color[2] * ratio;
+                return hsl;
+            },
+            saturate(ratio) {
+                const hsl = this.hsl();
+                hsl.color[1] += hsl.color[1] * ratio;
+                return hsl;
+            },
+            desaturate(ratio) {
+                const hsl = this.hsl();
+                hsl.color[1] -= hsl.color[1] * ratio;
+                return hsl;
+            },
+            whiten(ratio) {
+                const hwb = this.hwb();
+                hwb.color[1] += hwb.color[1] * ratio;
+                return hwb;
+            },
+            blacken(ratio) {
+                const hwb = this.hwb();
+                hwb.color[2] += hwb.color[2] * ratio;
+                return hwb;
+            },
+            grayscale() {
+                const rgb = this.rgb().color;
+                const value = rgb[0] * 0.3 + rgb[1] * 0.59 + rgb[2] * 0.11;
+                return Color.rgb(value, value, value);
+            },
+            fade(ratio) {
+                return this.alpha(this.valpha - this.valpha * ratio);
+            },
+            opaquer(ratio) {
+                return this.alpha(this.valpha + this.valpha * ratio);
+            },
+            rotate(degrees) {
+                const hsl = this.hsl();
+                let hue = hsl.color[0];
+                hue = (hue + degrees) % 360;
+                hue = hue < 0 ? 360 + hue : hue;
+                hsl.color[0] = hue;
+                return hsl;
+            },
+            mix(mixinColor, weight) {
+                if (!mixinColor || !mixinColor.rgb) {
+                    throw new Error(
+                        'Argument to "mix" was not a Color instance, but rather an instance of ' +
+                            typeof mixinColor,
+                    );
+                }
+                const color1 = mixinColor.rgb();
+                const color2 = this.rgb();
+                const p = weight === void 0 ? 0.5 : weight;
+                const w = 2 * p - 1;
+                const a = color1.alpha() - color2.alpha();
+                const w1 = ((w * a === -1 ? w : (w + a) / (1 + w * a)) + 1) / 2;
+                const w2 = 1 - w1;
+                return Color.rgb(
+                    w1 * color1.red() + w2 * color2.red(),
+                    w1 * color1.green() + w2 * color2.green(),
+                    w1 * color1.blue() + w2 * color2.blue(),
+                    color1.alpha() * p + color2.alpha() * (1 - p),
+                );
+            },
+        };
+        for (const model of Object.keys(convert)) {
+            if (skippedModels.includes(model)) {
+                continue;
+            }
+            const { channels } = convert[model];
+            Color.prototype[model] = function (...args) {
+                if (this.model === model) {
+                    return new Color(this);
+                }
+                if (args.length > 0) {
+                    return new Color(args, model);
+                }
+                return new Color(
+                    [...assertArray(convert[this.model][model].raw(this.color)), this.valpha],
+                    model,
+                );
+            };
+            Color[model] = function (...args) {
+                let color = args[0];
+                if (typeof color === 'number') {
+                    color = zeroArray(args, channels);
+                }
+                return new Color(color, model);
+            };
+        }
+        function roundTo(number, places) {
+            return Number(number.toFixed(places));
+        }
+        function roundToPlace(places) {
+            return function (number) {
+                return roundTo(number, places);
+            };
+        }
+        function getset(model, channel, modifier) {
+            model = Array.isArray(model) ? model : [model];
+            for (const m2 of model) {
+                (limiters[m2] || (limiters[m2] = []))[channel] = modifier;
+            }
+            model = model[0];
+            return function (value) {
+                let result;
+                if (value !== void 0) {
+                    if (modifier) {
+                        value = modifier(value);
+                    }
+                    result = this[model]();
+                    result.color[channel] = value;
+                    return result;
+                }
+                result = this[model]().color[channel];
+                if (modifier) {
+                    result = modifier(result);
+                }
+                return result;
+            };
+        }
+        function maxfn(max) {
+            return function (v) {
+                return Math.max(0, Math.min(max, v));
+            };
+        }
+        function assertArray(value) {
+            return Array.isArray(value) ? value : [value];
+        }
+        function zeroArray(array, length) {
+            for (let i2 = 0; i2 < length; i2++) {
+                if (typeof array[i2] !== 'number') {
+                    array[i2] = 0;
+                }
+            }
+            return array;
+        }
+        module2.exports = Color;
+    },
+});
+
+// node_modules/sharp/lib/input.js
+var require_input = __commonJS({
+    'node_modules/sharp/lib/input.js'(exports2, module2) {
+        'use strict';
+        var color = require_color();
+        var is4 = require_is();
+        var sharp2 = require_sharp();
+        var align = {
+            left: 'low',
+            center: 'centre',
+            centre: 'centre',
+            right: 'high',
+        };
+        function _inputOptionsFromObject(obj) {
+            const {
+                raw,
+                density,
+                limitInputPixels,
+                ignoreIcc,
+                unlimited,
+                sequentialRead,
+                failOn,
+                failOnError,
+                animated,
+                page,
+                pages,
+                subifd,
+            } = obj;
+            return [
+                raw,
+                density,
+                limitInputPixels,
+                ignoreIcc,
+                unlimited,
+                sequentialRead,
+                failOn,
+                failOnError,
+                animated,
+                page,
+                pages,
+                subifd,
+            ].some(is4.defined)
+                ? {
+                      raw,
+                      density,
+                      limitInputPixels,
+                      ignoreIcc,
+                      unlimited,
+                      sequentialRead,
+                      failOn,
+                      failOnError,
+                      animated,
+                      page,
+                      pages,
+                      subifd,
+                  }
+                : void 0;
+        }
+        function _createInputDescriptor(input, inputOptions, containerOptions) {
+            const inputDescriptor = {
+                failOn: 'warning',
+                limitInputPixels: Math.pow(16383, 2),
+                ignoreIcc: false,
+                unlimited: false,
+                sequentialRead: true,
+            };
+            if (is4.string(input)) {
+                inputDescriptor.file = input;
+            } else if (is4.buffer(input)) {
+                if (input.length === 0) {
+                    throw Error('Input Buffer is empty');
+                }
+                inputDescriptor.buffer = input;
+            } else if (is4.arrayBuffer(input)) {
+                if (input.byteLength === 0) {
+                    throw Error('Input bit Array is empty');
+                }
+                inputDescriptor.buffer = Buffer.from(input, 0, input.byteLength);
+            } else if (is4.typedArray(input)) {
+                if (input.length === 0) {
+                    throw Error('Input Bit Array is empty');
+                }
+                inputDescriptor.buffer = Buffer.from(
+                    input.buffer,
+                    input.byteOffset,
+                    input.byteLength,
+                );
+            } else if (is4.plainObject(input) && !is4.defined(inputOptions)) {
+                inputOptions = input;
+                if (_inputOptionsFromObject(inputOptions)) {
+                    inputDescriptor.buffer = [];
+                }
+            } else if (
+                !is4.defined(input) &&
+                !is4.defined(inputOptions) &&
+                is4.object(containerOptions) &&
+                containerOptions.allowStream
+            ) {
+                inputDescriptor.buffer = [];
+            } else {
+                throw new Error(
+                    `Unsupported input '${input}' of type ${typeof input}${is4.defined(inputOptions) ? ` when also providing options of type ${typeof inputOptions}` : ''}`,
+                );
+            }
+            if (is4.object(inputOptions)) {
+                if (is4.defined(inputOptions.failOnError)) {
+                    if (is4.bool(inputOptions.failOnError)) {
+                        inputDescriptor.failOn = inputOptions.failOnError ? 'warning' : 'none';
+                    } else {
+                        throw is4.invalidParameterError(
+                            'failOnError',
+                            'boolean',
+                            inputOptions.failOnError,
+                        );
+                    }
+                }
+                if (is4.defined(inputOptions.failOn)) {
+                    if (
+                        is4.string(inputOptions.failOn) &&
+                        is4.inArray(inputOptions.failOn, ['none', 'truncated', 'error', 'warning'])
+                    ) {
+                        inputDescriptor.failOn = inputOptions.failOn;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'failOn',
+                            'one of: none, truncated, error, warning',
+                            inputOptions.failOn,
+                        );
+                    }
+                }
+                if (is4.defined(inputOptions.density)) {
+                    if (is4.inRange(inputOptions.density, 1, 1e5)) {
+                        inputDescriptor.density = inputOptions.density;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'density',
+                            'number between 1 and 100000',
+                            inputOptions.density,
+                        );
+                    }
+                }
+                if (is4.defined(inputOptions.ignoreIcc)) {
+                    if (is4.bool(inputOptions.ignoreIcc)) {
+                        inputDescriptor.ignoreIcc = inputOptions.ignoreIcc;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'ignoreIcc',
+                            'boolean',
+                            inputOptions.ignoreIcc,
+                        );
+                    }
+                }
+                if (is4.defined(inputOptions.limitInputPixels)) {
+                    if (is4.bool(inputOptions.limitInputPixels)) {
+                        inputDescriptor.limitInputPixels = inputOptions.limitInputPixels
+                            ? Math.pow(16383, 2)
+                            : 0;
+                    } else if (
+                        is4.integer(inputOptions.limitInputPixels) &&
+                        is4.inRange(inputOptions.limitInputPixels, 0, Number.MAX_SAFE_INTEGER)
+                    ) {
+                        inputDescriptor.limitInputPixels = inputOptions.limitInputPixels;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'limitInputPixels',
+                            'positive integer',
+                            inputOptions.limitInputPixels,
+                        );
+                    }
+                }
+                if (is4.defined(inputOptions.unlimited)) {
+                    if (is4.bool(inputOptions.unlimited)) {
+                        inputDescriptor.unlimited = inputOptions.unlimited;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'unlimited',
+                            'boolean',
+                            inputOptions.unlimited,
+                        );
+                    }
+                }
+                if (is4.defined(inputOptions.sequentialRead)) {
+                    if (is4.bool(inputOptions.sequentialRead)) {
+                        inputDescriptor.sequentialRead = inputOptions.sequentialRead;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'sequentialRead',
+                            'boolean',
+                            inputOptions.sequentialRead,
+                        );
+                    }
+                }
+                if (is4.defined(inputOptions.raw)) {
+                    if (
+                        is4.object(inputOptions.raw) &&
+                        is4.integer(inputOptions.raw.width) &&
+                        inputOptions.raw.width > 0 &&
+                        is4.integer(inputOptions.raw.height) &&
+                        inputOptions.raw.height > 0 &&
+                        is4.integer(inputOptions.raw.channels) &&
+                        is4.inRange(inputOptions.raw.channels, 1, 4)
+                    ) {
+                        inputDescriptor.rawWidth = inputOptions.raw.width;
+                        inputDescriptor.rawHeight = inputOptions.raw.height;
+                        inputDescriptor.rawChannels = inputOptions.raw.channels;
+                        inputDescriptor.rawPremultiplied = !!inputOptions.raw.premultiplied;
+                        switch (input.constructor) {
+                            case Uint8Array:
+                            case Uint8ClampedArray:
+                                inputDescriptor.rawDepth = 'uchar';
+                                break;
+                            case Int8Array:
+                                inputDescriptor.rawDepth = 'char';
+                                break;
+                            case Uint16Array:
+                                inputDescriptor.rawDepth = 'ushort';
+                                break;
+                            case Int16Array:
+                                inputDescriptor.rawDepth = 'short';
+                                break;
+                            case Uint32Array:
+                                inputDescriptor.rawDepth = 'uint';
+                                break;
+                            case Int32Array:
+                                inputDescriptor.rawDepth = 'int';
+                                break;
+                            case Float32Array:
+                                inputDescriptor.rawDepth = 'float';
+                                break;
+                            case Float64Array:
+                                inputDescriptor.rawDepth = 'double';
+                                break;
+                            default:
+                                inputDescriptor.rawDepth = 'uchar';
+                                break;
+                        }
+                    } else {
+                        throw new Error('Expected width, height and channels for raw pixel input');
+                    }
+                }
+                if (is4.defined(inputOptions.animated)) {
+                    if (is4.bool(inputOptions.animated)) {
+                        inputDescriptor.pages = inputOptions.animated ? -1 : 1;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'animated',
+                            'boolean',
+                            inputOptions.animated,
+                        );
+                    }
+                }
+                if (is4.defined(inputOptions.pages)) {
+                    if (
+                        is4.integer(inputOptions.pages) &&
+                        is4.inRange(inputOptions.pages, -1, 1e5)
+                    ) {
+                        inputDescriptor.pages = inputOptions.pages;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'pages',
+                            'integer between -1 and 100000',
+                            inputOptions.pages,
+                        );
+                    }
+                }
+                if (is4.defined(inputOptions.page)) {
+                    if (is4.integer(inputOptions.page) && is4.inRange(inputOptions.page, 0, 1e5)) {
+                        inputDescriptor.page = inputOptions.page;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'page',
+                            'integer between 0 and 100000',
+                            inputOptions.page,
+                        );
+                    }
+                }
+                if (is4.defined(inputOptions.level)) {
+                    if (
+                        is4.integer(inputOptions.level) &&
+                        is4.inRange(inputOptions.level, 0, 256)
+                    ) {
+                        inputDescriptor.level = inputOptions.level;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'level',
+                            'integer between 0 and 256',
+                            inputOptions.level,
+                        );
+                    }
+                }
+                if (is4.defined(inputOptions.subifd)) {
+                    if (
+                        is4.integer(inputOptions.subifd) &&
+                        is4.inRange(inputOptions.subifd, -1, 1e5)
+                    ) {
+                        inputDescriptor.subifd = inputOptions.subifd;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'subifd',
+                            'integer between -1 and 100000',
+                            inputOptions.subifd,
+                        );
+                    }
+                }
+                if (is4.defined(inputOptions.create)) {
+                    if (
+                        is4.object(inputOptions.create) &&
+                        is4.integer(inputOptions.create.width) &&
+                        inputOptions.create.width > 0 &&
+                        is4.integer(inputOptions.create.height) &&
+                        inputOptions.create.height > 0 &&
+                        is4.integer(inputOptions.create.channels)
+                    ) {
+                        inputDescriptor.createWidth = inputOptions.create.width;
+                        inputDescriptor.createHeight = inputOptions.create.height;
+                        inputDescriptor.createChannels = inputOptions.create.channels;
+                        if (is4.defined(inputOptions.create.noise)) {
+                            if (!is4.object(inputOptions.create.noise)) {
+                                throw new Error('Expected noise to be an object');
+                            }
+                            if (!is4.inArray(inputOptions.create.noise.type, ['gaussian'])) {
+                                throw new Error('Only gaussian noise is supported at the moment');
+                            }
+                            if (!is4.inRange(inputOptions.create.channels, 1, 4)) {
+                                throw is4.invalidParameterError(
+                                    'create.channels',
+                                    'number between 1 and 4',
+                                    inputOptions.create.channels,
+                                );
+                            }
+                            inputDescriptor.createNoiseType = inputOptions.create.noise.type;
+                            if (
+                                is4.number(inputOptions.create.noise.mean) &&
+                                is4.inRange(inputOptions.create.noise.mean, 0, 1e4)
+                            ) {
+                                inputDescriptor.createNoiseMean = inputOptions.create.noise.mean;
+                            } else {
+                                throw is4.invalidParameterError(
+                                    'create.noise.mean',
+                                    'number between 0 and 10000',
+                                    inputOptions.create.noise.mean,
+                                );
+                            }
+                            if (
+                                is4.number(inputOptions.create.noise.sigma) &&
+                                is4.inRange(inputOptions.create.noise.sigma, 0, 1e4)
+                            ) {
+                                inputDescriptor.createNoiseSigma = inputOptions.create.noise.sigma;
+                            } else {
+                                throw is4.invalidParameterError(
+                                    'create.noise.sigma',
+                                    'number between 0 and 10000',
+                                    inputOptions.create.noise.sigma,
+                                );
+                            }
+                        } else if (is4.defined(inputOptions.create.background)) {
+                            if (!is4.inRange(inputOptions.create.channels, 3, 4)) {
+                                throw is4.invalidParameterError(
+                                    'create.channels',
+                                    'number between 3 and 4',
+                                    inputOptions.create.channels,
+                                );
+                            }
+                            const background = color(inputOptions.create.background);
+                            inputDescriptor.createBackground = [
+                                background.red(),
+                                background.green(),
+                                background.blue(),
+                                Math.round(background.alpha() * 255),
+                            ];
+                        } else {
+                            throw new Error(
+                                'Expected valid noise or background to create a new input image',
+                            );
+                        }
+                        delete inputDescriptor.buffer;
+                    } else {
+                        throw new Error(
+                            'Expected valid width, height and channels to create a new input image',
+                        );
+                    }
+                }
+                if (is4.defined(inputOptions.text)) {
+                    if (is4.object(inputOptions.text) && is4.string(inputOptions.text.text)) {
+                        inputDescriptor.textValue = inputOptions.text.text;
+                        if (
+                            is4.defined(inputOptions.text.height) &&
+                            is4.defined(inputOptions.text.dpi)
+                        ) {
+                            throw new Error('Expected only one of dpi or height');
+                        }
+                        if (is4.defined(inputOptions.text.font)) {
+                            if (is4.string(inputOptions.text.font)) {
+                                inputDescriptor.textFont = inputOptions.text.font;
+                            } else {
+                                throw is4.invalidParameterError(
+                                    'text.font',
+                                    'string',
+                                    inputOptions.text.font,
+                                );
+                            }
+                        }
+                        if (is4.defined(inputOptions.text.fontfile)) {
+                            if (is4.string(inputOptions.text.fontfile)) {
+                                inputDescriptor.textFontfile = inputOptions.text.fontfile;
+                            } else {
+                                throw is4.invalidParameterError(
+                                    'text.fontfile',
+                                    'string',
+                                    inputOptions.text.fontfile,
+                                );
+                            }
+                        }
+                        if (is4.defined(inputOptions.text.width)) {
+                            if (is4.number(inputOptions.text.width)) {
+                                inputDescriptor.textWidth = inputOptions.text.width;
+                            } else {
+                                throw is4.invalidParameterError(
+                                    'text.textWidth',
+                                    'number',
+                                    inputOptions.text.width,
+                                );
+                            }
+                        }
+                        if (is4.defined(inputOptions.text.height)) {
+                            if (is4.number(inputOptions.text.height)) {
+                                inputDescriptor.textHeight = inputOptions.text.height;
+                            } else {
+                                throw is4.invalidParameterError(
+                                    'text.height',
+                                    'number',
+                                    inputOptions.text.height,
+                                );
+                            }
+                        }
+                        if (is4.defined(inputOptions.text.align)) {
+                            if (
+                                is4.string(inputOptions.text.align) &&
+                                is4.string(this.constructor.align[inputOptions.text.align])
+                            ) {
+                                inputDescriptor.textAlign =
+                                    this.constructor.align[inputOptions.text.align];
+                            } else {
+                                throw is4.invalidParameterError(
+                                    'text.align',
+                                    'valid alignment',
+                                    inputOptions.text.align,
+                                );
+                            }
+                        }
+                        if (is4.defined(inputOptions.text.justify)) {
+                            if (is4.bool(inputOptions.text.justify)) {
+                                inputDescriptor.textJustify = inputOptions.text.justify;
+                            } else {
+                                throw is4.invalidParameterError(
+                                    'text.justify',
+                                    'boolean',
+                                    inputOptions.text.justify,
+                                );
+                            }
+                        }
+                        if (is4.defined(inputOptions.text.dpi)) {
+                            if (
+                                is4.number(inputOptions.text.dpi) &&
+                                is4.inRange(inputOptions.text.dpi, 1, 1e5)
+                            ) {
+                                inputDescriptor.textDpi = inputOptions.text.dpi;
+                            } else {
+                                throw is4.invalidParameterError(
+                                    'text.dpi',
+                                    'number between 1 and 100000',
+                                    inputOptions.text.dpi,
+                                );
+                            }
+                        }
+                        if (is4.defined(inputOptions.text.rgba)) {
+                            if (is4.bool(inputOptions.text.rgba)) {
+                                inputDescriptor.textRgba = inputOptions.text.rgba;
+                            } else {
+                                throw is4.invalidParameterError(
+                                    'text.rgba',
+                                    'bool',
+                                    inputOptions.text.rgba,
+                                );
+                            }
+                        }
+                        if (is4.defined(inputOptions.text.spacing)) {
+                            if (is4.number(inputOptions.text.spacing)) {
+                                inputDescriptor.textSpacing = inputOptions.text.spacing;
+                            } else {
+                                throw is4.invalidParameterError(
+                                    'text.spacing',
+                                    'number',
+                                    inputOptions.text.spacing,
+                                );
+                            }
+                        }
+                        if (is4.defined(inputOptions.text.wrap)) {
+                            if (
+                                is4.string(inputOptions.text.wrap) &&
+                                is4.inArray(inputOptions.text.wrap, [
+                                    'word',
+                                    'char',
+                                    'wordChar',
+                                    'none',
+                                ])
+                            ) {
+                                inputDescriptor.textWrap = inputOptions.text.wrap;
+                            } else {
+                                throw is4.invalidParameterError(
+                                    'text.wrap',
+                                    'one of: word, char, wordChar, none',
+                                    inputOptions.text.wrap,
+                                );
+                            }
+                        }
+                        delete inputDescriptor.buffer;
+                    } else {
+                        throw new Error('Expected a valid string to create an image with text.');
+                    }
+                }
+            } else if (is4.defined(inputOptions)) {
+                throw new Error('Invalid input options ' + inputOptions);
+            }
+            return inputDescriptor;
+        }
+        function _write(chunk, encoding, callback) {
+            if (Array.isArray(this.options.input.buffer)) {
+                if (is4.buffer(chunk)) {
+                    if (this.options.input.buffer.length === 0) {
+                        this.on('finish', () => {
+                            this.streamInFinished = true;
+                        });
+                    }
+                    this.options.input.buffer.push(chunk);
+                    callback();
+                } else {
+                    callback(new Error('Non-Buffer data on Writable Stream'));
+                }
+            } else {
+                callback(new Error('Unexpected data on Writable Stream'));
+            }
+        }
+        function _flattenBufferIn() {
+            if (this._isStreamInput()) {
+                this.options.input.buffer = Buffer.concat(this.options.input.buffer);
+            }
+        }
+        function _isStreamInput() {
+            return Array.isArray(this.options.input.buffer);
+        }
+        function metadata(callback) {
+            const stack = Error();
+            if (is4.fn(callback)) {
+                if (this._isStreamInput()) {
+                    this.on('finish', () => {
+                        this._flattenBufferIn();
+                        sharp2.metadata(this.options, (err, metadata2) => {
+                            if (err) {
+                                callback(is4.nativeError(err, stack));
+                            } else {
+                                callback(null, metadata2);
+                            }
+                        });
+                    });
+                } else {
+                    sharp2.metadata(this.options, (err, metadata2) => {
+                        if (err) {
+                            callback(is4.nativeError(err, stack));
+                        } else {
+                            callback(null, metadata2);
+                        }
+                    });
+                }
+                return this;
+            } else {
+                if (this._isStreamInput()) {
+                    return new Promise((resolve2, reject) => {
+                        const finished = () => {
+                            this._flattenBufferIn();
+                            sharp2.metadata(this.options, (err, metadata2) => {
+                                if (err) {
+                                    reject(is4.nativeError(err, stack));
+                                } else {
+                                    resolve2(metadata2);
+                                }
+                            });
+                        };
+                        if (this.writableFinished) {
+                            finished();
+                        } else {
+                            this.once('finish', finished);
+                        }
+                    });
+                } else {
+                    return new Promise((resolve2, reject) => {
+                        sharp2.metadata(this.options, (err, metadata2) => {
+                            if (err) {
+                                reject(is4.nativeError(err, stack));
+                            } else {
+                                resolve2(metadata2);
+                            }
+                        });
+                    });
+                }
+            }
+        }
+        function stats(callback) {
+            const stack = Error();
+            if (is4.fn(callback)) {
+                if (this._isStreamInput()) {
+                    this.on('finish', () => {
+                        this._flattenBufferIn();
+                        sharp2.stats(this.options, (err, stats2) => {
+                            if (err) {
+                                callback(is4.nativeError(err, stack));
+                            } else {
+                                callback(null, stats2);
+                            }
+                        });
+                    });
+                } else {
+                    sharp2.stats(this.options, (err, stats2) => {
+                        if (err) {
+                            callback(is4.nativeError(err, stack));
+                        } else {
+                            callback(null, stats2);
+                        }
+                    });
+                }
+                return this;
+            } else {
+                if (this._isStreamInput()) {
+                    return new Promise((resolve2, reject) => {
+                        this.on('finish', function () {
+                            this._flattenBufferIn();
+                            sharp2.stats(this.options, (err, stats2) => {
+                                if (err) {
+                                    reject(is4.nativeError(err, stack));
+                                } else {
+                                    resolve2(stats2);
+                                }
+                            });
+                        });
+                    });
+                } else {
+                    return new Promise((resolve2, reject) => {
+                        sharp2.stats(this.options, (err, stats2) => {
+                            if (err) {
+                                reject(is4.nativeError(err, stack));
+                            } else {
+                                resolve2(stats2);
+                            }
+                        });
+                    });
+                }
+            }
+        }
+        module2.exports = function (Sharp) {
+            Object.assign(Sharp.prototype, {
+                // Private
+                _inputOptionsFromObject,
+                _createInputDescriptor,
+                _write,
+                _flattenBufferIn,
+                _isStreamInput,
+                // Public
+                metadata,
+                stats,
+            });
+            Sharp.align = align;
+        };
+    },
+});
+
+// node_modules/sharp/lib/resize.js
+var require_resize = __commonJS({
+    'node_modules/sharp/lib/resize.js'(exports2, module2) {
+        'use strict';
+        var is4 = require_is();
+        var gravity = {
+            center: 0,
+            centre: 0,
+            north: 1,
+            east: 2,
+            south: 3,
+            west: 4,
+            northeast: 5,
+            southeast: 6,
+            southwest: 7,
+            northwest: 8,
+        };
+        var position = {
+            top: 1,
+            right: 2,
+            bottom: 3,
+            left: 4,
+            'right top': 5,
+            'right bottom': 6,
+            'left bottom': 7,
+            'left top': 8,
+        };
+        var extendWith = {
+            background: 'background',
+            copy: 'copy',
+            repeat: 'repeat',
+            mirror: 'mirror',
+        };
+        var strategy = {
+            entropy: 16,
+            attention: 17,
+        };
+        var kernel = {
+            nearest: 'nearest',
+            cubic: 'cubic',
+            mitchell: 'mitchell',
+            lanczos2: 'lanczos2',
+            lanczos3: 'lanczos3',
+        };
+        var fit = {
+            contain: 'contain',
+            cover: 'cover',
+            fill: 'fill',
+            inside: 'inside',
+            outside: 'outside',
+        };
+        var mapFitToCanvas = {
+            contain: 'embed',
+            cover: 'crop',
+            fill: 'ignore_aspect',
+            inside: 'max',
+            outside: 'min',
+        };
+        function isRotationExpected(options2) {
+            return (
+                options2.angle % 360 !== 0 ||
+                options2.useExifOrientation === true ||
+                options2.rotationAngle !== 0
+            );
+        }
+        function isResizeExpected(options2) {
+            return options2.width !== -1 || options2.height !== -1;
+        }
+        function resize(widthOrOptions, height, options2) {
+            if (isResizeExpected(this.options)) {
+                this.options.debuglog('ignoring previous resize options');
+            }
+            if (this.options.widthPost !== -1) {
+                this.options.debuglog('operation order will be: extract, resize, extract');
+            }
+            if (is4.defined(widthOrOptions)) {
+                if (is4.object(widthOrOptions) && !is4.defined(options2)) {
+                    options2 = widthOrOptions;
+                } else if (is4.integer(widthOrOptions) && widthOrOptions > 0) {
+                    this.options.width = widthOrOptions;
+                } else {
+                    throw is4.invalidParameterError('width', 'positive integer', widthOrOptions);
+                }
+            } else {
+                this.options.width = -1;
+            }
+            if (is4.defined(height)) {
+                if (is4.integer(height) && height > 0) {
+                    this.options.height = height;
+                } else {
+                    throw is4.invalidParameterError('height', 'positive integer', height);
+                }
+            } else {
+                this.options.height = -1;
+            }
+            if (is4.object(options2)) {
+                if (is4.defined(options2.width)) {
+                    if (is4.integer(options2.width) && options2.width > 0) {
+                        this.options.width = options2.width;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'width',
+                            'positive integer',
+                            options2.width,
+                        );
+                    }
+                }
+                if (is4.defined(options2.height)) {
+                    if (is4.integer(options2.height) && options2.height > 0) {
+                        this.options.height = options2.height;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'height',
+                            'positive integer',
+                            options2.height,
+                        );
+                    }
+                }
+                if (is4.defined(options2.fit)) {
+                    const canvas = mapFitToCanvas[options2.fit];
+                    if (is4.string(canvas)) {
+                        this.options.canvas = canvas;
+                    } else {
+                        throw is4.invalidParameterError('fit', 'valid fit', options2.fit);
+                    }
+                }
+                if (is4.defined(options2.position)) {
+                    const pos = is4.integer(options2.position)
+                        ? options2.position
+                        : strategy[options2.position] ||
+                          position[options2.position] ||
+                          gravity[options2.position];
+                    if (is4.integer(pos) && (is4.inRange(pos, 0, 8) || is4.inRange(pos, 16, 17))) {
+                        this.options.position = pos;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'position',
+                            'valid position/gravity/strategy',
+                            options2.position,
+                        );
+                    }
+                }
+                this._setBackgroundColourOption('resizeBackground', options2.background);
+                if (is4.defined(options2.kernel)) {
+                    if (is4.string(kernel[options2.kernel])) {
+                        this.options.kernel = kernel[options2.kernel];
+                    } else {
+                        throw is4.invalidParameterError(
+                            'kernel',
+                            'valid kernel name',
+                            options2.kernel,
+                        );
+                    }
+                }
+                if (is4.defined(options2.withoutEnlargement)) {
+                    this._setBooleanOption('withoutEnlargement', options2.withoutEnlargement);
+                }
+                if (is4.defined(options2.withoutReduction)) {
+                    this._setBooleanOption('withoutReduction', options2.withoutReduction);
+                }
+                if (is4.defined(options2.fastShrinkOnLoad)) {
+                    this._setBooleanOption('fastShrinkOnLoad', options2.fastShrinkOnLoad);
+                }
+            }
+            if (isRotationExpected(this.options) && isResizeExpected(this.options)) {
+                this.options.rotateBeforePreExtract = true;
+            }
+            return this;
+        }
+        function extend(extend2) {
+            if (is4.integer(extend2) && extend2 > 0) {
+                this.options.extendTop = extend2;
+                this.options.extendBottom = extend2;
+                this.options.extendLeft = extend2;
+                this.options.extendRight = extend2;
+            } else if (is4.object(extend2)) {
+                if (is4.defined(extend2.top)) {
+                    if (is4.integer(extend2.top) && extend2.top >= 0) {
+                        this.options.extendTop = extend2.top;
+                    } else {
+                        throw is4.invalidParameterError('top', 'positive integer', extend2.top);
+                    }
+                }
+                if (is4.defined(extend2.bottom)) {
+                    if (is4.integer(extend2.bottom) && extend2.bottom >= 0) {
+                        this.options.extendBottom = extend2.bottom;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'bottom',
+                            'positive integer',
+                            extend2.bottom,
+                        );
+                    }
+                }
+                if (is4.defined(extend2.left)) {
+                    if (is4.integer(extend2.left) && extend2.left >= 0) {
+                        this.options.extendLeft = extend2.left;
+                    } else {
+                        throw is4.invalidParameterError('left', 'positive integer', extend2.left);
+                    }
+                }
+                if (is4.defined(extend2.right)) {
+                    if (is4.integer(extend2.right) && extend2.right >= 0) {
+                        this.options.extendRight = extend2.right;
+                    } else {
+                        throw is4.invalidParameterError('right', 'positive integer', extend2.right);
+                    }
+                }
+                this._setBackgroundColourOption('extendBackground', extend2.background);
+                if (is4.defined(extend2.extendWith)) {
+                    if (is4.string(extendWith[extend2.extendWith])) {
+                        this.options.extendWith = extendWith[extend2.extendWith];
+                    } else {
+                        throw is4.invalidParameterError(
+                            'extendWith',
+                            'one of: background, copy, repeat, mirror',
+                            extend2.extendWith,
+                        );
+                    }
+                }
+            } else {
+                throw is4.invalidParameterError('extend', 'integer or object', extend2);
+            }
+            return this;
+        }
+        function extract(options2) {
+            const suffix =
+                isResizeExpected(this.options) || this.options.widthPre !== -1 ? 'Post' : 'Pre';
+            if (this.options[`width${suffix}`] !== -1) {
+                this.options.debuglog('ignoring previous extract options');
+            }
+            ['left', 'top', 'width', 'height'].forEach(function (name) {
+                const value = options2[name];
+                if (is4.integer(value) && value >= 0) {
+                    this.options[
+                        name + (name === 'left' || name === 'top' ? 'Offset' : '') + suffix
+                    ] = value;
+                } else {
+                    throw is4.invalidParameterError(name, 'integer', value);
+                }
+            }, this);
+            if (isRotationExpected(this.options) && !isResizeExpected(this.options)) {
+                if (this.options.widthPre === -1 || this.options.widthPost === -1) {
+                    this.options.rotateBeforePreExtract = true;
+                }
+            }
+            return this;
+        }
+        function trim(options2) {
+            this.options.trimThreshold = 10;
+            if (is4.defined(options2)) {
+                if (is4.object(options2)) {
+                    if (is4.defined(options2.background)) {
+                        this._setBackgroundColourOption('trimBackground', options2.background);
+                    }
+                    if (is4.defined(options2.threshold)) {
+                        if (is4.number(options2.threshold) && options2.threshold >= 0) {
+                            this.options.trimThreshold = options2.threshold;
+                        } else {
+                            throw is4.invalidParameterError(
+                                'threshold',
+                                'positive number',
+                                options2.threshold,
+                            );
+                        }
+                    }
+                    if (is4.defined(options2.lineArt)) {
+                        this._setBooleanOption('trimLineArt', options2.lineArt);
+                    }
+                } else {
+                    throw is4.invalidParameterError('trim', 'object', options2);
+                }
+            }
+            if (isRotationExpected(this.options)) {
+                this.options.rotateBeforePreExtract = true;
+            }
+            return this;
+        }
+        module2.exports = function (Sharp) {
+            Object.assign(Sharp.prototype, {
+                resize,
+                extend,
+                extract,
+                trim,
+            });
+            Sharp.gravity = gravity;
+            Sharp.strategy = strategy;
+            Sharp.kernel = kernel;
+            Sharp.fit = fit;
+            Sharp.position = position;
+        };
+    },
+});
+
+// node_modules/sharp/lib/composite.js
+var require_composite = __commonJS({
+    'node_modules/sharp/lib/composite.js'(exports2, module2) {
+        'use strict';
+        var is4 = require_is();
+        var blend = {
+            clear: 'clear',
+            source: 'source',
+            over: 'over',
+            in: 'in',
+            out: 'out',
+            atop: 'atop',
+            dest: 'dest',
+            'dest-over': 'dest-over',
+            'dest-in': 'dest-in',
+            'dest-out': 'dest-out',
+            'dest-atop': 'dest-atop',
+            xor: 'xor',
+            add: 'add',
+            saturate: 'saturate',
+            multiply: 'multiply',
+            screen: 'screen',
+            overlay: 'overlay',
+            darken: 'darken',
+            lighten: 'lighten',
+            'colour-dodge': 'colour-dodge',
+            'color-dodge': 'colour-dodge',
+            'colour-burn': 'colour-burn',
+            'color-burn': 'colour-burn',
+            'hard-light': 'hard-light',
+            'soft-light': 'soft-light',
+            difference: 'difference',
+            exclusion: 'exclusion',
+        };
+        function composite(images) {
+            if (!Array.isArray(images)) {
+                throw is4.invalidParameterError('images to composite', 'array', images);
+            }
+            this.options.composite = images.map((image) => {
+                if (!is4.object(image)) {
+                    throw is4.invalidParameterError('image to composite', 'object', image);
+                }
+                const inputOptions = this._inputOptionsFromObject(image);
+                const composite2 = {
+                    input: this._createInputDescriptor(image.input, inputOptions, {
+                        allowStream: false,
+                    }),
+                    blend: 'over',
+                    tile: false,
+                    left: 0,
+                    top: 0,
+                    hasOffset: false,
+                    gravity: 0,
+                    premultiplied: false,
+                };
+                if (is4.defined(image.blend)) {
+                    if (is4.string(blend[image.blend])) {
+                        composite2.blend = blend[image.blend];
+                    } else {
+                        throw is4.invalidParameterError('blend', 'valid blend name', image.blend);
+                    }
+                }
+                if (is4.defined(image.tile)) {
+                    if (is4.bool(image.tile)) {
+                        composite2.tile = image.tile;
+                    } else {
+                        throw is4.invalidParameterError('tile', 'boolean', image.tile);
+                    }
+                }
+                if (is4.defined(image.left)) {
+                    if (is4.integer(image.left)) {
+                        composite2.left = image.left;
+                    } else {
+                        throw is4.invalidParameterError('left', 'integer', image.left);
+                    }
+                }
+                if (is4.defined(image.top)) {
+                    if (is4.integer(image.top)) {
+                        composite2.top = image.top;
+                    } else {
+                        throw is4.invalidParameterError('top', 'integer', image.top);
+                    }
+                }
+                if (is4.defined(image.top) !== is4.defined(image.left)) {
+                    throw new Error('Expected both left and top to be set');
+                } else {
+                    composite2.hasOffset = is4.integer(image.top) && is4.integer(image.left);
+                }
+                if (is4.defined(image.gravity)) {
+                    if (is4.integer(image.gravity) && is4.inRange(image.gravity, 0, 8)) {
+                        composite2.gravity = image.gravity;
+                    } else if (
+                        is4.string(image.gravity) &&
+                        is4.integer(this.constructor.gravity[image.gravity])
+                    ) {
+                        composite2.gravity = this.constructor.gravity[image.gravity];
+                    } else {
+                        throw is4.invalidParameterError('gravity', 'valid gravity', image.gravity);
+                    }
+                }
+                if (is4.defined(image.premultiplied)) {
+                    if (is4.bool(image.premultiplied)) {
+                        composite2.premultiplied = image.premultiplied;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'premultiplied',
+                            'boolean',
+                            image.premultiplied,
+                        );
+                    }
+                }
+                return composite2;
+            });
+            return this;
+        }
+        module2.exports = function (Sharp) {
+            Sharp.prototype.composite = composite;
+            Sharp.blend = blend;
+        };
+    },
+});
+
+// node_modules/sharp/lib/operation.js
+var require_operation = __commonJS({
+    'node_modules/sharp/lib/operation.js'(exports2, module2) {
+        'use strict';
+        var color = require_color();
+        var is4 = require_is();
+        function rotate(angle, options2) {
+            if (
+                this.options.useExifOrientation ||
+                this.options.angle ||
+                this.options.rotationAngle
+            ) {
+                this.options.debuglog('ignoring previous rotate options');
+            }
+            if (!is4.defined(angle)) {
+                this.options.useExifOrientation = true;
+            } else if (is4.integer(angle) && !(angle % 90)) {
+                this.options.angle = angle;
+            } else if (is4.number(angle)) {
+                this.options.rotationAngle = angle;
+                if (is4.object(options2) && options2.background) {
+                    const backgroundColour = color(options2.background);
+                    this.options.rotationBackground = [
+                        backgroundColour.red(),
+                        backgroundColour.green(),
+                        backgroundColour.blue(),
+                        Math.round(backgroundColour.alpha() * 255),
+                    ];
+                }
+            } else {
+                throw is4.invalidParameterError('angle', 'numeric', angle);
+            }
+            return this;
+        }
+        function flip(flip2) {
+            this.options.flip = is4.bool(flip2) ? flip2 : true;
+            return this;
+        }
+        function flop(flop2) {
+            this.options.flop = is4.bool(flop2) ? flop2 : true;
+            return this;
+        }
+        function affine(matrix, options2) {
+            const flatMatrix = [].concat(...matrix);
+            if (flatMatrix.length === 4 && flatMatrix.every(is4.number)) {
+                this.options.affineMatrix = flatMatrix;
+            } else {
+                throw is4.invalidParameterError('matrix', '1x4 or 2x2 array', matrix);
+            }
+            if (is4.defined(options2)) {
+                if (is4.object(options2)) {
+                    this._setBackgroundColourOption('affineBackground', options2.background);
+                    if (is4.defined(options2.idx)) {
+                        if (is4.number(options2.idx)) {
+                            this.options.affineIdx = options2.idx;
+                        } else {
+                            throw is4.invalidParameterError('options.idx', 'number', options2.idx);
+                        }
+                    }
+                    if (is4.defined(options2.idy)) {
+                        if (is4.number(options2.idy)) {
+                            this.options.affineIdy = options2.idy;
+                        } else {
+                            throw is4.invalidParameterError('options.idy', 'number', options2.idy);
+                        }
+                    }
+                    if (is4.defined(options2.odx)) {
+                        if (is4.number(options2.odx)) {
+                            this.options.affineOdx = options2.odx;
+                        } else {
+                            throw is4.invalidParameterError('options.odx', 'number', options2.odx);
+                        }
+                    }
+                    if (is4.defined(options2.ody)) {
+                        if (is4.number(options2.ody)) {
+                            this.options.affineOdy = options2.ody;
+                        } else {
+                            throw is4.invalidParameterError('options.ody', 'number', options2.ody);
+                        }
+                    }
+                    if (is4.defined(options2.interpolator)) {
+                        if (
+                            is4.inArray(
+                                options2.interpolator,
+                                Object.values(this.constructor.interpolators),
+                            )
+                        ) {
+                            this.options.affineInterpolator = options2.interpolator;
+                        } else {
+                            throw is4.invalidParameterError(
+                                'options.interpolator',
+                                'valid interpolator name',
+                                options2.interpolator,
+                            );
+                        }
+                    }
+                } else {
+                    throw is4.invalidParameterError('options', 'object', options2);
+                }
+            }
+            return this;
+        }
+        function sharpen(options2, flat, jagged) {
+            if (!is4.defined(options2)) {
+                this.options.sharpenSigma = -1;
+            } else if (is4.bool(options2)) {
+                this.options.sharpenSigma = options2 ? -1 : 0;
+            } else if (is4.number(options2) && is4.inRange(options2, 0.01, 1e4)) {
+                this.options.sharpenSigma = options2;
+                if (is4.defined(flat)) {
+                    if (is4.number(flat) && is4.inRange(flat, 0, 1e4)) {
+                        this.options.sharpenM1 = flat;
+                    } else {
+                        throw is4.invalidParameterError('flat', 'number between 0 and 10000', flat);
+                    }
+                }
+                if (is4.defined(jagged)) {
+                    if (is4.number(jagged) && is4.inRange(jagged, 0, 1e4)) {
+                        this.options.sharpenM2 = jagged;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'jagged',
+                            'number between 0 and 10000',
+                            jagged,
+                        );
+                    }
+                }
+            } else if (is4.plainObject(options2)) {
+                if (is4.number(options2.sigma) && is4.inRange(options2.sigma, 1e-6, 10)) {
+                    this.options.sharpenSigma = options2.sigma;
+                } else {
+                    throw is4.invalidParameterError(
+                        'options.sigma',
+                        'number between 0.000001 and 10',
+                        options2.sigma,
+                    );
+                }
+                if (is4.defined(options2.m1)) {
+                    if (is4.number(options2.m1) && is4.inRange(options2.m1, 0, 1e6)) {
+                        this.options.sharpenM1 = options2.m1;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'options.m1',
+                            'number between 0 and 1000000',
+                            options2.m1,
+                        );
+                    }
+                }
+                if (is4.defined(options2.m2)) {
+                    if (is4.number(options2.m2) && is4.inRange(options2.m2, 0, 1e6)) {
+                        this.options.sharpenM2 = options2.m2;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'options.m2',
+                            'number between 0 and 1000000',
+                            options2.m2,
+                        );
+                    }
+                }
+                if (is4.defined(options2.x1)) {
+                    if (is4.number(options2.x1) && is4.inRange(options2.x1, 0, 1e6)) {
+                        this.options.sharpenX1 = options2.x1;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'options.x1',
+                            'number between 0 and 1000000',
+                            options2.x1,
+                        );
+                    }
+                }
+                if (is4.defined(options2.y2)) {
+                    if (is4.number(options2.y2) && is4.inRange(options2.y2, 0, 1e6)) {
+                        this.options.sharpenY2 = options2.y2;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'options.y2',
+                            'number between 0 and 1000000',
+                            options2.y2,
+                        );
+                    }
+                }
+                if (is4.defined(options2.y3)) {
+                    if (is4.number(options2.y3) && is4.inRange(options2.y3, 0, 1e6)) {
+                        this.options.sharpenY3 = options2.y3;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'options.y3',
+                            'number between 0 and 1000000',
+                            options2.y3,
+                        );
+                    }
+                }
+            } else {
+                throw is4.invalidParameterError('sigma', 'number between 0.01 and 10000', options2);
+            }
+            return this;
+        }
+        function median(size) {
+            if (!is4.defined(size)) {
+                this.options.medianSize = 3;
+            } else if (is4.integer(size) && is4.inRange(size, 1, 1e3)) {
+                this.options.medianSize = size;
+            } else {
+                throw is4.invalidParameterError('size', 'integer between 1 and 1000', size);
+            }
+            return this;
+        }
+        function blur(sigma) {
+            if (!is4.defined(sigma)) {
+                this.options.blurSigma = -1;
+            } else if (is4.bool(sigma)) {
+                this.options.blurSigma = sigma ? -1 : 0;
+            } else if (is4.number(sigma) && is4.inRange(sigma, 0.3, 1e3)) {
+                this.options.blurSigma = sigma;
+            } else {
+                throw is4.invalidParameterError('sigma', 'number between 0.3 and 1000', sigma);
+            }
+            return this;
+        }
+        function flatten2(options2) {
+            this.options.flatten = is4.bool(options2) ? options2 : true;
+            if (is4.object(options2)) {
+                this._setBackgroundColourOption('flattenBackground', options2.background);
+            }
+            return this;
+        }
+        function unflatten() {
+            this.options.unflatten = true;
+            return this;
+        }
+        function gamma(gamma2, gammaOut) {
+            if (!is4.defined(gamma2)) {
+                this.options.gamma = 2.2;
+            } else if (is4.number(gamma2) && is4.inRange(gamma2, 1, 3)) {
+                this.options.gamma = gamma2;
+            } else {
+                throw is4.invalidParameterError('gamma', 'number between 1.0 and 3.0', gamma2);
+            }
+            if (!is4.defined(gammaOut)) {
+                this.options.gammaOut = this.options.gamma;
+            } else if (is4.number(gammaOut) && is4.inRange(gammaOut, 1, 3)) {
+                this.options.gammaOut = gammaOut;
+            } else {
+                throw is4.invalidParameterError('gammaOut', 'number between 1.0 and 3.0', gammaOut);
+            }
+            return this;
+        }
+        function negate(options2) {
+            this.options.negate = is4.bool(options2) ? options2 : true;
+            if (is4.plainObject(options2) && 'alpha' in options2) {
+                if (!is4.bool(options2.alpha)) {
+                    throw is4.invalidParameterError(
+                        'alpha',
+                        'should be boolean value',
+                        options2.alpha,
+                    );
+                } else {
+                    this.options.negateAlpha = options2.alpha;
+                }
+            }
+            return this;
+        }
+        function normalise(options2) {
+            if (is4.plainObject(options2)) {
+                if (is4.defined(options2.lower)) {
+                    if (is4.number(options2.lower) && is4.inRange(options2.lower, 0, 99)) {
+                        this.options.normaliseLower = options2.lower;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'lower',
+                            'number between 0 and 99',
+                            options2.lower,
+                        );
+                    }
+                }
+                if (is4.defined(options2.upper)) {
+                    if (is4.number(options2.upper) && is4.inRange(options2.upper, 1, 100)) {
+                        this.options.normaliseUpper = options2.upper;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'upper',
+                            'number between 1 and 100',
+                            options2.upper,
+                        );
+                    }
+                }
+            }
+            if (this.options.normaliseLower >= this.options.normaliseUpper) {
+                throw is4.invalidParameterError(
+                    'range',
+                    'lower to be less than upper',
+                    `${this.options.normaliseLower} >= ${this.options.normaliseUpper}`,
+                );
+            }
+            this.options.normalise = true;
+            return this;
+        }
+        function normalize(options2) {
+            return this.normalise(options2);
+        }
+        function clahe(options2) {
+            if (is4.plainObject(options2)) {
+                if (is4.integer(options2.width) && options2.width > 0) {
+                    this.options.claheWidth = options2.width;
+                } else {
+                    throw is4.invalidParameterError(
+                        'width',
+                        'integer greater than zero',
+                        options2.width,
+                    );
+                }
+                if (is4.integer(options2.height) && options2.height > 0) {
+                    this.options.claheHeight = options2.height;
+                } else {
+                    throw is4.invalidParameterError(
+                        'height',
+                        'integer greater than zero',
+                        options2.height,
+                    );
+                }
+                if (is4.defined(options2.maxSlope)) {
+                    if (is4.integer(options2.maxSlope) && is4.inRange(options2.maxSlope, 0, 100)) {
+                        this.options.claheMaxSlope = options2.maxSlope;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'maxSlope',
+                            'integer between 0 and 100',
+                            options2.maxSlope,
+                        );
+                    }
+                }
+            } else {
+                throw is4.invalidParameterError('options', 'plain object', options2);
+            }
+            return this;
+        }
+        function convolve(kernel) {
+            if (
+                !is4.object(kernel) ||
+                !Array.isArray(kernel.kernel) ||
+                !is4.integer(kernel.width) ||
+                !is4.integer(kernel.height) ||
+                !is4.inRange(kernel.width, 3, 1001) ||
+                !is4.inRange(kernel.height, 3, 1001) ||
+                kernel.height * kernel.width !== kernel.kernel.length
+            ) {
+                throw new Error('Invalid convolution kernel');
+            }
+            if (!is4.integer(kernel.scale)) {
+                kernel.scale = kernel.kernel.reduce(function (a, b) {
+                    return a + b;
+                }, 0);
+            }
+            if (kernel.scale < 1) {
+                kernel.scale = 1;
+            }
+            if (!is4.integer(kernel.offset)) {
+                kernel.offset = 0;
+            }
+            this.options.convKernel = kernel;
+            return this;
+        }
+        function threshold(threshold2, options2) {
+            if (!is4.defined(threshold2)) {
+                this.options.threshold = 128;
+            } else if (is4.bool(threshold2)) {
+                this.options.threshold = threshold2 ? 128 : 0;
+            } else if (is4.integer(threshold2) && is4.inRange(threshold2, 0, 255)) {
+                this.options.threshold = threshold2;
+            } else {
+                throw is4.invalidParameterError(
+                    'threshold',
+                    'integer between 0 and 255',
+                    threshold2,
+                );
+            }
+            if (
+                !is4.object(options2) ||
+                options2.greyscale === true ||
+                options2.grayscale === true
+            ) {
+                this.options.thresholdGrayscale = true;
+            } else {
+                this.options.thresholdGrayscale = false;
+            }
+            return this;
+        }
+        function boolean(operand, operator, options2) {
+            this.options.boolean = this._createInputDescriptor(operand, options2);
+            if (is4.string(operator) && is4.inArray(operator, ['and', 'or', 'eor'])) {
+                this.options.booleanOp = operator;
+            } else {
+                throw is4.invalidParameterError('operator', 'one of: and, or, eor', operator);
+            }
+            return this;
+        }
+        function linear(a, b) {
+            if (!is4.defined(a) && is4.number(b)) {
+                a = 1;
+            } else if (is4.number(a) && !is4.defined(b)) {
+                b = 0;
+            }
+            if (!is4.defined(a)) {
+                this.options.linearA = [];
+            } else if (is4.number(a)) {
+                this.options.linearA = [a];
+            } else if (Array.isArray(a) && a.length && a.every(is4.number)) {
+                this.options.linearA = a;
+            } else {
+                throw is4.invalidParameterError('a', 'number or array of numbers', a);
+            }
+            if (!is4.defined(b)) {
+                this.options.linearB = [];
+            } else if (is4.number(b)) {
+                this.options.linearB = [b];
+            } else if (Array.isArray(b) && b.length && b.every(is4.number)) {
+                this.options.linearB = b;
+            } else {
+                throw is4.invalidParameterError('b', 'number or array of numbers', b);
+            }
+            if (this.options.linearA.length !== this.options.linearB.length) {
+                throw new Error('Expected a and b to be arrays of the same length');
+            }
+            return this;
+        }
+        function recomb(inputMatrix) {
+            if (
+                !Array.isArray(inputMatrix) ||
+                inputMatrix.length !== 3 ||
+                inputMatrix[0].length !== 3 ||
+                inputMatrix[1].length !== 3 ||
+                inputMatrix[2].length !== 3
+            ) {
+                throw new Error('Invalid recombination matrix');
+            }
+            this.options.recombMatrix = [
+                inputMatrix[0][0],
+                inputMatrix[0][1],
+                inputMatrix[0][2],
+                inputMatrix[1][0],
+                inputMatrix[1][1],
+                inputMatrix[1][2],
+                inputMatrix[2][0],
+                inputMatrix[2][1],
+                inputMatrix[2][2],
+            ].map(Number);
+            return this;
+        }
+        function modulate(options2) {
+            if (!is4.plainObject(options2)) {
+                throw is4.invalidParameterError('options', 'plain object', options2);
+            }
+            if ('brightness' in options2) {
+                if (is4.number(options2.brightness) && options2.brightness >= 0) {
+                    this.options.brightness = options2.brightness;
+                } else {
+                    throw is4.invalidParameterError(
+                        'brightness',
+                        'number above zero',
+                        options2.brightness,
+                    );
+                }
+            }
+            if ('saturation' in options2) {
+                if (is4.number(options2.saturation) && options2.saturation >= 0) {
+                    this.options.saturation = options2.saturation;
+                } else {
+                    throw is4.invalidParameterError(
+                        'saturation',
+                        'number above zero',
+                        options2.saturation,
+                    );
+                }
+            }
+            if ('hue' in options2) {
+                if (is4.integer(options2.hue)) {
+                    this.options.hue = options2.hue % 360;
+                } else {
+                    throw is4.invalidParameterError('hue', 'number', options2.hue);
+                }
+            }
+            if ('lightness' in options2) {
+                if (is4.number(options2.lightness)) {
+                    this.options.lightness = options2.lightness;
+                } else {
+                    throw is4.invalidParameterError('lightness', 'number', options2.lightness);
+                }
+            }
+            return this;
+        }
+        module2.exports = function (Sharp) {
+            Object.assign(Sharp.prototype, {
+                rotate,
+                flip,
+                flop,
+                affine,
+                sharpen,
+                median,
+                blur,
+                flatten: flatten2,
+                unflatten,
+                gamma,
+                negate,
+                normalise,
+                normalize,
+                clahe,
+                convolve,
+                threshold,
+                boolean,
+                linear,
+                recomb,
+                modulate,
+            });
+        };
+    },
+});
+
+// node_modules/sharp/lib/colour.js
+var require_colour = __commonJS({
+    'node_modules/sharp/lib/colour.js'(exports2, module2) {
+        'use strict';
+        var color = require_color();
+        var is4 = require_is();
+        var colourspace = {
+            multiband: 'multiband',
+            'b-w': 'b-w',
+            bw: 'b-w',
+            cmyk: 'cmyk',
+            srgb: 'srgb',
+        };
+        function tint(tint2) {
+            this._setBackgroundColourOption('tint', tint2);
+            return this;
+        }
+        function greyscale(greyscale2) {
+            this.options.greyscale = is4.bool(greyscale2) ? greyscale2 : true;
+            return this;
+        }
+        function grayscale(grayscale2) {
+            return this.greyscale(grayscale2);
+        }
+        function pipelineColourspace(colourspace2) {
+            if (!is4.string(colourspace2)) {
+                throw is4.invalidParameterError('colourspace', 'string', colourspace2);
+            }
+            this.options.colourspaceInput = colourspace2;
+            return this;
+        }
+        function pipelineColorspace(colorspace) {
+            return this.pipelineColourspace(colorspace);
+        }
+        function toColourspace(colourspace2) {
+            if (!is4.string(colourspace2)) {
+                throw is4.invalidParameterError('colourspace', 'string', colourspace2);
+            }
+            this.options.colourspace = colourspace2;
+            return this;
+        }
+        function toColorspace(colorspace) {
+            return this.toColourspace(colorspace);
+        }
+        function _setBackgroundColourOption(key, value) {
+            if (is4.defined(value)) {
+                if (is4.object(value) || is4.string(value)) {
+                    const colour = color(value);
+                    this.options[key] = [
+                        colour.red(),
+                        colour.green(),
+                        colour.blue(),
+                        Math.round(colour.alpha() * 255),
+                    ];
+                } else {
+                    throw is4.invalidParameterError('background', 'object or string', value);
+                }
+            }
+        }
+        module2.exports = function (Sharp) {
+            Object.assign(Sharp.prototype, {
+                // Public
+                tint,
+                greyscale,
+                grayscale,
+                pipelineColourspace,
+                pipelineColorspace,
+                toColourspace,
+                toColorspace,
+                // Private
+                _setBackgroundColourOption,
+            });
+            Sharp.colourspace = colourspace;
+            Sharp.colorspace = colourspace;
+        };
+    },
+});
+
+// node_modules/sharp/lib/channel.js
+var require_channel = __commonJS({
+    'node_modules/sharp/lib/channel.js'(exports2, module2) {
+        'use strict';
+        var is4 = require_is();
+        var bool = {
+            and: 'and',
+            or: 'or',
+            eor: 'eor',
+        };
+        function removeAlpha() {
+            this.options.removeAlpha = true;
+            return this;
+        }
+        function ensureAlpha(alpha) {
+            if (is4.defined(alpha)) {
+                if (is4.number(alpha) && is4.inRange(alpha, 0, 1)) {
+                    this.options.ensureAlpha = alpha;
+                } else {
+                    throw is4.invalidParameterError('alpha', 'number between 0 and 1', alpha);
+                }
+            } else {
+                this.options.ensureAlpha = 1;
+            }
+            return this;
+        }
+        function extractChannel(channel) {
+            const channelMap = { red: 0, green: 1, blue: 2, alpha: 3 };
+            if (Object.keys(channelMap).includes(channel)) {
+                channel = channelMap[channel];
+            }
+            if (is4.integer(channel) && is4.inRange(channel, 0, 4)) {
+                this.options.extractChannel = channel;
+            } else {
+                throw is4.invalidParameterError(
+                    'channel',
+                    'integer or one of: red, green, blue, alpha',
+                    channel,
+                );
+            }
+            return this;
+        }
+        function joinChannel(images, options2) {
+            if (Array.isArray(images)) {
+                images.forEach(function (image) {
+                    this.options.joinChannelIn.push(this._createInputDescriptor(image, options2));
+                }, this);
+            } else {
+                this.options.joinChannelIn.push(this._createInputDescriptor(images, options2));
+            }
+            return this;
+        }
+        function bandbool(boolOp) {
+            if (is4.string(boolOp) && is4.inArray(boolOp, ['and', 'or', 'eor'])) {
+                this.options.bandBoolOp = boolOp;
+            } else {
+                throw is4.invalidParameterError('boolOp', 'one of: and, or, eor', boolOp);
+            }
+            return this;
+        }
+        module2.exports = function (Sharp) {
+            Object.assign(Sharp.prototype, {
+                // Public instance functions
+                removeAlpha,
+                ensureAlpha,
+                extractChannel,
+                joinChannel,
+                bandbool,
+            });
+            Sharp.bool = bool;
+        };
+    },
+});
+
+// node_modules/sharp/lib/output.js
+var require_output = __commonJS({
+    'node_modules/sharp/lib/output.js'(exports2, module2) {
+        'use strict';
+        var path5 = require('path');
+        var is4 = require_is();
+        var sharp2 = require_sharp();
+        var formats = /* @__PURE__ */ new Map([
+            ['heic', 'heif'],
+            ['heif', 'heif'],
+            ['avif', 'avif'],
+            ['jpeg', 'jpeg'],
+            ['jpg', 'jpeg'],
+            ['jpe', 'jpeg'],
+            ['tile', 'tile'],
+            ['dz', 'tile'],
+            ['png', 'png'],
+            ['raw', 'raw'],
+            ['tiff', 'tiff'],
+            ['tif', 'tiff'],
+            ['webp', 'webp'],
+            ['gif', 'gif'],
+            ['jp2', 'jp2'],
+            ['jpx', 'jp2'],
+            ['j2k', 'jp2'],
+            ['j2c', 'jp2'],
+            ['jxl', 'jxl'],
+        ]);
+        var jp2Regex = /\.(jp[2x]|j2[kc])$/i;
+        var errJp2Save = () => new Error('JP2 output requires libvips with support for OpenJPEG');
+        var bitdepthFromColourCount = (colours) =>
+            1 << (31 - Math.clz32(Math.ceil(Math.log2(colours))));
+        function toFile(fileOut, callback) {
+            let err;
+            if (!is4.string(fileOut)) {
+                err = new Error('Missing output file path');
+            } else if (
+                is4.string(this.options.input.file) &&
+                path5.resolve(this.options.input.file) === path5.resolve(fileOut)
+            ) {
+                err = new Error('Cannot use same file for input and output');
+            } else if (
+                jp2Regex.test(path5.extname(fileOut)) &&
+                !this.constructor.format.jp2k.output.file
+            ) {
+                err = errJp2Save();
+            }
+            if (err) {
+                if (is4.fn(callback)) {
+                    callback(err);
+                } else {
+                    return Promise.reject(err);
+                }
+            } else {
+                this.options.fileOut = fileOut;
+                const stack = Error();
+                return this._pipeline(callback, stack);
+            }
+            return this;
+        }
+        function toBuffer(options2, callback) {
+            if (is4.object(options2)) {
+                this._setBooleanOption('resolveWithObject', options2.resolveWithObject);
+            } else if (this.options.resolveWithObject) {
+                this.options.resolveWithObject = false;
+            }
+            this.options.fileOut = '';
+            const stack = Error();
+            return this._pipeline(is4.fn(options2) ? options2 : callback, stack);
+        }
+        function keepExif() {
+            this.options.keepMetadata |= 1;
+            return this;
+        }
+        function withExif(exif) {
+            if (is4.object(exif)) {
+                for (const [ifd, entries] of Object.entries(exif)) {
+                    if (is4.object(entries)) {
+                        for (const [k, v] of Object.entries(entries)) {
+                            if (is4.string(v)) {
+                                this.options.withExif[`exif-${ifd.toLowerCase()}-${k}`] = v;
+                            } else {
+                                throw is4.invalidParameterError(`${ifd}.${k}`, 'string', v);
+                            }
+                        }
+                    } else {
+                        throw is4.invalidParameterError(ifd, 'object', entries);
+                    }
+                }
+            } else {
+                throw is4.invalidParameterError('exif', 'object', exif);
+            }
+            this.options.withExifMerge = false;
+            return this.keepExif();
+        }
+        function withExifMerge(exif) {
+            this.withExif(exif);
+            this.options.withExifMerge = true;
+            return this;
+        }
+        function keepIccProfile() {
+            this.options.keepMetadata |= 8;
+            return this;
+        }
+        function withIccProfile(icc, options2) {
+            if (is4.string(icc)) {
+                this.options.withIccProfile = icc;
+            } else {
+                throw is4.invalidParameterError('icc', 'string', icc);
+            }
+            this.keepIccProfile();
+            if (is4.object(options2)) {
+                if (is4.defined(options2.attach)) {
+                    if (is4.bool(options2.attach)) {
+                        if (!options2.attach) {
+                            this.options.keepMetadata &= ~8;
+                        }
+                    } else {
+                        throw is4.invalidParameterError('attach', 'boolean', options2.attach);
+                    }
+                }
+            }
+            return this;
+        }
+        function keepMetadata() {
+            this.options.keepMetadata = 31;
+            return this;
+        }
+        function withMetadata(options2) {
+            this.keepMetadata();
+            this.withIccProfile('srgb');
+            if (is4.object(options2)) {
+                if (is4.defined(options2.orientation)) {
+                    if (
+                        is4.integer(options2.orientation) &&
+                        is4.inRange(options2.orientation, 1, 8)
+                    ) {
+                        this.options.withMetadataOrientation = options2.orientation;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'orientation',
+                            'integer between 1 and 8',
+                            options2.orientation,
+                        );
+                    }
+                }
+                if (is4.defined(options2.density)) {
+                    if (is4.number(options2.density) && options2.density > 0) {
+                        this.options.withMetadataDensity = options2.density;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'density',
+                            'positive number',
+                            options2.density,
+                        );
+                    }
+                }
+                if (is4.defined(options2.icc)) {
+                    this.withIccProfile(options2.icc);
+                }
+                if (is4.defined(options2.exif)) {
+                    this.withExifMerge(options2.exif);
+                }
+            }
+            return this;
+        }
+        function toFormat(format, options2) {
+            const actualFormat = formats.get(
+                (is4.object(format) && is4.string(format.id) ? format.id : format).toLowerCase(),
+            );
+            if (!actualFormat) {
+                throw is4.invalidParameterError(
+                    'format',
+                    `one of: ${[...formats.keys()].join(', ')}`,
+                    format,
+                );
+            }
+            return this[actualFormat](options2);
+        }
+        function jpeg(options2) {
+            if (is4.object(options2)) {
+                if (is4.defined(options2.quality)) {
+                    if (is4.integer(options2.quality) && is4.inRange(options2.quality, 1, 100)) {
+                        this.options.jpegQuality = options2.quality;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'quality',
+                            'integer between 1 and 100',
+                            options2.quality,
+                        );
+                    }
+                }
+                if (is4.defined(options2.progressive)) {
+                    this._setBooleanOption('jpegProgressive', options2.progressive);
+                }
+                if (is4.defined(options2.chromaSubsampling)) {
+                    if (
+                        is4.string(options2.chromaSubsampling) &&
+                        is4.inArray(options2.chromaSubsampling, ['4:2:0', '4:4:4'])
+                    ) {
+                        this.options.jpegChromaSubsampling = options2.chromaSubsampling;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'chromaSubsampling',
+                            'one of: 4:2:0, 4:4:4',
+                            options2.chromaSubsampling,
+                        );
+                    }
+                }
+                const optimiseCoding = is4.bool(options2.optimizeCoding)
+                    ? options2.optimizeCoding
+                    : options2.optimiseCoding;
+                if (is4.defined(optimiseCoding)) {
+                    this._setBooleanOption('jpegOptimiseCoding', optimiseCoding);
+                }
+                if (is4.defined(options2.mozjpeg)) {
+                    if (is4.bool(options2.mozjpeg)) {
+                        if (options2.mozjpeg) {
+                            this.options.jpegTrellisQuantisation = true;
+                            this.options.jpegOvershootDeringing = true;
+                            this.options.jpegOptimiseScans = true;
+                            this.options.jpegProgressive = true;
+                            this.options.jpegQuantisationTable = 3;
+                        }
+                    } else {
+                        throw is4.invalidParameterError('mozjpeg', 'boolean', options2.mozjpeg);
+                    }
+                }
+                const trellisQuantisation = is4.bool(options2.trellisQuantization)
+                    ? options2.trellisQuantization
+                    : options2.trellisQuantisation;
+                if (is4.defined(trellisQuantisation)) {
+                    this._setBooleanOption('jpegTrellisQuantisation', trellisQuantisation);
+                }
+                if (is4.defined(options2.overshootDeringing)) {
+                    this._setBooleanOption('jpegOvershootDeringing', options2.overshootDeringing);
+                }
+                const optimiseScans = is4.bool(options2.optimizeScans)
+                    ? options2.optimizeScans
+                    : options2.optimiseScans;
+                if (is4.defined(optimiseScans)) {
+                    this._setBooleanOption('jpegOptimiseScans', optimiseScans);
+                    if (optimiseScans) {
+                        this.options.jpegProgressive = true;
+                    }
+                }
+                const quantisationTable = is4.number(options2.quantizationTable)
+                    ? options2.quantizationTable
+                    : options2.quantisationTable;
+                if (is4.defined(quantisationTable)) {
+                    if (is4.integer(quantisationTable) && is4.inRange(quantisationTable, 0, 8)) {
+                        this.options.jpegQuantisationTable = quantisationTable;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'quantisationTable',
+                            'integer between 0 and 8',
+                            quantisationTable,
+                        );
+                    }
+                }
+            }
+            return this._updateFormatOut('jpeg', options2);
+        }
+        function png(options2) {
+            if (is4.object(options2)) {
+                if (is4.defined(options2.progressive)) {
+                    this._setBooleanOption('pngProgressive', options2.progressive);
+                }
+                if (is4.defined(options2.compressionLevel)) {
+                    if (
+                        is4.integer(options2.compressionLevel) &&
+                        is4.inRange(options2.compressionLevel, 0, 9)
+                    ) {
+                        this.options.pngCompressionLevel = options2.compressionLevel;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'compressionLevel',
+                            'integer between 0 and 9',
+                            options2.compressionLevel,
+                        );
+                    }
+                }
+                if (is4.defined(options2.adaptiveFiltering)) {
+                    this._setBooleanOption('pngAdaptiveFiltering', options2.adaptiveFiltering);
+                }
+                const colours = options2.colours || options2.colors;
+                if (is4.defined(colours)) {
+                    if (is4.integer(colours) && is4.inRange(colours, 2, 256)) {
+                        this.options.pngBitdepth = bitdepthFromColourCount(colours);
+                    } else {
+                        throw is4.invalidParameterError(
+                            'colours',
+                            'integer between 2 and 256',
+                            colours,
+                        );
+                    }
+                }
+                if (is4.defined(options2.palette)) {
+                    this._setBooleanOption('pngPalette', options2.palette);
+                } else if (
+                    [
+                        options2.quality,
+                        options2.effort,
+                        options2.colours,
+                        options2.colors,
+                        options2.dither,
+                    ].some(is4.defined)
+                ) {
+                    this._setBooleanOption('pngPalette', true);
+                }
+                if (this.options.pngPalette) {
+                    if (is4.defined(options2.quality)) {
+                        if (
+                            is4.integer(options2.quality) &&
+                            is4.inRange(options2.quality, 0, 100)
+                        ) {
+                            this.options.pngQuality = options2.quality;
+                        } else {
+                            throw is4.invalidParameterError(
+                                'quality',
+                                'integer between 0 and 100',
+                                options2.quality,
+                            );
+                        }
+                    }
+                    if (is4.defined(options2.effort)) {
+                        if (is4.integer(options2.effort) && is4.inRange(options2.effort, 1, 10)) {
+                            this.options.pngEffort = options2.effort;
+                        } else {
+                            throw is4.invalidParameterError(
+                                'effort',
+                                'integer between 1 and 10',
+                                options2.effort,
+                            );
+                        }
+                    }
+                    if (is4.defined(options2.dither)) {
+                        if (is4.number(options2.dither) && is4.inRange(options2.dither, 0, 1)) {
+                            this.options.pngDither = options2.dither;
+                        } else {
+                            throw is4.invalidParameterError(
+                                'dither',
+                                'number between 0.0 and 1.0',
+                                options2.dither,
+                            );
+                        }
+                    }
+                }
+            }
+            return this._updateFormatOut('png', options2);
+        }
+        function webp(options2) {
+            if (is4.object(options2)) {
+                if (is4.defined(options2.quality)) {
+                    if (is4.integer(options2.quality) && is4.inRange(options2.quality, 1, 100)) {
+                        this.options.webpQuality = options2.quality;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'quality',
+                            'integer between 1 and 100',
+                            options2.quality,
+                        );
+                    }
+                }
+                if (is4.defined(options2.alphaQuality)) {
+                    if (
+                        is4.integer(options2.alphaQuality) &&
+                        is4.inRange(options2.alphaQuality, 0, 100)
+                    ) {
+                        this.options.webpAlphaQuality = options2.alphaQuality;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'alphaQuality',
+                            'integer between 0 and 100',
+                            options2.alphaQuality,
+                        );
+                    }
+                }
+                if (is4.defined(options2.lossless)) {
+                    this._setBooleanOption('webpLossless', options2.lossless);
+                }
+                if (is4.defined(options2.nearLossless)) {
+                    this._setBooleanOption('webpNearLossless', options2.nearLossless);
+                }
+                if (is4.defined(options2.smartSubsample)) {
+                    this._setBooleanOption('webpSmartSubsample', options2.smartSubsample);
+                }
+                if (is4.defined(options2.preset)) {
+                    if (
+                        is4.string(options2.preset) &&
+                        is4.inArray(options2.preset, [
+                            'default',
+                            'photo',
+                            'picture',
+                            'drawing',
+                            'icon',
+                            'text',
+                        ])
+                    ) {
+                        this.options.webpPreset = options2.preset;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'preset',
+                            'one of: default, photo, picture, drawing, icon, text',
+                            options2.preset,
+                        );
+                    }
+                }
+                if (is4.defined(options2.effort)) {
+                    if (is4.integer(options2.effort) && is4.inRange(options2.effort, 0, 6)) {
+                        this.options.webpEffort = options2.effort;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'effort',
+                            'integer between 0 and 6',
+                            options2.effort,
+                        );
+                    }
+                }
+                if (is4.defined(options2.minSize)) {
+                    this._setBooleanOption('webpMinSize', options2.minSize);
+                }
+                if (is4.defined(options2.mixed)) {
+                    this._setBooleanOption('webpMixed', options2.mixed);
+                }
+            }
+            trySetAnimationOptions(options2, this.options);
+            return this._updateFormatOut('webp', options2);
+        }
+        function gif(options2) {
+            if (is4.object(options2)) {
+                if (is4.defined(options2.reuse)) {
+                    this._setBooleanOption('gifReuse', options2.reuse);
+                }
+                if (is4.defined(options2.progressive)) {
+                    this._setBooleanOption('gifProgressive', options2.progressive);
+                }
+                const colours = options2.colours || options2.colors;
+                if (is4.defined(colours)) {
+                    if (is4.integer(colours) && is4.inRange(colours, 2, 256)) {
+                        this.options.gifBitdepth = bitdepthFromColourCount(colours);
+                    } else {
+                        throw is4.invalidParameterError(
+                            'colours',
+                            'integer between 2 and 256',
+                            colours,
+                        );
+                    }
+                }
+                if (is4.defined(options2.effort)) {
+                    if (is4.number(options2.effort) && is4.inRange(options2.effort, 1, 10)) {
+                        this.options.gifEffort = options2.effort;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'effort',
+                            'integer between 1 and 10',
+                            options2.effort,
+                        );
+                    }
+                }
+                if (is4.defined(options2.dither)) {
+                    if (is4.number(options2.dither) && is4.inRange(options2.dither, 0, 1)) {
+                        this.options.gifDither = options2.dither;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'dither',
+                            'number between 0.0 and 1.0',
+                            options2.dither,
+                        );
+                    }
+                }
+                if (is4.defined(options2.interFrameMaxError)) {
+                    if (
+                        is4.number(options2.interFrameMaxError) &&
+                        is4.inRange(options2.interFrameMaxError, 0, 32)
+                    ) {
+                        this.options.gifInterFrameMaxError = options2.interFrameMaxError;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'interFrameMaxError',
+                            'number between 0.0 and 32.0',
+                            options2.interFrameMaxError,
+                        );
+                    }
+                }
+                if (is4.defined(options2.interPaletteMaxError)) {
+                    if (
+                        is4.number(options2.interPaletteMaxError) &&
+                        is4.inRange(options2.interPaletteMaxError, 0, 256)
+                    ) {
+                        this.options.gifInterPaletteMaxError = options2.interPaletteMaxError;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'interPaletteMaxError',
+                            'number between 0.0 and 256.0',
+                            options2.interPaletteMaxError,
+                        );
+                    }
+                }
+            }
+            trySetAnimationOptions(options2, this.options);
+            return this._updateFormatOut('gif', options2);
+        }
+        function jp2(options2) {
+            if (!this.constructor.format.jp2k.output.buffer) {
+                throw errJp2Save();
+            }
+            if (is4.object(options2)) {
+                if (is4.defined(options2.quality)) {
+                    if (is4.integer(options2.quality) && is4.inRange(options2.quality, 1, 100)) {
+                        this.options.jp2Quality = options2.quality;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'quality',
+                            'integer between 1 and 100',
+                            options2.quality,
+                        );
+                    }
+                }
+                if (is4.defined(options2.lossless)) {
+                    if (is4.bool(options2.lossless)) {
+                        this.options.jp2Lossless = options2.lossless;
+                    } else {
+                        throw is4.invalidParameterError('lossless', 'boolean', options2.lossless);
+                    }
+                }
+                if (is4.defined(options2.tileWidth)) {
+                    if (
+                        is4.integer(options2.tileWidth) &&
+                        is4.inRange(options2.tileWidth, 1, 32768)
+                    ) {
+                        this.options.jp2TileWidth = options2.tileWidth;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'tileWidth',
+                            'integer between 1 and 32768',
+                            options2.tileWidth,
+                        );
+                    }
+                }
+                if (is4.defined(options2.tileHeight)) {
+                    if (
+                        is4.integer(options2.tileHeight) &&
+                        is4.inRange(options2.tileHeight, 1, 32768)
+                    ) {
+                        this.options.jp2TileHeight = options2.tileHeight;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'tileHeight',
+                            'integer between 1 and 32768',
+                            options2.tileHeight,
+                        );
+                    }
+                }
+                if (is4.defined(options2.chromaSubsampling)) {
+                    if (
+                        is4.string(options2.chromaSubsampling) &&
+                        is4.inArray(options2.chromaSubsampling, ['4:2:0', '4:4:4'])
+                    ) {
+                        this.options.jp2ChromaSubsampling = options2.chromaSubsampling;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'chromaSubsampling',
+                            'one of: 4:2:0, 4:4:4',
+                            options2.chromaSubsampling,
+                        );
+                    }
+                }
+            }
+            return this._updateFormatOut('jp2', options2);
+        }
+        function trySetAnimationOptions(source, target) {
+            if (is4.object(source) && is4.defined(source.loop)) {
+                if (is4.integer(source.loop) && is4.inRange(source.loop, 0, 65535)) {
+                    target.loop = source.loop;
+                } else {
+                    throw is4.invalidParameterError(
+                        'loop',
+                        'integer between 0 and 65535',
+                        source.loop,
+                    );
+                }
+            }
+            if (is4.object(source) && is4.defined(source.delay)) {
+                if (is4.integer(source.delay) && is4.inRange(source.delay, 0, 65535)) {
+                    target.delay = [source.delay];
+                } else if (
+                    Array.isArray(source.delay) &&
+                    source.delay.every(is4.integer) &&
+                    source.delay.every((v) => is4.inRange(v, 0, 65535))
+                ) {
+                    target.delay = source.delay;
+                } else {
+                    throw is4.invalidParameterError(
+                        'delay',
+                        'integer or an array of integers between 0 and 65535',
+                        source.delay,
+                    );
+                }
+            }
+        }
+        function tiff(options2) {
+            if (is4.object(options2)) {
+                if (is4.defined(options2.quality)) {
+                    if (is4.integer(options2.quality) && is4.inRange(options2.quality, 1, 100)) {
+                        this.options.tiffQuality = options2.quality;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'quality',
+                            'integer between 1 and 100',
+                            options2.quality,
+                        );
+                    }
+                }
+                if (is4.defined(options2.bitdepth)) {
+                    if (
+                        is4.integer(options2.bitdepth) &&
+                        is4.inArray(options2.bitdepth, [1, 2, 4, 8])
+                    ) {
+                        this.options.tiffBitdepth = options2.bitdepth;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'bitdepth',
+                            '1, 2, 4 or 8',
+                            options2.bitdepth,
+                        );
+                    }
+                }
+                if (is4.defined(options2.tile)) {
+                    this._setBooleanOption('tiffTile', options2.tile);
+                }
+                if (is4.defined(options2.tileWidth)) {
+                    if (is4.integer(options2.tileWidth) && options2.tileWidth > 0) {
+                        this.options.tiffTileWidth = options2.tileWidth;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'tileWidth',
+                            'integer greater than zero',
+                            options2.tileWidth,
+                        );
+                    }
+                }
+                if (is4.defined(options2.tileHeight)) {
+                    if (is4.integer(options2.tileHeight) && options2.tileHeight > 0) {
+                        this.options.tiffTileHeight = options2.tileHeight;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'tileHeight',
+                            'integer greater than zero',
+                            options2.tileHeight,
+                        );
+                    }
+                }
+                if (is4.defined(options2.miniswhite)) {
+                    this._setBooleanOption('tiffMiniswhite', options2.miniswhite);
+                }
+                if (is4.defined(options2.pyramid)) {
+                    this._setBooleanOption('tiffPyramid', options2.pyramid);
+                }
+                if (is4.defined(options2.xres)) {
+                    if (is4.number(options2.xres) && options2.xres > 0) {
+                        this.options.tiffXres = options2.xres;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'xres',
+                            'number greater than zero',
+                            options2.xres,
+                        );
+                    }
+                }
+                if (is4.defined(options2.yres)) {
+                    if (is4.number(options2.yres) && options2.yres > 0) {
+                        this.options.tiffYres = options2.yres;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'yres',
+                            'number greater than zero',
+                            options2.yres,
+                        );
+                    }
+                }
+                if (is4.defined(options2.compression)) {
+                    if (
+                        is4.string(options2.compression) &&
+                        is4.inArray(options2.compression, [
+                            'none',
+                            'jpeg',
+                            'deflate',
+                            'packbits',
+                            'ccittfax4',
+                            'lzw',
+                            'webp',
+                            'zstd',
+                            'jp2k',
+                        ])
+                    ) {
+                        this.options.tiffCompression = options2.compression;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'compression',
+                            'one of: none, jpeg, deflate, packbits, ccittfax4, lzw, webp, zstd, jp2k',
+                            options2.compression,
+                        );
+                    }
+                }
+                if (is4.defined(options2.predictor)) {
+                    if (
+                        is4.string(options2.predictor) &&
+                        is4.inArray(options2.predictor, ['none', 'horizontal', 'float'])
+                    ) {
+                        this.options.tiffPredictor = options2.predictor;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'predictor',
+                            'one of: none, horizontal, float',
+                            options2.predictor,
+                        );
+                    }
+                }
+                if (is4.defined(options2.resolutionUnit)) {
+                    if (
+                        is4.string(options2.resolutionUnit) &&
+                        is4.inArray(options2.resolutionUnit, ['inch', 'cm'])
+                    ) {
+                        this.options.tiffResolutionUnit = options2.resolutionUnit;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'resolutionUnit',
+                            'one of: inch, cm',
+                            options2.resolutionUnit,
+                        );
+                    }
+                }
+            }
+            return this._updateFormatOut('tiff', options2);
+        }
+        function avif(options2) {
+            return this.heif({ ...options2, compression: 'av1' });
+        }
+        function heif(options2) {
+            if (is4.object(options2)) {
+                if (
+                    is4.string(options2.compression) &&
+                    is4.inArray(options2.compression, ['av1', 'hevc'])
+                ) {
+                    this.options.heifCompression = options2.compression;
+                } else {
+                    throw is4.invalidParameterError(
+                        'compression',
+                        'one of: av1, hevc',
+                        options2.compression,
+                    );
+                }
+                if (is4.defined(options2.quality)) {
+                    if (is4.integer(options2.quality) && is4.inRange(options2.quality, 1, 100)) {
+                        this.options.heifQuality = options2.quality;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'quality',
+                            'integer between 1 and 100',
+                            options2.quality,
+                        );
+                    }
+                }
+                if (is4.defined(options2.lossless)) {
+                    if (is4.bool(options2.lossless)) {
+                        this.options.heifLossless = options2.lossless;
+                    } else {
+                        throw is4.invalidParameterError('lossless', 'boolean', options2.lossless);
+                    }
+                }
+                if (is4.defined(options2.effort)) {
+                    if (is4.integer(options2.effort) && is4.inRange(options2.effort, 0, 9)) {
+                        this.options.heifEffort = options2.effort;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'effort',
+                            'integer between 0 and 9',
+                            options2.effort,
+                        );
+                    }
+                }
+                if (is4.defined(options2.chromaSubsampling)) {
+                    if (
+                        is4.string(options2.chromaSubsampling) &&
+                        is4.inArray(options2.chromaSubsampling, ['4:2:0', '4:4:4'])
+                    ) {
+                        this.options.heifChromaSubsampling = options2.chromaSubsampling;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'chromaSubsampling',
+                            'one of: 4:2:0, 4:4:4',
+                            options2.chromaSubsampling,
+                        );
+                    }
+                }
+            } else {
+                throw is4.invalidParameterError('options', 'Object', options2);
+            }
+            return this._updateFormatOut('heif', options2);
+        }
+        function jxl(options2) {
+            if (is4.object(options2)) {
+                if (is4.defined(options2.quality)) {
+                    if (is4.integer(options2.quality) && is4.inRange(options2.quality, 1, 100)) {
+                        this.options.jxlDistance =
+                            options2.quality >= 30
+                                ? 0.1 + (100 - options2.quality) * 0.09
+                                : (53 / 3e3) * options2.quality * options2.quality -
+                                  (23 / 20) * options2.quality +
+                                  25;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'quality',
+                            'integer between 1 and 100',
+                            options2.quality,
+                        );
+                    }
+                } else if (is4.defined(options2.distance)) {
+                    if (is4.number(options2.distance) && is4.inRange(options2.distance, 0, 15)) {
+                        this.options.jxlDistance = options2.distance;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'distance',
+                            'number between 0.0 and 15.0',
+                            options2.distance,
+                        );
+                    }
+                }
+                if (is4.defined(options2.decodingTier)) {
+                    if (
+                        is4.integer(options2.decodingTier) &&
+                        is4.inRange(options2.decodingTier, 0, 4)
+                    ) {
+                        this.options.jxlDecodingTier = options2.decodingTier;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'decodingTier',
+                            'integer between 0 and 4',
+                            options2.decodingTier,
+                        );
+                    }
+                }
+                if (is4.defined(options2.lossless)) {
+                    if (is4.bool(options2.lossless)) {
+                        this.options.jxlLossless = options2.lossless;
+                    } else {
+                        throw is4.invalidParameterError('lossless', 'boolean', options2.lossless);
+                    }
+                }
+                if (is4.defined(options2.effort)) {
+                    if (is4.integer(options2.effort) && is4.inRange(options2.effort, 3, 9)) {
+                        this.options.jxlEffort = options2.effort;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'effort',
+                            'integer between 3 and 9',
+                            options2.effort,
+                        );
+                    }
+                }
+            }
+            return this._updateFormatOut('jxl', options2);
+        }
+        function raw(options2) {
+            if (is4.object(options2)) {
+                if (is4.defined(options2.depth)) {
+                    if (
+                        is4.string(options2.depth) &&
+                        is4.inArray(options2.depth, [
+                            'char',
+                            'uchar',
+                            'short',
+                            'ushort',
+                            'int',
+                            'uint',
+                            'float',
+                            'complex',
+                            'double',
+                            'dpcomplex',
+                        ])
+                    ) {
+                        this.options.rawDepth = options2.depth;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'depth',
+                            'one of: char, uchar, short, ushort, int, uint, float, complex, double, dpcomplex',
+                            options2.depth,
+                        );
+                    }
+                }
+            }
+            return this._updateFormatOut('raw');
+        }
+        function tile(options2) {
+            if (is4.object(options2)) {
+                if (is4.defined(options2.size)) {
+                    if (is4.integer(options2.size) && is4.inRange(options2.size, 1, 8192)) {
+                        this.options.tileSize = options2.size;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'size',
+                            'integer between 1 and 8192',
+                            options2.size,
+                        );
+                    }
+                }
+                if (is4.defined(options2.overlap)) {
+                    if (is4.integer(options2.overlap) && is4.inRange(options2.overlap, 0, 8192)) {
+                        if (options2.overlap > this.options.tileSize) {
+                            throw is4.invalidParameterError(
+                                'overlap',
+                                `<= size (${this.options.tileSize})`,
+                                options2.overlap,
+                            );
+                        }
+                        this.options.tileOverlap = options2.overlap;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'overlap',
+                            'integer between 0 and 8192',
+                            options2.overlap,
+                        );
+                    }
+                }
+                if (is4.defined(options2.container)) {
+                    if (
+                        is4.string(options2.container) &&
+                        is4.inArray(options2.container, ['fs', 'zip'])
+                    ) {
+                        this.options.tileContainer = options2.container;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'container',
+                            'one of: fs, zip',
+                            options2.container,
+                        );
+                    }
+                }
+                if (is4.defined(options2.layout)) {
+                    if (
+                        is4.string(options2.layout) &&
+                        is4.inArray(options2.layout, ['dz', 'google', 'iiif', 'iiif3', 'zoomify'])
+                    ) {
+                        this.options.tileLayout = options2.layout;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'layout',
+                            'one of: dz, google, iiif, iiif3, zoomify',
+                            options2.layout,
+                        );
+                    }
+                }
+                if (is4.defined(options2.angle)) {
+                    if (is4.integer(options2.angle) && !(options2.angle % 90)) {
+                        this.options.tileAngle = options2.angle;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'angle',
+                            'positive/negative multiple of 90',
+                            options2.angle,
+                        );
+                    }
+                }
+                this._setBackgroundColourOption('tileBackground', options2.background);
+                if (is4.defined(options2.depth)) {
+                    if (
+                        is4.string(options2.depth) &&
+                        is4.inArray(options2.depth, ['onepixel', 'onetile', 'one'])
+                    ) {
+                        this.options.tileDepth = options2.depth;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'depth',
+                            'one of: onepixel, onetile, one',
+                            options2.depth,
+                        );
+                    }
+                }
+                if (is4.defined(options2.skipBlanks)) {
+                    if (
+                        is4.integer(options2.skipBlanks) &&
+                        is4.inRange(options2.skipBlanks, -1, 65535)
+                    ) {
+                        this.options.tileSkipBlanks = options2.skipBlanks;
+                    } else {
+                        throw is4.invalidParameterError(
+                            'skipBlanks',
+                            'integer between -1 and 255/65535',
+                            options2.skipBlanks,
+                        );
+                    }
+                } else if (is4.defined(options2.layout) && options2.layout === 'google') {
+                    this.options.tileSkipBlanks = 5;
+                }
+                const centre = is4.bool(options2.center) ? options2.center : options2.centre;
+                if (is4.defined(centre)) {
+                    this._setBooleanOption('tileCentre', centre);
+                }
+                if (is4.defined(options2.id)) {
+                    if (is4.string(options2.id)) {
+                        this.options.tileId = options2.id;
+                    } else {
+                        throw is4.invalidParameterError('id', 'string', options2.id);
+                    }
+                }
+                if (is4.defined(options2.basename)) {
+                    if (is4.string(options2.basename)) {
+                        this.options.tileBasename = options2.basename;
+                    } else {
+                        throw is4.invalidParameterError('basename', 'string', options2.basename);
+                    }
+                }
+            }
+            if (is4.inArray(this.options.formatOut, ['jpeg', 'png', 'webp'])) {
+                this.options.tileFormat = this.options.formatOut;
+            } else if (this.options.formatOut !== 'input') {
+                throw is4.invalidParameterError(
+                    'format',
+                    'one of: jpeg, png, webp',
+                    this.options.formatOut,
+                );
+            }
+            return this._updateFormatOut('dz');
+        }
+        function timeout(options2) {
+            if (!is4.plainObject(options2)) {
+                throw is4.invalidParameterError('options', 'object', options2);
+            }
+            if (is4.integer(options2.seconds) && is4.inRange(options2.seconds, 0, 3600)) {
+                this.options.timeoutSeconds = options2.seconds;
+            } else {
+                throw is4.invalidParameterError(
+                    'seconds',
+                    'integer between 0 and 3600',
+                    options2.seconds,
+                );
+            }
+            return this;
+        }
+        function _updateFormatOut(formatOut, options2) {
+            if (!(is4.object(options2) && options2.force === false)) {
+                this.options.formatOut = formatOut;
+            }
+            return this;
+        }
+        function _setBooleanOption(key, val2) {
+            if (is4.bool(val2)) {
+                this.options[key] = val2;
+            } else {
+                throw is4.invalidParameterError(key, 'boolean', val2);
+            }
+        }
+        function _read() {
+            if (!this.options.streamOut) {
+                this.options.streamOut = true;
+                const stack = Error();
+                this._pipeline(void 0, stack);
+            }
+        }
+        function _pipeline(callback, stack) {
+            if (typeof callback === 'function') {
+                if (this._isStreamInput()) {
+                    this.on('finish', () => {
+                        this._flattenBufferIn();
+                        sharp2.pipeline(this.options, (err, data2, info) => {
+                            if (err) {
+                                callback(is4.nativeError(err, stack));
+                            } else {
+                                callback(null, data2, info);
+                            }
+                        });
+                    });
+                } else {
+                    sharp2.pipeline(this.options, (err, data2, info) => {
+                        if (err) {
+                            callback(is4.nativeError(err, stack));
+                        } else {
+                            callback(null, data2, info);
+                        }
+                    });
+                }
+                return this;
+            } else if (this.options.streamOut) {
+                if (this._isStreamInput()) {
+                    this.once('finish', () => {
+                        this._flattenBufferIn();
+                        sharp2.pipeline(this.options, (err, data2, info) => {
+                            if (err) {
+                                this.emit('error', is4.nativeError(err, stack));
+                            } else {
+                                this.emit('info', info);
+                                this.push(data2);
+                            }
+                            this.push(null);
+                            this.on('end', () => this.emit('close'));
+                        });
+                    });
+                    if (this.streamInFinished) {
+                        this.emit('finish');
+                    }
+                } else {
+                    sharp2.pipeline(this.options, (err, data2, info) => {
+                        if (err) {
+                            this.emit('error', is4.nativeError(err, stack));
+                        } else {
+                            this.emit('info', info);
+                            this.push(data2);
+                        }
+                        this.push(null);
+                        this.on('end', () => this.emit('close'));
+                    });
+                }
+                return this;
+            } else {
+                if (this._isStreamInput()) {
+                    return new Promise((resolve2, reject) => {
+                        this.once('finish', () => {
+                            this._flattenBufferIn();
+                            sharp2.pipeline(this.options, (err, data2, info) => {
+                                if (err) {
+                                    reject(is4.nativeError(err, stack));
+                                } else {
+                                    if (this.options.resolveWithObject) {
+                                        resolve2({ data: data2, info });
+                                    } else {
+                                        resolve2(data2);
+                                    }
+                                }
+                            });
+                        });
+                    });
+                } else {
+                    return new Promise((resolve2, reject) => {
+                        sharp2.pipeline(this.options, (err, data2, info) => {
+                            if (err) {
+                                reject(is4.nativeError(err, stack));
+                            } else {
+                                if (this.options.resolveWithObject) {
+                                    resolve2({ data: data2, info });
+                                } else {
+                                    resolve2(data2);
+                                }
+                            }
+                        });
+                    });
+                }
+            }
+        }
+        module2.exports = function (Sharp) {
+            Object.assign(Sharp.prototype, {
+                // Public
+                toFile,
+                toBuffer,
+                keepExif,
+                withExif,
+                withExifMerge,
+                keepIccProfile,
+                withIccProfile,
+                keepMetadata,
+                withMetadata,
+                toFormat,
+                jpeg,
+                jp2,
+                png,
+                webp,
+                tiff,
+                avif,
+                heif,
+                jxl,
+                gif,
+                raw,
+                tile,
+                timeout,
+                // Private
+                _updateFormatOut,
+                _setBooleanOption,
+                _read,
+                _pipeline,
+            });
+        };
+    },
+});
+
+// node_modules/sharp/lib/utility.js
+var require_utility = __commonJS({
+    'node_modules/sharp/lib/utility.js'(exports2, module2) {
+        'use strict';
+        var events = require('events');
+        var detectLibc = require_detect_libc();
+        var is4 = require_is();
+        var { runtimePlatformArch } = require_libvips();
+        var sharp2 = require_sharp();
+        var runtimePlatform = runtimePlatformArch();
+        var libvipsVersion = sharp2.libvipsVersion();
+        var format = sharp2.format();
+        format.heif.output.alias = ['avif', 'heic'];
+        format.jpeg.output.alias = ['jpe', 'jpg'];
+        format.tiff.output.alias = ['tif'];
+        format.jp2k.output.alias = ['j2c', 'j2k', 'jp2', 'jpx'];
+        var interpolators = {
+            /** [Nearest neighbour interpolation](http://en.wikipedia.org/wiki/Nearest-neighbor_interpolation). Suitable for image enlargement only. */
+            nearest: 'nearest',
+            /** [Bilinear interpolation](http://en.wikipedia.org/wiki/Bilinear_interpolation). Faster than bicubic but with less smooth results. */
+            bilinear: 'bilinear',
+            /** [Bicubic interpolation](http://en.wikipedia.org/wiki/Bicubic_interpolation) (the default). */
+            bicubic: 'bicubic',
+            /** [LBB interpolation](https://github.com/libvips/libvips/blob/master/libvips/resample/lbb.cpp#L100). Prevents some "[acutance](http://en.wikipedia.org/wiki/Acutance)" but typically reduces performance by a factor of 2. */
+            locallyBoundedBicubic: 'lbb',
+            /** [Nohalo interpolation](http://eprints.soton.ac.uk/268086/). Prevents acutance but typically reduces performance by a factor of 3. */
+            nohalo: 'nohalo',
+            /** [VSQBS interpolation](https://github.com/libvips/libvips/blob/master/libvips/resample/vsqbs.cpp#L48). Prevents "staircasing" when enlarging. */
+            vertexSplitQuadraticBasisSpline: 'vsqbs',
+        };
+        var versions = {
+            vips: libvipsVersion.semver,
+        };
+        if (!libvipsVersion.isGlobal) {
+            if (!libvipsVersion.isWasm) {
+                try {
+                    versions = require(`@img/sharp-${runtimePlatform}/versions`);
+                } catch (_) {
+                    try {
+                        versions = require(`@img/sharp-libvips-${runtimePlatform}/versions`);
+                    } catch (_2) {}
+                }
+            } else {
+                try {
+                    versions = require('@img/sharp-wasm32/versions');
+                } catch (_) {}
+            }
+        }
+        versions.sharp = require_package().version;
+        function cache(options2) {
+            if (is4.bool(options2)) {
+                if (options2) {
+                    return sharp2.cache(50, 20, 100);
+                } else {
+                    return sharp2.cache(0, 0, 0);
+                }
+            } else if (is4.object(options2)) {
+                return sharp2.cache(options2.memory, options2.files, options2.items);
+            } else {
+                return sharp2.cache();
+            }
+        }
+        cache(true);
+        function concurrency(concurrency2) {
+            return sharp2.concurrency(is4.integer(concurrency2) ? concurrency2 : null);
+        }
+        if (detectLibc.familySync() === detectLibc.GLIBC && !sharp2._isUsingJemalloc()) {
+            sharp2.concurrency(1);
+        }
+        var queue = new events.EventEmitter();
+        function counters() {
+            return sharp2.counters();
+        }
+        function simd(simd2) {
+            return sharp2.simd(is4.bool(simd2) ? simd2 : null);
+        }
+        function block(options2) {
+            if (is4.object(options2)) {
+                if (Array.isArray(options2.operation) && options2.operation.every(is4.string)) {
+                    sharp2.block(options2.operation, true);
+                } else {
+                    throw is4.invalidParameterError(
+                        'operation',
+                        'Array<string>',
+                        options2.operation,
+                    );
+                }
+            } else {
+                throw is4.invalidParameterError('options', 'object', options2);
+            }
+        }
+        function unblock(options2) {
+            if (is4.object(options2)) {
+                if (Array.isArray(options2.operation) && options2.operation.every(is4.string)) {
+                    sharp2.block(options2.operation, false);
+                } else {
+                    throw is4.invalidParameterError(
+                        'operation',
+                        'Array<string>',
+                        options2.operation,
+                    );
+                }
+            } else {
+                throw is4.invalidParameterError('options', 'object', options2);
+            }
+        }
+        module2.exports = function (Sharp) {
+            Sharp.cache = cache;
+            Sharp.concurrency = concurrency;
+            Sharp.counters = counters;
+            Sharp.simd = simd;
+            Sharp.format = format;
+            Sharp.interpolators = interpolators;
+            Sharp.versions = versions;
+            Sharp.queue = queue;
+            Sharp.block = block;
+            Sharp.unblock = unblock;
+        };
+    },
+});
+
+// node_modules/sharp/lib/index.js
+var require_lib3 = __commonJS({
+    'node_modules/sharp/lib/index.js'(exports2, module2) {
+        'use strict';
+        var Sharp = require_constructor();
+        require_input()(Sharp);
+        require_resize()(Sharp);
+        require_composite()(Sharp);
+        require_operation()(Sharp);
+        require_colour()(Sharp);
+        require_channel()(Sharp);
+        require_output()(Sharp);
+        require_utility()(Sharp);
+        module2.exports = Sharp;
+    },
+});
+
+// src/index.ts
+var import_prompts3 = __toESM(require_prompts3(), 1);
 
 // node_modules/kolorist/dist/esm/index.mjs
 var enabled = true;
@@ -56185,12 +62838,12 @@ var bgLightMagenta = kolorist(105, 49);
 var bgLightCyan = kolorist(106, 49);
 var bgLightGray = kolorist(47, 49);
 
-// utils/log.ts
+// src/utils/log.ts
 function log(str) {
     console.log(`  ${bold(lightBlue(str))}`);
 }
 
-// utils/banners.ts
+// src/utils/banners.ts
 var import_gradient_string = __toESM(require_gradient_string(), 1);
 var defaultBanner = 'Yu Cheng Cli - Individual Efficiency Scaffolding';
 var gradientBanner = (0, import_gradient_string.default)([
@@ -57178,7 +63831,7 @@ var setupTimeout = (spawned, { timeout, killSignal = 'SIGTERM' }, spawnedPromise
         return spawnedPromise;
     }
     let timeoutId;
-    const timeoutPromise = new Promise((resolve, reject) => {
+    const timeoutPromise = new Promise((resolve2, reject) => {
         timeoutId = setTimeout(() => {
             timeoutKill(spawned, killSignal, reject);
         }, timeout);
@@ -57592,9 +64245,9 @@ var mergePromise = (spawned, promise) => {
     }
 };
 var getSpawnedPromise = (spawned) =>
-    new Promise((resolve, reject) => {
+    new Promise((resolve2, reject) => {
         spawned.on('exit', (exitCode, signal) => {
-            resolve({ exitCode, signal });
+            resolve2({ exitCode, signal });
         });
         spawned.on('error', (error) => {
             reject(error);
@@ -57917,17 +64570,21 @@ function create$(options2) {
 }
 var $2 = create$();
 
-// utils/png_webp.ts
+// src/png_webp.ts
 async function pngToWebp() {
     console.log();
     await $2`npx webp-batch-convert -I images -O images_webp`;
     console.log();
 }
+async function main() {
+    pngToWebp();
+}
 var png_webp_default = {
     pngToWebp,
+    main,
 };
 
-// utils/lang.ts
+// src/lang.ts
 var import_xlsx = __toESM(require_xlsx(), 1);
 var import_path = __toESM(require('path'), 1);
 var import_fs_extra = __toESM(require_lib2(), 1);
@@ -57996,9 +64653,16 @@ function exportLangToJson() {
         );
     });
 }
+async function main2() {
+    exportLangToJson();
+}
 var lang_default = {
     exportLangToJson,
+    main: main2,
 };
+
+// src/csdn.ts
+var import_prompts = __toESM(require_prompts3(), 1);
 
 // node_modules/node-fetch/src/index.js
 var import_node_http2 = __toESM(require('http'), 1);
@@ -59118,7 +65782,7 @@ init_esm_min();
 init_from();
 var supportedSchemas = /* @__PURE__ */ new Set(['data:', 'http:', 'https:']);
 async function fetch(url, options_) {
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve2, reject) => {
         const request = new Request(url, options_);
         const { parsedURL, options: options2 } = getNodeRequestOptions(request);
         if (!supportedSchemas.has(parsedURL.protocol)) {
@@ -59129,7 +65793,7 @@ async function fetch(url, options_) {
         if (parsedURL.protocol === 'data:') {
             const data2 = dist_default(request.url);
             const response2 = new Response(data2, { headers: { 'Content-Type': data2.typeFull } });
-            resolve(response2);
+            resolve2(response2);
             return;
         }
         const send = (
@@ -59295,7 +65959,7 @@ async function fetch(url, options_) {
                         if (responseReferrerPolicy) {
                             requestOptions.referrerPolicy = responseReferrerPolicy;
                         }
-                        resolve(fetch(new Request(locationURL, requestOptions)));
+                        resolve2(fetch(new Request(locationURL, requestOptions)));
                         finalize();
                         return;
                     }
@@ -59342,7 +66006,7 @@ async function fetch(url, options_) {
                 response_.statusCode === 304
             ) {
                 response = new Response(body, responseOptions);
-                resolve(response);
+                resolve2(response);
                 return;
             }
             const zlibOptions = {
@@ -59360,7 +66024,7 @@ async function fetch(url, options_) {
                     },
                 );
                 response = new Response(body, responseOptions);
-                resolve(response);
+                resolve2(response);
                 return;
             }
             if (codings === 'deflate' || codings === 'x-deflate') {
@@ -59396,12 +66060,12 @@ async function fetch(url, options_) {
                         );
                     }
                     response = new Response(body, responseOptions);
-                    resolve(response);
+                    resolve2(response);
                 });
                 raw.once('end', () => {
                     if (!response) {
                         response = new Response(body, responseOptions);
-                        resolve(response);
+                        resolve2(response);
                     }
                 });
                 return;
@@ -59417,11 +66081,11 @@ async function fetch(url, options_) {
                     },
                 );
                 response = new Response(body, responseOptions);
-                resolve(response);
+                resolve2(response);
                 return;
             }
             response = new Response(body, responseOptions);
-            resolve(response);
+            resolve2(response);
         });
         writeToStream(request_, request).catch(reject);
     });
@@ -75115,7 +81779,7 @@ var { merge: merge2 } = static_exports;
 var { parseHTML: parseHTML2 } = static_exports;
 var { root: root2 } = static_exports;
 
-// utils/csdn.ts
+// src/csdn.ts
 var indexPage = 1;
 async function reptile(author = 'weixin_43575775') {
     let url = `https://blog.csdn.net/${author}/article/list/` + indexPage;
@@ -75177,40 +81841,163 @@ function intervalArticle(urls) {
         } catch (error) {}
     }, 2e3);
 }
+async function main3() {
+    const { name } = await (0, import_prompts.default)({
+        type: 'text',
+        name: 'name',
+        message: '\u8BF7\u8F93\u5165csdn\u535A\u5BA2\u540D\u5B57',
+        description: 'Please enter csdn blog name',
+        initial: 'weixin_43575775',
+    });
+    reptile(name);
+}
 var csdn_default = {
     reptile,
+    main: main3,
 };
 
-// index.ts
+// src/images.ts
+var import_sharp = __toESM(require_lib3(), 1);
+var import_fs_extra2 = __toESM(require_lib2(), 1);
+var import_prompts2 = __toESM(require_prompts3(), 1);
+
+// src/utils/index.ts
+var import_node_path3 = __toESM(require('path'), 1);
+function resolve(p) {
+    const currentDirectory = process.cwd();
+    return import_node_path3.default.resolve(currentDirectory, p);
+}
+
+// src/images.ts
+function transformOneImage(inputPath, outputPath, format) {
+    const image = (0, import_sharp.default)(inputPath);
+    const compressOptions = { quality: 100 };
+    image[format](compressOptions).toFile(outputPath, (err, info) => {
+        if (err) throw err;
+        log(
+            `\u6210\u529F\u538B\u7F29\u56FE\u7247\uFF01\u65B0\u56FE\u7247\u4FDD\u5B58\u4E3A ${outputPath}`,
+        );
+    });
+}
+async function main4() {
+    const { inputDir } = await (0, import_prompts2.default)({
+        type: 'text',
+        name: 'inputDir',
+        message: '\u8BF7\u8F93\u5165\u9700\u8981\u8F6C\u6362\u7684\u6587\u4EF6\u540D\u5B57',
+        description: 'Please Enter The Name Of The File To Be Converted',
+        initial: 'images',
+    });
+    const { outputDir } = await (0, import_prompts2.default)({
+        type: 'text',
+        name: 'outputDir',
+        message: '\u8BF7\u8F93\u5165\u9700\u8981\u8F6C\u6362\u540E\u6587\u4EF6\u5939',
+        description: 'Please Enter The Folder To Be Converted',
+        initial: 'outImages',
+    });
+    const { toFormat } = await (0, import_prompts2.default)({
+        type: 'select',
+        name: 'toFormat',
+        message: '\u8BF7\u8F93\u5165\u9700\u8981\u8F6C\u6362\u540E\u683C\u5F0F',
+        description: 'Please enter the format to be converted',
+        initial: 0,
+        choices: [
+            {
+                title: 'jpeg' /* JPEG */,
+                value: 'jpeg' /* JPEG */,
+                description:
+                    'The module supports reading JPEG, PNG, WebP, GIF, AVIF, TIFF and SVG images.',
+            },
+            {
+                title: 'png' /* PNG */,
+                value: 'png' /* PNG */,
+                description:
+                    'The module supports reading JPEG, PNG, WebP, GIF, AVIF, TIFF and SVG images.',
+            },
+            {
+                title: 'gif' /* GIF */,
+                value: 'gif' /* GIF */,
+                description:
+                    'The module supports reading JPEG, PNG, WebP, GIF, AVIF, TIFF and SVG images.',
+            },
+            {
+                title: 'webp' /* WebP */,
+                value: 'webp' /* WebP */,
+                description:
+                    'The module supports reading JPEG, PNG, WebP, GIF, AVIF, TIFF and SVG images.',
+            },
+            {
+                title: 'avif' /* AVIF */,
+                value: 'avif' /* AVIF */,
+                description:
+                    'The module supports reading JPEG, PNG, WebP, GIF, AVIF, TIFF and SVG images.',
+            },
+            {
+                title: 'tiff' /* TIFF */,
+                value: 'tiff' /* TIFF */,
+                description:
+                    'The module supports reading JPEG, PNG, WebP, GIF, AVIF, TIFF and SVG images.',
+            },
+        ],
+    });
+    const targetDirectory = resolve(inputDir);
+    const targetOutDirectory = resolve(outputDir);
+    if (!import_fs_extra2.default.existsSync(targetDirectory)) {
+        console.log('\u6587\u4EF6\u5939\u4E0D\u5B58\u5728');
+        process.exit(1);
+    }
+    if (!import_fs_extra2.default.existsSync(targetOutDirectory)) {
+        import_fs_extra2.default.mkdirSync(targetOutDirectory);
+    }
+    const inputImages = import_fs_extra2.default.readdirSync(targetDirectory);
+    inputImages.forEach((file) => {
+        const [name, ext] = file.split('.');
+        transformOneImage(
+            resolve(`${inputDir}/${file}`),
+            `${targetOutDirectory}/${name}.${toFormat}`,
+            toFormat,
+        );
+    });
+}
+var images_default = {
+    main: main4,
+};
+
+// src/index.ts
+var config = [
+    {
+        title: '\u56FE\u7247\u538B\u7F29',
+        description: 'Image Compression',
+        value: 4 /* images */,
+    },
+    {
+        title: '\u521B\u5EFA\u524D\u7AEF\u9879\u76EE',
+        description: 'Creating a front-end project',
+        value: 0 /* create */,
+    },
+    {
+        title: '\u5237csdn\u535A\u5BA2\u8BBF\u95EE\u91CF',
+        description: 'Brush csdn blog visits',
+        value: 1 /* csdn */,
+    },
+    {
+        title: '\u5C06\u5F53\u524D\u76EE\u5F55\u4E0B\u7684png\u8F6C\u6210webp',
+        description: 'Convert png in current directory to webp',
+        value: 2 /* transpile */,
+    },
+    {
+        title: '\u5C06excel\u8F6C\u6210json\u8BED\u8A00\u5305',
+        description: 'Convert excel to json language package',
+        value: 3 /* lang */,
+    },
+];
 async function chooseType() {
-    const { type } = await (0, import_prompts.default)([
+    const { type } = await (0, import_prompts3.default)([
         {
             type: 'select',
             name: 'type',
             message: '\u8BF7\u9009\u62E9\u4F60\u8981\u4F7F\u7528\u7684\u529F\u80FD',
             description: 'Please select the function you want to use',
-            choices: [
-                {
-                    title: '\u521B\u5EFA\u524D\u7AEF\u9879\u76EE',
-                    description: 'Creating a front-end project',
-                    value: 0 /* create */,
-                },
-                {
-                    title: '\u5237csdn\u535A\u5BA2\u8BBF\u95EE\u91CF',
-                    description: 'Brush csdn blog visits',
-                    value: 1 /* csdn */,
-                },
-                {
-                    title: '\u5C06\u5F53\u524D\u76EE\u5F55\u4E0B\u7684png\u8F6C\u6210webp',
-                    description: 'Convert png in current directory to webp',
-                    value: 2 /* transpile */,
-                },
-                {
-                    title: '\u5C06excel\u8F6C\u6210json\u8BED\u8A00\u5305',
-                    description: 'Convert excel to json language package',
-                    value: 3 /* lang */,
-                },
-            ],
+            choices: config,
             initial: 0,
         },
     ]);
@@ -75231,23 +82018,18 @@ async function init() {
             case 0 /* create */:
                 break;
             case 1 /* csdn */:
-                const { name } = await (0, import_prompts.default)({
-                    type: 'text',
-                    name: 'name',
-                    message: '\u8BF7\u8F93\u5165csdn\u535A\u5BA2\u540D\u5B57',
-                    description: 'Please enter csdn blog name',
-                    initial: 'weixin_43575775',
-                });
-                csdn_default.reptile(name);
+                csdn_default.main();
                 break;
             case 3 /* lang */:
-                lang_default.exportLangToJson();
+                lang_default.main();
                 break;
             case 2 /* transpile */:
-                png_webp_default.pngToWebp();
+                png_webp_default.main();
+                break;
+            case 4 /* images */:
+                images_default.main();
                 break;
         }
-        console.log('type', type);
     } catch (cancelled) {
         console.log(cancelled.message);
         process.exit(1);

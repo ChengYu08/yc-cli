@@ -16,7 +16,6 @@ function exportLangToJson() {
         console.log('没有找到.xlsx文件');
         return;
     }
-
     excelFiles.forEach((str, idx) => {
         // 默认取第一个
         var data = XLSX.readFile(excelFiles[idx]);
@@ -70,6 +69,11 @@ function exportLangToJson() {
     });
 }
 
+async function main() {
+    exportLangToJson();
+}
+
 export default {
-    exportLangToJson: exportLangToJson,
+    exportLangToJson,
+    main,
 };

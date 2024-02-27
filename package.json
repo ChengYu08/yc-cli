@@ -22,7 +22,8 @@
         "**/*": "prettier --write --ignore-unknown"
     },
     "dependencies": {
-        "prettier-plugin-packagejson": "^2.4.12"
+        "prettier-plugin-packagejson": "^2.4.12",
+        "sharp": "^0.33.2"
     },
     "devDependencies": {
         "cheerio": "^1.0.0-rc.12",
@@ -39,6 +40,6 @@
         "zx": "^7.2.3"
     },
     "engines": {
-        "node": ">=v16.20.0"
+        "node": ">=v18.17.0"
     }
 }
