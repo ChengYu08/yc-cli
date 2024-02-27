@@ -1,5 +1,5 @@
 {
-    "name": "yc_cli",
+    "name": "cheng_cli",
     "version": "0.0.1",
     "description": "",
     "keywords": [],
@@ -7,7 +7,7 @@
     "author": "",
     "type": "module",
     "bin": {
-        "yc_cli": "out.cjs"
+        "cheng_cli": "out.cjs"
     },
     "files": [
         "out.cjs"
