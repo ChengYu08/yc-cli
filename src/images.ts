@@ -20,11 +20,11 @@ enum ImageType {
  * format 转换后的格式
  * quality 压缩质量
  */
-function transformOneImage(inputPath, outputPath, format) {
+function transformOneImage(inputPath, outputPath, format, quality) {
     // 创建Sharp实例并指定输入图片路径
     const image = sharp(inputPath);
     // 设置压缩参数（这里将图像质量降低到70%）
-    const compressOptions = { quality: 100 };
+    const compressOptions = { quality };
     // 调用resize()函数进行尺寸调整或者其他操作
     image[format](compressOptions).toFile(outputPath, (err, info) => {
         if (err) throw err;
@@ -99,6 +99,17 @@ async function main() {
             },
         ],
     });
+    const { quality } = await prompts({
+        type: 'number',
+        name: 'quality',
+        message: '请输入压缩的质量0-100',
+        description: 'Please enter the compressed mass 0-100',
+        initial: 100,
+        style: 'default',
+        min: 1,
+        max: 100,
+    });
+
     const targetDirectory = resolve(inputDir);
     const targetOutDirectory = resolve(outputDir);
     // 判断输入的名字 是否是真是的文件夹
@@ -118,6 +129,7 @@ async function main() {
             resolve(`${inputDir}/${file}`),
             `${targetOutDirectory}/${name}.${toFormat}`,
             toFormat,
+            quality,
         );
     });
 }

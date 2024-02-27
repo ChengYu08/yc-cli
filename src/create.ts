@@ -24,8 +24,13 @@ async function renderTemplate(src, dest, renderConst) {
 
     const result = template(renderConst);
     const outPath = replaceFileExtension(dest, '.dart');
-    fs.writeFileSync(outPath, result, 'utf8');
-    successLog(`${renderConst['name']} 页面 ${path.basename(outPath)} 创建成功 ${outPath}`);
+    const targetFileName = path.basename(outPath);
+    const outComPath =
+        targetFileName.indexOf('index') == -1
+            ? outPath.replace(targetFileName, `${renderConst['pageName']}_${targetFileName}`)
+            : outPath;
+    fs.writeFileSync(outComPath, result, 'utf8');
+    successLog(`${renderConst['name']}页面 ${path.basename(outComPath)} 创建成功 ${outComPath}`);
     return result;
 }
 
@@ -41,12 +46,19 @@ async function main() {
     if (!fs.existsSync(pageSrc)) {
         fs.ensureDirSync(pageSrc);
     }
+    const name = capitalizeFirstLetter(pageName);
     renderTemplate(
         path.resolve(__dirname, './template/dart_page_template'),
         resolve(`${pageSrc}/${pageName.toLocaleLowerCase()}`),
         {
-            name: capitalizeFirstLetter(pageName),
+            name,
+            pageName,
         },
+    );
+    fs.writeFileSync(
+        resolve(`${pageSrc}/index.text`),
+        `export './${pageName}/index.dart';`,
+        'utf8',
     );
 }
 

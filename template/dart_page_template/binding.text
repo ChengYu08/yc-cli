@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 
-import './logic.dart';
+import '{{pageName}}_logic.dart';
 
 class {{name}}Binding extends Bindings {
   @override

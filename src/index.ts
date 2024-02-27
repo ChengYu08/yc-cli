@@ -22,8 +22,8 @@ enum selectType {
 // 选项配置
 const config = [
     {
-        title: '图片压缩',
-        description: 'Image Compression',
+        title: '图片压缩和格式转换',
+        description: 'Image Compression And Format Conversion',
         value: selectType.images,
     },
     {
