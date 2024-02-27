@@ -2,7 +2,7 @@ import sharp from 'sharp';
 import fs from 'fs-extra';
 import prompts from 'prompts';
 import { resolve } from './utils/index.ts';
-import { log } from './utils/log.ts';
+import { successLog } from './utils/log.ts';
 
 enum ImageType {
     JPEG = 'jpeg',
@@ -28,7 +28,7 @@ function transformOneImage(inputPath, outputPath, format) {
     // 调用resize()函数进行尺寸调整或者其他操作
     image[format](compressOptions).toFile(outputPath, (err, info) => {
         if (err) throw err;
-        log(`成功压缩图片！新图片保存为 ${outputPath}`);
+        successLog(`成功压缩图片！新图片保存为 ${outputPath}`);
     });
 }
 

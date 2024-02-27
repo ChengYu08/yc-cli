@@ -5,7 +5,7 @@ import prompts from 'prompts';
 import { log } from './utils/log.ts';
 import * as banners from './utils/banners.ts';
 
-import transpile from './png_webp.ts';
+// import transpile from './png_webp.ts';
 import lang from './lang.ts';
 import csdn from './csdn.ts';
 import images from './images.ts';
@@ -13,7 +13,7 @@ import images from './images.ts';
 enum selectType {
     create,
     csdn,
-    transpile,
+    // transpile,
     lang,
     images,
 }
@@ -35,11 +35,11 @@ const config = [
         description: 'Brush csdn blog visits',
         value: selectType.csdn,
     },
-    {
-        title: '将当前目录下的png转成webp',
-        description: 'Convert png in current directory to webp',
-        value: selectType.transpile,
-    },
+    // {
+    //     title: '将当前目录下的png转成webp',
+    //     description: 'Convert png in current directory to webp',
+    //     value: selectType.transpile,
+    // },
     {
         title: '将excel转成json语言包',
         description: 'Convert excel to json language package',
@@ -89,9 +89,6 @@ async function init() {
                 break;
             case selectType.lang:
                 lang.main();
-                break;
-            case selectType.transpile:
-                transpile.main();
                 break;
             case selectType.images:
                 images.main();
