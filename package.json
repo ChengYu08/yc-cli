@@ -22,6 +22,7 @@
         "**/*": "prettier --write --ignore-unknown"
     },
     "dependencies": {
+        "handlebars": "^4.7.8",
         "prettier-plugin-packagejson": "^2.4.12",
         "sharp": "^0.33.2"
     },

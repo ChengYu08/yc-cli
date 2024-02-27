@@ -9,6 +9,7 @@ import * as banners from './utils/banners.ts';
 import lang from './lang.ts';
 import csdn from './csdn.ts';
 import images from './images.ts';
+import create from './create.ts';
 
 enum selectType {
     create,
@@ -26,8 +27,8 @@ const config = [
         value: selectType.images,
     },
     {
-        title: '创建前端项目',
-        description: 'Creating a front-end project',
+        title: '创建flutter项目bloc Page',
+        description: 'Creating a bloc Page for a flutter project',
         value: selectType.create,
     },
     {
@@ -83,6 +84,7 @@ async function init() {
         const type = await chooseType();
         switch (type) {
             case selectType.create:
+                create.main();
                 break;
             case selectType.csdn:
                 csdn.main();

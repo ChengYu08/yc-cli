@@ -6,8 +6,21 @@ function resolve(p) {
     return path.resolve(currentDirectory, p);
 }
 
+// 首字母大写
+
+function capitalizeFirstLetter(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
+// 替换文件的后缀
+function replaceFileExtension(path, newExtension) {
+    return path.replace(/\..+$/, newExtension);
+}
+
 export default {
     resolve,
+    capitalizeFirstLetter,
+    replaceFileExtension,
 };
 
-export { resolve };
+export { resolve, capitalizeFirstLetter, replaceFileExtension };
