@@ -2,6 +2,8 @@ import prompts from 'prompts';
 import fetch from 'node-fetch';
 import * as cheerio from 'cheerio';
 
+import { log } from './utils/log.ts';
+
 // 当前页码，这个可以自定义也可以从页面抓取，这里我就不赘述了
 let indexPage = 1;
 // 博客地址 + /article/list/ + 页码  表示当前网页
@@ -57,7 +59,7 @@ async function reptile(author = 'weixin_43575775') {
         }
         article.title = text;
         article.url = url;
-        console.log(`article  ${JSON.stringify(article)}`);
+        console.table(article);
         articles.push(article);
     });
     data.articles = articles;
@@ -80,7 +82,7 @@ function intervalArticle(urls) {
             const res = await fetch(urls[co].url);
 
             if (res.ok && res.status === 200) {
-                console.log(
+                log(
                     `seeEount: ${count} , title: ${urls[co].title} , loadTimes: ${parseInt(((count + len) / len).toString())}`,
                 );
             }
