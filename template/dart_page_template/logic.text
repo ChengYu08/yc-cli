@@ -1,9 +1,14 @@
 import 'package:get/get.dart';
 
-class {{name}}Logic extends GetxController {
+class {{fileName}}Logic extends GetxController {
   @override
   void onInit() {
     super.onInit();
+  }
+
+  @override
+  void onReady() {
+    super.onReady();
   }
 
   @override

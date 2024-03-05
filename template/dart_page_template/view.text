@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '{{pageName}}_logic.dart';
 
-class {{name}}Page extends StatelessWidget {
-  final logic = Get.find<{{name}}Logic>();
-  {{name}}Page({super.key});
+class {{fileName}}Page extends StatelessWidget {
+  final logic = Get.find<{{fileName}}Logic>();
+  {{fileName}}Page({super.key});
   
 
   @override

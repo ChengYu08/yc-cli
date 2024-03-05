@@ -1,7 +1,7 @@
 import prompts from 'prompts';
 
 import fs from 'fs-extra';
-import { capitalizeFirstLetter, replaceFileExtension } from './utils/index.ts';
+import { capitalizeFirstLetter, replaceFileExtension, toCamelCase } from './utils/index.ts';
 import { resolve } from './utils/index.ts';
 import path from 'node:path';
 import handlebars from 'handlebars';
@@ -46,6 +46,7 @@ async function main() {
     if (!fs.existsSync(pageSrc)) {
         fs.ensureDirSync(pageSrc);
     }
+    const fileName = capitalizeFirstLetter(toCamelCase(pageName));
     const name = capitalizeFirstLetter(pageName);
     renderTemplate(
         path.resolve(__dirname, './template/dart_page_template'),
@@ -53,6 +54,7 @@ async function main() {
         {
             name,
             pageName,
+            fileName,
         },
     );
     fs.writeFileSync(
