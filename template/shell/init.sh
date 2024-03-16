@@ -1,0 +1,3 @@
+#!/bin/bash
+
+flutter pub add get flutter_screenutil get_it flutter_native_splash cached_network_image dio get_storage permission_handler pull_to_refresh flutter_smart_dialog flutter_launcher_icons path_provider pretty_dio_logger flutter_easyloading visibility_detector bot_toast image_cropper url_launcher connectivity_plus

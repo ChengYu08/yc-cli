@@ -1,0 +1,1 @@
+MuMuManager.exe adb -v 1

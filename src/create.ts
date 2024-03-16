@@ -39,7 +39,7 @@ async function main() {
     const { pageName } = await prompts({
         type: 'text',
         name: 'pageName',
-        message: '请输入页面的名字',
+        message: '请输入页面的名字(下划线 首字母字母小写)',
         description: 'Please enter the name of the page',
         validate: (ipt) => (ipt.trim().length == 0 ? '页面的名字不为空' : true),
     });

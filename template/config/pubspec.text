@@ -1,0 +1,47 @@
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.3.11
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+  melos: ^4.1.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/icon/
+    - assets/images/
+
+# 修改启动图标后执行的命令行：flutter pub run flutter_launcher_icons:main
+flutter_launcher_icons:
+  image_path: "assets/icon/launcher.webp"
+  android: true
+  ios: true
+  web:
+    generate: true
+    image_path: "assets/icon/launcher.webp"
+    background_color: "#0F1012"
+    theme_color: "#0F1012"
+# 修改启动页后执行的命令行：flutter pub run flutter_native_splash:create
+flutter_native_splash:
+  # color: "#0F1012"
+  color: '#ffffff'
+  image: assets/splash.png
+  android_gravity: fill
+  ios_content_mode: scaleToFill
+  web_image_mode: cover
+# 图片资源本地化命令行 flutter packages pub run build_runner build
+flutter_gen:
+  output: lib/gen/ # Optional (default: lib/gen/)
+  lineLength: 80 # Optional (default: 80)

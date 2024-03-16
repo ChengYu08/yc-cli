@@ -17,7 +17,7 @@ class {{fileName}}Page extends StatelessWidget {
       child: Scaffold(
         body: SingleChildScrollView(
           child: Container(
-            const constraints: BoxConstraints(
+            constraints: BoxConstraints(
               minHeight: 1.sh,
             ),
             decoration: const BoxDecoration(

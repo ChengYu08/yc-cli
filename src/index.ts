@@ -10,6 +10,7 @@ import lang from './lang.ts';
 import csdn from './csdn.ts';
 import images from './images.ts';
 import create from './create.ts';
+import folder from './init_flutter_folder.ts';
 
 enum selectType {
     create,
@@ -17,6 +18,7 @@ enum selectType {
     // transpile,
     lang,
     images,
+    flutterInit,
 }
 
 // 选项配置
@@ -45,6 +47,11 @@ const config = [
         title: '将excel转成json语言包',
         description: 'Convert excel to json language package',
         value: selectType.lang,
+    },
+    {
+        title: '初始化flutter文件夹',
+        description: 'Initialize the flutter folder',
+        value: selectType.flutterInit,
     },
 ];
 
@@ -94,6 +101,9 @@ async function init() {
                 break;
             case selectType.images:
                 images.main();
+                break;
+            case selectType.flutterInit:
+                folder.main();
                 break;
         }
         // console.log('type', type); // => { value: 24 }
