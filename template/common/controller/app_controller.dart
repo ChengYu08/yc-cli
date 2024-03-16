@@ -1,4 +1,3 @@
-import '../config.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -22,7 +21,7 @@ class AppController extends GetxController {
   }
 
   Messages getLangList() {
-    return Config.getIt.get<Langs>().lang;
+    return curLang;
   }
 
   runningBackground(bool run) {

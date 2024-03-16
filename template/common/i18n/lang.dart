@@ -67,11 +67,4 @@ class Messages extends Translations {
   }
 }
 
-// 多语言的单利
-class Langs {
-  late Messages lang;
-
-  Langs({
-    required this.lang,
-  });
-}
+Messages curLang = Messages();

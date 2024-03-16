@@ -23,8 +23,8 @@ class Config {
     try {
       final lang = Messages();
       await lang.loadJSON();
+      curLang = lang;
       // 全局依赖注入
-      getIt.registerSingleton<Langs>(Langs(lang: lang));
       getIt.registerSingleton<Emitter>(Emitter());
       await GetStorage.init();
       FlutterError.onError = (FlutterErrorDetails details) {
