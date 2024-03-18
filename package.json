@@ -10,7 +10,8 @@
         "cheng_cli": "out.cjs"
     },
     "files": [
-        "out.cjs"
+        "out.cjs",
+        "template"
     ],
     "scripts": {
         "build": "zx ./scripts/build.mjs",
