@@ -23,9 +23,10 @@
         "**/*": "prettier --write --ignore-unknown"
     },
     "dependencies": {
+        "@esbuild/darwin-arm64": "^0.21.2",
         "handlebars": "^4.7.8",
         "prettier-plugin-packagejson": "^2.4.12",
-        "sharp": "^0.33.2"
+        "sharp": "^0.33.3"
     },
     "devDependencies": {
         "cheerio": "^1.0.0-rc.12",
