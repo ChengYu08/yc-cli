@@ -35,45 +35,46 @@ async function renderTemplate(src, dest, renderConst) {
 }
 
 async function main() {
-    const pageSrc = resolve('./lib/pages');
-    const { pageName } = await prompts({
-        type: 'text',
-        name: 'pageName',
-        message: '请输入页面的名字(下划线 首字母字母小写 如 management_tasks)',
-        description: 'Please enter the name of the page',
-        validate: (ipt) => (ipt.trim().length == 0 ? '页面的名字不为空' : true),
-    });
-    if (!fs.existsSync(pageSrc)) {
-        fs.ensureDirSync(pageSrc);
-    }
-    const cameName = toCamelCase(pageName);
-    const fileName = capitalizeFirstLetter(cameName);
-    const name = capitalizeFirstLetter(pageName);
-    renderTemplate(
-        path.resolve(__dirname, './template/dart_page_template'),
-        resolve(`${pageSrc}/${pageName.toLocaleLowerCase()}`),
-        {
-            name,
-            pageName,
-            fileName,
-        },
-    );
-    fs.writeFileSync(
-        resolve(`${pageSrc}/index.text`),
-        `export './${pageName}/index.dart';`,
-        'utf8',
-    );
+    try {
+        const pageSrc = resolve('./lib/pages');
+        const { pageName } = await prompts({
+            type: 'text',
+            name: 'pageName',
+            message: '请输入页面的名字(下划线 首字母字母小写 如 management_tasks)',
+            description: 'Please enter the name of the page',
+            validate: (ipt) => (ipt.trim().length == 0 ? '页面的名字不为空' : true),
+        });
+        if (!fs.existsSync(pageSrc)) {
+            fs.ensureDirSync(pageSrc);
+        }
+        const cameName = toCamelCase(pageName);
+        const fileName = capitalizeFirstLetter(cameName);
+        const name = capitalizeFirstLetter(pageName);
+        renderTemplate(
+            path.resolve(__dirname, './template/dart_page_template'),
+            resolve(`${pageSrc}/${pageName.toLocaleLowerCase()}`),
+            {
+                name,
+                pageName,
+                fileName,
+            },
+        );
+        fs.writeFileSync(
+            resolve(`${pageSrc}/index.text`),
+            `export './${pageName}/index.dart';`,
+            'utf8',
+        );
 
-    // 路由生成
-    fs.writeFileSync(
-        resolve(`./lib/routers/name.text`),
-        `static const ${cameName} = '/${pageName}';`,
-        'utf8',
-    );
+        // 路由生成
+        fs.writeFileSync(
+            resolve(`./lib/routers/name.text`),
+            `static const ${cameName} = '/${pageName}';`,
+            'utf8',
+        );
 
-    fs.writeFileSync(
-        resolve(`./lib/routers/pages.text`),
-        `
+        fs.writeFileSync(
+            resolve(`./lib/routers/pages.text`),
+            `
         import '../pages/${pageName}/${pageName}_binding.dart';
         import '../pages/${pageName}/${pageName}_view.dart';
 
@@ -83,18 +84,19 @@ async function main() {
             binding: ${fileName}Binding(),
             ),
         `,
-        'utf8',
-    );
+            'utf8',
+        );
 
-    fs.writeFileSync(
-        resolve(`./lib/routers/navigator.text`),
-        `
+        fs.writeFileSync(
+            resolve(`./lib/routers/navigator.text`),
+            `
         static void toGo${fileName}() {
             Get.toNamed(RouteNames.${cameName});
         }
         `,
-        'utf8',
-    );
+            'utf8',
+        );
+    } catch (error) {}
 }
 
 export default {

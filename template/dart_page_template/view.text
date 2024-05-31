@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '{{pageName}}_logic.dart';
+import 'package:auto_route/auto_route.dart';
 
-import '../../components/custom_app_bar.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-
+@RoutePage(name: "{{fileName}}Page")
 class {{fileName}}Page extends StatelessWidget {
-  final logic = Get.find<{{fileName}}Logic>();
+  final logic = Get.lazyPut(() => {{fileName}}Logic());
   {{fileName}}Page({super.key});
   
 
@@ -15,34 +14,8 @@ class {{fileName}}Page extends StatelessWidget {
     return SafeArea(
       top: false,
       child: Scaffold(
-        body: SingleChildScrollView(
-          child: Container(
-            constraints: BoxConstraints(
-              minHeight: 1.sh,
-            ),
-            decoration: const BoxDecoration(
-              gradient: LinearGradient(
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                  colors: [
-                    Color(0xFFFFD731),
-                    Color.fromRGBO(246, 240, 189, 1),
-                    Color(0xFFF2F4F7),
-                  ],
-                  stops: [
-                    0,
-                    0.3,
-                    1
-                  ]),
-            ),
-            child: const Column(
-              children: [
-                const CustomAppBar(
-                  title: '{{fileName}}Page',
-                ),
-              ],
-            ),
-          ),
+          body: SingleChildScrollView(
+          child: Container( child: Text("{{fileName}}Page"),),
         ),
       ),
     );
