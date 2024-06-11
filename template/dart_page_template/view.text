@@ -5,7 +5,7 @@ import 'package:auto_route/auto_route.dart';
 
 @RoutePage(name: "{{fileName}}Page")
 class {{fileName}}Page extends StatelessWidget {
-  final logic = Get.lazyPut(() => {{fileName}}Logic());
+  final logic = Get.put({{fileName}}Logic());
   {{fileName}}Page({super.key});
   
 
