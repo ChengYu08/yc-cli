@@ -1,3 +1,2 @@
-export '{{pageName}}_binding.dart';
 export '{{pageName}}_logic.dart';
 export '{{pageName}}_view.dart';

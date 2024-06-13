@@ -4,3 +4,5 @@
     "engines": {
         "node": ">=v18.17.0"
     }
+
+npm install --os=darwin --cpu=arm64 sharp
