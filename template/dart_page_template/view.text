@@ -27,6 +27,7 @@ class _{{fileName}}PageState extends State<{{fileName}}Page> {
   Widget build(BuildContext context) {
     return SafeArea(
       top: false,
+      bottom: false,
       child: Stack(
         children: [
           // 背景
@@ -43,7 +44,7 @@ class _{{fileName}}PageState extends State<{{fileName}}Page> {
                   // appBar
                   const AppContentBar(),
                   SizedBox(height: 18.h),
-                  Expanded(child: Container()),
+                  Expanded(child: Container(),),
                 ],
               )
             )
