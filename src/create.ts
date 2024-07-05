@@ -67,35 +67,32 @@ async function main() {
 
         // 路由生成
         fs.writeFileSync(
-            resolve(`./lib/routers/name.text`),
+            resolve(`./lib/router/name.text`),
             `static const ${cameName} = '/${pageName}';`,
             'utf8',
         );
 
         fs.writeFileSync(
-            resolve(`./lib/routers/pages.text`),
+            resolve(`./lib/router/pages.text`),
             `
-        import '../pages/${pageName}/${pageName}_binding.dart';
-        import '../pages/${pageName}/${pageName}_view.dart';
-
-        GetPage(
-            name: RouteNames.${cameName},
-            page: () => ${fileName}Page(),
-            binding: ${fileName}Binding(),
-            ),
+         CustomRoute(
+          path: "/${cameName}Page",
+          page: ${fileName}Page.page,
+          transitionsBuilder: TransitionsBuilders.slideLeftWithFade,
+        ),
         `,
             'utf8',
         );
 
-        fs.writeFileSync(
-            resolve(`./lib/routers/navigator.text`),
-            `
-        static void toGo${fileName}() {
-            Get.toNamed(RouteNames.${cameName});
-        }
-        `,
-            'utf8',
-        );
+        // fs.writeFileSync(
+        //     resolve(`./lib/routers/navigator.text`),
+        //     `
+        // static void toGo${fileName}() {
+        //     Get.toNamed(RouteNames.${cameName});
+        // }
+        // `,
+        //     'utf8',
+        // );
     } catch (error) {}
 }
 

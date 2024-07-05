@@ -1,24 +1,55 @@
 import 'package:flutter/material.dart';
+import 'package:auto_route/auto_route.dart';
 import 'package:get/get.dart';
 import '{{pageName}}_logic.dart';
-import 'package:auto_route/auto_route.dart';
+import '../../components/app_content_bar.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 @RoutePage(name: "{{fileName}}Page")
-class {{fileName}}Page extends StatelessWidget {
-  final logic = Get.put({{fileName}}Logic());
-  {{fileName}}Page({super.key});
-  
+class {{fileName}}Page extends StatefulWidget {
+  const {{fileName}}Page({super.key});
 
- @override
+  @override
+  State<{{fileName}}Page> createState() => _{{fileName}}PageState();
+}
+
+class _{{fileName}}PageState extends State<{{fileName}}Page> {
+    final logic = Get.put({{fileName}}Logic());
+
+
+  @override
+  void dispose() {
+    Get.delete<{{fileName}}Logic>();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return SafeArea(
       top: false,
-      child: Scaffold(
-          body: SingleChildScrollView(
-          child: Container( child: Text("{{fileName}}Page"),),
-        ),
-      ),
+      child: Stack(
+        children: [
+          // 背景
+          Positioned.fill(child: Container()),
+          // 内容
+          Scaffold(
+            appBar: null,
+            backgroundColor: Colors.transparent,
+            body: SizedBox(
+              height: 1.sh,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  // appBar
+                  const AppContentBar(),
+                  SizedBox(height: 18.h),
+                  Expanded(child: Container()),
+                ],
+              )
+            )
+          ),
+        ]
+      )
     );
   }
-
 }
