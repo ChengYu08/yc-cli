@@ -7,6 +7,7 @@ import * as banners from './utils/banners.ts';
 
 // import transpile from './png_webp.ts';
 import lang from './lang.ts';
+import langMulti from './lang_multi.ts';
 import csdn from './csdn.ts';
 import images from './images.ts';
 import create from './create.ts';
@@ -17,6 +18,7 @@ enum selectType {
     csdn,
     // transpile,
     lang,
+    langMulti,
     images,
     flutterInit,
 }
@@ -44,9 +46,14 @@ const config = [
     //     value: selectType.transpile,
     // },
     {
-        title: '将excel转成json语言包',
+        title: '将excel转成json语言包(一个文件版本)',
         description: 'Convert excel to json language package',
         value: selectType.lang,
+    },
+    {
+        title: '将excel转成json语言包(多文件版本)',
+        description: 'Convert excel to json language package',
+        value: selectType.langMulti,
     },
     {
         title: '初始化flutter文件夹',
@@ -98,6 +105,9 @@ async function init() {
                 break;
             case selectType.lang:
                 lang.main();
+                break;
+            case selectType.langMulti:
+                langMulti.main();
                 break;
             case selectType.images:
                 images.main();

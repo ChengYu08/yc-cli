@@ -1,8 +1,2 @@
-待做功能
-1、一键flutter 标准文件夹 注入路由 注入http拦截器
-
-    "engines": {
-        "node": ">=v18.17.0"
-    }
-
-npm install --os=darwin --cpu=arm64 sharp
+#github地址 https://github.com/ChengYu08/yc-cli
+[Excel 模板](template.xlsx)

@@ -1,6 +1,6 @@
 {
     "name": "cheng_cli",
-    "version": "0.0.8",
+    "version": "0.0.9",
     "description": "",
     "keywords": [],
     "license": "ISC",
@@ -26,7 +26,7 @@
         "@esbuild/darwin-arm64": "^0.21.2",
         "handlebars": "^4.7.8",
         "prettier-plugin-packagejson": "^2.4.12",
-        "sharp": "^0.33.4"
+        "sharp": "^0.33.5"
     },
     "devDependencies": {
         "cheerio": "^1.0.0-rc.12",
