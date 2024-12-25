@@ -42,7 +42,9 @@ function exportLangToJson() {
                     langNumMap[s] = value.w.trim();
                 } else {
                     const lang = langNumMap[s];
-                    exportJsonMap[lang][keyNumMap[v]] = value.w.trim();
+                    if (keyNumMap[v]) {
+                        exportJsonMap[lang][keyNumMap[v]] = value.w.trim();
+                    }
                 }
             }
         });
