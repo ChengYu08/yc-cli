@@ -1,6 +1,6 @@
 {
     "name": "cheng_cli",
-    "version": "0.0.9",
+    "version": "0.0.12",
     "description": "",
     "keywords": [],
     "license": "ISC",
@@ -23,14 +23,13 @@
         "**/*": "prettier --write --ignore-unknown"
     },
     "dependencies": {
-        "@esbuild/darwin-arm64": "^0.21.2",
+        "esbuild": "^0.25.5",
         "handlebars": "^4.7.8",
         "prettier-plugin-packagejson": "^2.4.12",
         "sharp": "^0.33.5"
     },
     "devDependencies": {
         "cheerio": "^1.0.0-rc.12",
-        "esbuild": "^0.20.1",
         "esbuild-plugin-license": "^1.2.2",
         "execa": "^8.0.1",
         "gradient-string": "^2.0.2",
