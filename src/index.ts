@@ -52,6 +52,11 @@ const config = [
         value: selectType.lang,
     },
     {
+        title: '获取excel的模板文件(生成到当前路径)',
+        description: 'Get the Excel template file (generated to the current path)',
+        value: selectType.getLangTemplate,
+    },
+    {
         title: '将excel转成json语言包(多文件版本)',
         description: 'Convert excel to json language package',
         value: selectType.langMulti,

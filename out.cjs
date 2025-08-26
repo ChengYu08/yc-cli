@@ -88658,6 +88658,11 @@ var config = [
         value: 2 /* lang */,
     },
     {
+        title: '\u83B7\u53D6excel\u7684\u6A21\u677F\u6587\u4EF6(\u751F\u6210\u5230\u5F53\u524D\u8DEF\u5F84)',
+        description: 'Get the Excel template file (generated to the current path)',
+        value: 6 /* getLangTemplate */,
+    },
+    {
         title: '\u5C06excel\u8F6C\u6210json\u8BED\u8A00\u5305(\u591A\u6587\u4EF6\u7248\u672C)',
         description: 'Convert excel to json language package',
         value: 3 /* langMulti */,
