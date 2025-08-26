@@ -14,6 +14,7 @@ function exportLangToJson() {
     console.log('当前文件夹下的.xlsx文件:', excelFiles);
     if (excelFiles.length == 0) {
         console.log('没有找到.xlsx文件');
+        getLangTemplate();
         return;
     }
 
@@ -49,8 +50,8 @@ function exportLangToJson() {
         fs.removeSync(`${currentDirectory}/langs`);
         fs.mkdirSync(`${currentDirectory}/langs`);
         Object.keys(exportJsonMap).forEach((key) => {
-            fs.writeFile(`./langs/${key}.arb`, JSON.stringify(exportJsonMap[key], null, 4));
-            console.log('文件已经生成', '==>', `./langs/${key}.arb`);
+            fs.writeFile(`./langs/${key}.json`, JSON.stringify(exportJsonMap[key], null, 4));
+            console.log('文件已经生成', '==>', `./langs/${key}.json`);
         });
     });
 }
@@ -60,9 +61,10 @@ async function main() {
 }
 
 async function getLangTemplate() {
-    const currentDirectory = process.cwd();
+    const templatePath = path.resolve(__dirname, './lang.xlsx');
     try {
-        await fs.copy(`${currentDirectory}/lang.xlsx`, './lang.xlsx');
+        await fs.copy(templatePath, './lang.xlsx');
+        console.log('获取excel的模板文件 lang.xlsx文件 到当前目录');
     } catch (err) {
         console.error(err);
     }
