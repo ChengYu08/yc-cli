@@ -1,6 +1,6 @@
 {
     "name": "cheng_cli",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "",
     "keywords": [],
     "license": "ISC",
@@ -11,7 +11,8 @@
     },
     "files": [
         "out.cjs",
-        "template"
+        "template",
+        "lang.xlsx"
     ],
     "scripts": {
         "build": "zx ./scripts/build.mjs",
