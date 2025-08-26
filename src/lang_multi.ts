@@ -59,7 +59,17 @@ async function main() {
     exportLangToJson();
 }
 
+async function getLangTemplate() {
+    const currentDirectory = process.cwd();
+    try {
+        await fs.copy(`${currentDirectory}/lang.xlsx`, './lang.xlsx');
+    } catch (err) {
+        console.error(err);
+    }
+}
+
 export default {
     exportLangToJson,
     main,
+    getLangTemplate,
 };

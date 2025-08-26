@@ -21,6 +21,7 @@ enum selectType {
     langMulti,
     images,
     flutterInit,
+    getLangTemplate,
 }
 
 // 选项配置
@@ -30,11 +31,11 @@ const config = [
         description: 'Image Compression And Format Conversion',
         value: selectType.images,
     },
-    {
-        title: '创建flutter项目bloc Page',
-        description: 'Creating a bloc Page for a flutter project',
-        value: selectType.create,
-    },
+    // {
+    //     title: '创建flutter项目bloc Page',
+    //     description: 'Creating a bloc Page for a flutter project',
+    //     value: selectType.create,
+    // },
     {
         title: '刷csdn博客访问量',
         description: 'Brush csdn blog visits',
@@ -108,6 +109,9 @@ async function init() {
                 break;
             case selectType.langMulti:
                 langMulti.main();
+                break;
+            case selectType.getLangTemplate:
+                langMulti.getLangTemplate();
                 break;
             case selectType.images:
                 images.main();
