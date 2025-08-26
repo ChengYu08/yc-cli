@@ -50,8 +50,8 @@ function exportLangToJson() {
         fs.removeSync(`${currentDirectory}/langs`);
         fs.mkdirSync(`${currentDirectory}/langs`);
         Object.keys(exportJsonMap).forEach((key) => {
-            fs.writeFile(`./langs/${key}.json`, JSON.stringify(exportJsonMap[key], null, 4));
-            console.log('文件已经生成', '==>', `./langs/${key}.json`);
+            fs.writeFile(`./langs/${key}.arb`, JSON.stringify(exportJsonMap[key], null, 4));
+            console.log('文件已经生成', '==>', `./langs/${key}.arb`);
         });
     });
 }

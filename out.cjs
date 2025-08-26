@@ -70857,10 +70857,10 @@ function exportLangToJson2() {
         import_fs_extra2.default.mkdirSync(`${currentDirectory}/langs`);
         Object.keys(exportJsonMap).forEach((key) => {
             import_fs_extra2.default.writeFile(
-                `./langs/${key}.json`,
+                `./langs/${key}.arb`,
                 JSON.stringify(exportJsonMap[key], null, 4),
             );
-            console.log('\u6587\u4EF6\u5DF2\u7ECF\u751F\u6210', '==>', `./langs/${key}.json`);
+            console.log('\u6587\u4EF6\u5DF2\u7ECF\u751F\u6210', '==>', `./langs/${key}.arb`);
         });
     });
 }
